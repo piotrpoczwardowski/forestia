@@ -1,0 +1,90 @@
+.products{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.products__left{
+    width: 50%;
+  
+    height: 500px;
+    font-size: 22px;
+    text-align: center;
+}
+.products__right{
+    width: 50%;
+    background: url(../images//budowa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  
+}
+.products__title{
+font-size: 70px;
+margin-top: 50px;
+font-weight: bold;
+}
+.products__description{
+    margin-top: 35px;
+}
+.products__button{
+    font-size: 25px;
+    margin-top: 35px;
+    background: white;
+    color:  #006451;
+    border: 1px solid  #006451;
+    width: 530px;
+    height: 50px;
+}
+
+
+@media (max-width: 1300px) {
+    .products{
+        display: block;
+        
+    }
+
+    .products__left{
+        width: 100%;
+      
+        height: auto;
+        
+    }
+    .products__right{
+        width: 100%;
+        margin-top: 100px;
+        height: 450px;
+      
+    }
+}
+
+@media (max-width: 650px) {
+    .products__description{
+       font-size: 5vw;
+       white-space: normal;
+       margin: 50px auto;
+    }
+
+    br{
+        display: none;
+    }
+
+    .products__title{
+        font-size: 10vw;
+       
+        }
+
+        .products__button{
+            font-size: 25px;
+            margin-top: 35px;
+            background: white;
+            color:  #006451;
+            border: 1px solid  #006451;
+            width: 90%;
+            height: 50px;
+        }
+
+        .products__right{
+           background-size: contain;
+          
+        }
+}

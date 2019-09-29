@@ -1,0 +1,158 @@
+.hero{
+    display: flex;
+   justify-content: space-between;
+   width: 100%;
+   margin: 30px auto;
+}
+
+.hero__content{
+    display: flex;
+   margin: 0 auto;
+    width: 85%;
+}
+
+.hero__left{
+    
+    background: rgb(228, 228, 228);
+    position: relative;
+    width: 50%;
+}
+
+.slides{
+
+height: 100%;
+position: relative;
+
+}
+.slide{
+    height: 100%;
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation-name: imageAnimation;
+    animation-duration: 1s;
+}
+.slide1{
+    background-image: url('../images/walls.jpg');
+    display: block;
+    
+
+}
+.slide2{
+    background-image: url('../images/horns.jpg');
+    display: none;
+  
+}
+.slide3{
+    background-image: url('../images/relitex.jpg');
+    display: none;
+   
+}
+.slide4{
+    background-image: url('../images/kitchen.jpg');
+    display: none;
+   
+}
+.slide__active{
+    display: block;
+}
+.left__selectors{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: 20px auto;
+   
+   
+}
+
+.selector{
+    width: 20px;
+    height: 20px;
+    background: grey;
+    border-radius: 50%;
+}
+
+.hero__right{
+   
+  width: 80%;
+    height:600px;
+    align-items: center;
+}
+
+.texts{
+    position: relative;
+}
+
+.text{
+    position: absolute;
+}
+
+.text1{
+    display: block;
+}
+
+.text2{
+    display: none;
+}
+
+.right__title{
+   margin-top: 2vw;
+    font-size: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.title__number{
+    font-size: 15vw;
+}
+.right__description{
+  font-size: 20px;
+  margin-left: 40px;
+}
+.right__button{
+    background:  #006451;
+    border: none;
+    color: white;
+    width: 200px;
+    height: 50px;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+.arrow__image{
+   
+    height: 50px;
+    width: 50px;
+}
+
+.arrow{
+    display: flex;
+    align-items: center;
+}
+
+.arrow__image{
+  
+}
+
+.left{
+    background: url(../images/arrowLeft.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.right{
+    background: url(../images/arrowRight.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@keyframes imageAnimation {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}

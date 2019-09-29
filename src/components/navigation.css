@@ -1,0 +1,285 @@
+
+.navigation{
+   
+    background: rgb(255, 255, 255);
+}
+
+
+.navigation__header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+    background: linear-gradient(to right, #4D4D4D, black);
+    color: white;
+   
+
+}
+.header__number, .header__email{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    justify-content: space-between;
+}
+
+
+.navigation__number--icon{
+    background: url(../images/teleWhite.png);
+}
+.navigation__email--icon{
+    background: url(../images/mailWhite.png);
+}
+.navigation__number--icon, .navigation__email--icon{
+    width: 23px;
+    height: 23px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+}
+.navigation__block{
+
+    height: 10vw;
+    margin-top: 3vw;
+   position: relative;
+   
+    display: flex;
+    background: white;
+}
+
+.block__left{
+    background: url(../images/logo_i_napis.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+    width: 25%;
+    margin-left: 50px;
+}
+
+.block__right{
+  width: 75%;
+  display: flex;
+  align-items: center;
+}
+.right__links{
+   
+    display: flex;
+    justify-content: space-around;
+    width: 60vw;
+    margin-left: 100px;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+    font-size: 2vw;
+   transition: color 0.3s;
+}
+
+.link:hover{
+    color: #0E4C89;
+}
+.main__line{
+    background: #006451;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 3vw;
+    width: 90%;
+
+}
+
+.active__page{
+    color: #0E4C89;
+}
+
+.products__wrapper{
+    width: 450px;
+    height: 0;
+    left: 510px;
+    position: absolute;
+    top: 13vw;
+    display: flex;
+    overflow: hidden;
+    transition: height 0.5s;
+    z-index: 5;
+}
+.active__wrapper{
+    height: 240px;
+}
+.wrapper__left{
+   background: rgb(255, 255, 255);
+}
+.--flex{
+    display: flex;
+    color: black;
+    
+    width: 280px;
+   
+    height: 80px;
+    align-items: center;
+}
+.--flex p:nth-child(1){
+    margin-left: 20px;
+    width: 150px;
+    white-space: nowrap;
+    font-size: 20px;
+}
+
+.--flex p:nth-child(2){
+    margin-left: 40px;
+}
+
+.--flex:hover{
+    background:  #006451 ;
+    color: white;
+}
+.wrapper__right{
+   
+    
+    background:  #006451 ;
+    color: white;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0px;
+    overflow: hidden;
+    transition: width 0.5s;
+
+}
+.active__wrapper__right{
+    width: 260px;
+}
+
+.wrapper__right__content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.wrapper__line{
+    height: 2px;
+    background: white;
+    width: 110px;
+}
+
+.blur{
+   
+    background: rgba(0, 0, 0, 0.342);
+ 
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    display: none;
+}
+
+.blur__active{
+    display: block;
+}
+
+
+
+@media (max-width: 850px) {
+    .block__left {
+        
+        
+        width: 35%;
+        
+    }
+    .block__right{
+        width: 65%;
+    }
+    .right__links{
+        margin-left: 3vw;
+    }
+    .link{
+        font-size: 2.2vw;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 700px) {
+  
+  .hamburger__links a, .hamburger__links {
+      display: block;
+  }
+  .hamburger__links{
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.938);
+      
+      top: 13vw;
+      height: 0px;
+      overflow: hidden;
+      transition: height 0.5s
+  }
+  .right__links{
+      margin-left: 0px;
+  }
+
+  .hamburger__menu{
+      background: black;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 3vw;
+  }
+  .block__right{
+      justify-content: flex-end;
+      margin-right: 0vw;
+  }
+  .link{
+      font-size: 33px;
+      margin-top: 20px;
+  }
+
+  .hamburger__active{
+      height: 500px;
+  }
+
+  .products__wrapper{
+      height: auto;
+      position: relative;
+      top: 0px;
+      left: 0px;
+      margin: 0 auto;
+      height: 0;
+     
+  }
+
+  .wrapper__left{
+      background: none;
+      margin: 0 auto;
+  }
+
+  .--flex{
+      font-weight: bold;
+      text-align: center;
+      justify-content: center;
+      height: 60px;
+  }
+.--flex:hover{
+    background: none;
+    color: black;
+}
+  .--flex p:nth-child(1){
+      margin: 0;
+      width: auto;
+  }
+  .--flex p:nth-child(2){
+    display: none;
+  }
+  .wrapper__right{
+      background: none;
+      color: black;
+  }
+  .wrapper__line{
+      background: black;
+  }
+  .active__wrapper--mobile{
+      height: 180px;
+  }
+}
