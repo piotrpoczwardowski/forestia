@@ -75,6 +75,7 @@
     color: black;
     font-size: 2vw;
    transition: color 0.3s;
+   cursor: pointer;
 }
 
 .link:hover{
@@ -113,7 +114,7 @@
 .--flex{
     display: flex;
     color: black;
-    
+    cursor: pointer;
     width: 280px;
    
     height: 80px;

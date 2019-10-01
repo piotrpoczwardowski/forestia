@@ -15,15 +15,21 @@ const IndexPage = (props) => (
     <Hero />
     
     <div className="features">
+    <Link to='/Produkty/'> 
       <div className="features__block features1">
         <p className="block__title title">Płyty ścienne</p>
       </div>
+      </Link>
+      <Link to='/Produkty/'> 
       <div className="features__block features2">
         <p className="block__title title">Płyty sufitowe</p>
       </div>
+      </Link>
+      <Link to='/Produkty/'> 
       <div className="features__block features3">
         <p className="block__title title">Płyty podłogowe</p>
       </div>
+      </Link>
     </div>
 
     <div className="about">

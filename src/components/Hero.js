@@ -1,6 +1,6 @@
 
 import React, { Component } from "react"
-
+import { Link } from "gatsby"
 import "./hero.css"
 
 class Hero extends Component {
@@ -8,7 +8,13 @@ class Hero extends Component {
     state = {
         selector: 1
     }
+    componentDidMount(){
+       
+    }
 
+    startInterval = () => {
+       
+    }
     handleChange = (e) => {
         let allSlides = document.querySelectorAll('.slide')
         let allTexts = document.querySelectorAll('.text')
@@ -86,16 +92,16 @@ class Hero extends Component {
         let description = ''
         let i = 1
 
-        let func = () => {
-            if(i===5){
-                i=1
-            }
+        // let func = () => {
+        //     if(i===5){
+        //         i=1
+        //     }
             
-            this.changeSlide(i)
-            i++
-        }
+        //     this.changeSlide(i)
+        //     i++
+        // }
 
-        // setInterval(func, 3000)
+        // setInterval(func, 2000)
 
 
         return (
@@ -129,7 +135,7 @@ class Hero extends Component {
                                 <p className="right__description">
                                     Nowe ściany gotowe od zaraz! <br /> 1.Instalujesz 2.Malujesz 3.Dużo czasu i oszczędności zyskujesz!
                     </p>
-                                <button className="right__button button1">Sprawdz</button>
+                              <Link to='/Produkty/'>  <button className="right__button button1">Sprawdz</button></Link>
                                 <div className="line">
                                 </div>
                             </div>
@@ -141,7 +147,7 @@ class Hero extends Component {
                                     Płyty ścienne z nałożoną tapetą.
             Wybierz Swoją kombinację i zaoszczędź wiele godzin pracy!
                     </p>
-                                <button className="right__button">Sprawdz</button>
+                    <Link to='/Produkty/'>  <button className="right__button button2">Sprawdz</button></Link>
                                 <div className="line">
                                 </div>
                             </div>
@@ -153,7 +159,7 @@ class Hero extends Component {
                                     Mocne i solidne płyty ścienne odporne na uszkodzenia.
             Idealny wybór do garażu lub pomieszczeń gospodarczych.
                     </p>
-                                <button className="right__button">Sprawdz</button>
+                    <Link to='/Produkty/'>  <button className="right__button button3">Sprawdz</button></Link>
                                 <div className="line">
                                 </div>
                             </div>
@@ -166,7 +172,7 @@ class Hero extends Component {
                                     Sufit w innym wydaniu? Zapoznaj się z ofertą Naszych płyt
             i wybierz te, które najbardziej odpowiadają Twoim oczekiwaniom.
                     </p>
-                                <button className="right__button">Sprawdz</button>
+                    <Link to='/Produkty/'>  <button className="right__button button4">Sprawdz</button></Link>
                                 <div className="line">
                                 </div>
 

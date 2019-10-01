@@ -34,7 +34,15 @@ font-weight: bold;
     border: 1px solid  #006451;
     width: 530px;
     height: 70px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    transition-property: color background
 }
+.products__button:hover{
+    background: #006451;
+    color: white;
+}
+
 
 
 @media (max-width: 1300px) {

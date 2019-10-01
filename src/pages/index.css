@@ -12,6 +12,11 @@
     margin-top: 100px;
 }
 
+.features a{
+    text-decoration: none;
+    color: black;
+}
+
 .features__block{
    
     width: 350px;
