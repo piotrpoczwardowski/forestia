@@ -1,34 +1,80 @@
 .footer{
   
-  margin-top: 90px;
+  margin-top: 4vw;
+  display: flex;
   
 }
 
 .footer__left{
-   height: 100%;
+   
     width: 50%;
     background: linear-gradient(#4D4D4D, rgb(0, 0, 0));
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 30px;
   
   padding-left: 50px;
 }
+.left__text{
+padding-top: 130px;
+}
 .left__title{
   background: url('../images/logo_smart_panel_biale.png');
-  background-position: center;
+  background-position: left;
   background-size: contain;
   background-repeat: no-repeat;
   height: 50px;
   width: 400px;
-  padding-top: 290px;
+ 
  
   
 }
 .left__description{
-  margin-top: 0px;
+  margin-top: 30px;
+  padding-bottom: 50px;
   
 }
 
-.block{
-  
+.footer__right{
+background: rgb(118, 28, 153);
+
+width: 50%;
+}
+
+
+
+@media (max-width: 1000px) {
+.footer{
+  display: block;
+}
+.footer br{
+  display: block;
+}
+.footer__left{
+  width: 100%;
+}
+.footer__right{
+  width: 100%;
+  height: 500px;
+}
+}
+
+@media (max-width: 550px) {
+  .left__text{
+    padding-top: 10vw; 
+  }
+  .footer__left{
+    padding: 5px;
+  }
+  .footer__right{
+    height: 60vw;
+  }
+}
+
+@media (max-width: 470px) {
+  .left__title{
+    width: 90%;
+  }
+  .left__description{
+    font-size: 5vw;
+  }
 }

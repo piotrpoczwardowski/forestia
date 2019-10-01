@@ -31,7 +31,7 @@ const Inspirations = (props) => (
                         w różnych pomieszczeniach.</div>
                     <div className="inspirations__bottom">
                         <div className="inspirations__line"></div>
-                        <button className=" inspirations__button">Zobacz  ></button>
+                       <a target='__blank' href="https://www.instagram.com/huset_i_brattelia/?fbclid=IwAR0dQCyo-syoj2dGT2QRLtprLfojdNdihS_o17Iihj4uOUER6mjwqG8FRsI"><button className=" inspirations__button">Zobacz  ></button></a> 
                     </div>
                 </div>
 

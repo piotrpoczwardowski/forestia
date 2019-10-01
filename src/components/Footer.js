@@ -14,7 +14,7 @@ const Footer = ({ children }) => {
         
             <div className="footer__left">
                 <div className="left__text">
-                <div className="block"></div>
+               
                     <div className="left__title"></div>
                     <div className="left__description">   Siedziba główna: <br/> <br />
                         Kaszubski Inkubator Przedsiębiorczości <br />
@@ -26,7 +26,7 @@ const Footer = ({ children }) => {
 
             </div>
             <div className="footer__right">
-
+    <iframe style={{width: '100%', height:'100%'}} src='https://maps.google.com/maps?q=ul.Przemys%C5%82owa%203%2C%2083-400%2C%20Ko%C5%9Bcierzyna%20&t=&z=15&ie=UTF8&iwloc=&output=embed' frameborder="0"></iframe>
             </div>
         </div>
     )

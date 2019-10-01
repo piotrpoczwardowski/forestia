@@ -33,7 +33,7 @@ font-weight: bold;
     color:  #006451;
     border: 1px solid  #006451;
     width: 530px;
-    height: 50px;
+    height: 70px;
 }
 
 
@@ -85,6 +85,29 @@ font-weight: bold;
 
         .products__right{
            background-size: contain;
+           margin-top: 5vw;
+           height: 45vw;
           
         }
+}
+
+@media (max-width: 550px) {
+    .products__button{
+      
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 445px) {
+    .products, .products__left, .products__title{
+        margin-top: 3vw;
+    }
+    .products__description{
+        margin: 0;
+        margin-top: 3vw;
+    }
+    .products__button{
+        margin-top: 3vw;
+     
+    }
 }

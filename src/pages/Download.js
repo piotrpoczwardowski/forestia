@@ -36,11 +36,12 @@ class Download extends Component {
                     <div className="download__bottom">
                         <div className="download__forestia">
                             <button onClick={this.handleChange} className="forestia__button">Karta produktów FORESTIA</button>
-                        <div className={this.state.active === 1 ? 'active__list forestia__list' : 'forestia__list'}>forestia</div>
+                        <div className={this.state.active === 1 ? 'active__list forestia__list' : 'forestia__list'}></div>
                         </div>
                         <div className="download__huntonit">
+                        
                             <button onClick={this.handleChange}  className="huntonit__button">Karta produktów HUNTONIT</button>
-                            <div className={this.state.active === 2 ? 'active__list huntonit__list' : 'huntonit__list'}>huntonit</div>
+                            <div className={this.state.active === 2 ? 'active__list huntonit__list' : 'huntonit__list'}></div>
                         </div>
                     </div>
 

@@ -15,7 +15,7 @@ componentDidMount(){
   }
 
   window.addEventListener('resize', function(){
-    console.log('das')
+  
   })
 }
 
@@ -75,9 +75,9 @@ handleHamburgerMenu =() => {
                 </div>
                 <div className="wrapper__right">
                   <div className="wrapper__right__content">
-                    <p>Forestia</p>
+                    <p><Link to='/Produkty/'>Forestia</Link> </p>
                     <div className="wrapper__line"></div>
-                    <p>Huntonit</p>
+                    <p><Link to='/Produkty/'>Huntonit</Link></p>
                   </div>
 
                 </div>

@@ -13,7 +13,7 @@ const IndexPage = (props) => (
   <Layout path={props.path}>
   
     <Hero />
-    {/* <Link to="/page-2/">Go to page 2</Link> */}
+    
     <div className="features">
       <div className="features__block features1">
         <p className="block__title title">Płyty ścienne</p>

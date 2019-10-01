@@ -34,31 +34,69 @@ button{
     outline: none;
    
 }
+.download__bottom{
+    position: relative;
+}
 
 .download__forestia, .download__huntonit{
 margin-top: 50px;
 display: flex;
 position: relative;
+height: 400px;
+}
+.download__huntonit{
+    top: -350px;
+   
 }
 .forestia__button, .huntonit__button{
     position: relative;
 }
-.forestia__list, .huntonit__list{
-    background: rgb(255, 255, 255);
+.forestia__list, .huntonit__list {
+    background: rgba(141, 63, 63, 0);
     height: 0px;
-    position: absolute;
-    left: 480px;
+   overflow: hidden;
+    
     width: 700px;
-    overflow: hidden;
+  
     transition: height 1s;
 }
 
 
 .active__list{
-    
+    height: 400px;
 }
 
 .active__button{
     background: white;
     border-color: white;
+}
+
+@media (max-width: 840px) {
+.download{
+    padding-left: 0;
+    text-align: center;
+    height: 500px;
+}
+
+.download__forestia, .download__huntonit{
+    display: block;
+    }
+    .forestia__list, .huntonit__list {
+       display: none;
+    }
+
+   
+}
+
+@media (max-width: 520px) {
+    .download__title {
+      font-size: 10vw;
+    }
+    .donwload__description{
+        font-size: 8vw;
+    }
+    .forestia__button, .huntonit__button{
+       width: 90%;
+       font-size: 6vw;
+    }
 }
