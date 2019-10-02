@@ -8,20 +8,75 @@ class Hero extends Component {
     state = {
         selector: 1
     }
-    componentDidMount(){
-       
+    componentDidMount() {
+        var intervalId = setInterval(this.handleArrowRight, 3500);
+
+        this.setState({ intervalId: intervalId });
+    }
+    componentWillUnmount() {
+
+        clearInterval(this.state.intervalId);
     }
 
-    startInterval = () => {
-       
-    }
+
     handleChange = (e) => {
+
+
+        let allSelectors = document.querySelectorAll('.selector')
+        allSelectors.forEach(function (el) {
+            el.classList.remove('selector__active')
+        })
+
+
+
+        let number = e.currentTarget.getAttribute('data-select')
+        this.setState({ selector: number })
+
+
+        var selectors = document.querySelectorAll(`.selector${number}`)
+        selectors.forEach(function (el) {
+            el.classList.add('selector__active')
+        })
+        this.changeSlide(number)
+
+
+    }
+    handleArrowLeft = () => {
+
+        let nextSelector = this.state.selector - 1
+
+        if (nextSelector < 1) {
+            nextSelector = 4
+
+        }
+
+        this.setState({ selector: nextSelector })
+
+        this.changeSlide(nextSelector)
+    }
+    handleArrowRight = () => {
+
+        let nextSelector = this.state.selector
+        nextSelector++
+
+        if (nextSelector > 4) {
+            nextSelector = 1
+
+        }
+
+        this.setState({ selector: nextSelector })
+
+        this.changeSlide(nextSelector)
+    }
+
+    changeSlide = (nextSlide) => {
+        this.setState({ selector: nextSlide })
         let allSlides = document.querySelectorAll('.slide')
         let allTexts = document.querySelectorAll('.text')
         let allSelectors = document.querySelectorAll('.selector')
-    allSelectors.forEach(function(el){
-        el.classList.remove('selector__active')
-    })
+        allSelectors.forEach(function (el) {
+            el.classList.remove('selector__active')
+        })
         allSlides.forEach(function (element) {
             element.style.display = 'none'
         })
@@ -29,83 +84,26 @@ class Hero extends Component {
             element.style.display = 'none'
         })
 
-
-        let number = e.currentTarget.getAttribute('data-select')
-        this.setState({ selector: number })
-
-        var slide = document.querySelector(`.slide${number}`)
-        var text = document.querySelector(`.text${number}`)
-        slide.style.display = 'block'
-        text.style.display = 'block'
-        var selectors = document.querySelectorAll(`.selector${number}`)
-        selectors.forEach(function(el){
+        var slide = document.querySelector(`.slide${nextSlide}`)
+        var text = document.querySelector(`.text${nextSlide}`)
+        var selectors = document.querySelectorAll(`.selector${nextSlide}`)
+        selectors.forEach(function (el) {
             el.classList.add('selector__active')
         })
+        slide.style.display = 'block'
+        text.style.display = 'block'
 
     }
- handleArrowLeft = () => {
-    let nextSelector = this.state.selector - 1
-    if(nextSelector < 1){
-        nextSelector = 4
-    }
-
-    this.setState({selector: nextSelector})
-     this.changeSlide(nextSelector)
- }
- handleArrowRight = () => {
-    
-    let nextSelector = this.state.selector + 1
-    if(nextSelector > 4){
-        nextSelector = 1
-    }
-
-    this.setState({selector: nextSelector})
-     this.changeSlide(nextSelector)
- }
-
- changeSlide = (nextSlide) => {
-    let allSlides = document.querySelectorAll('.slide')
-    let allTexts = document.querySelectorAll('.text')
-    let allSelectors = document.querySelectorAll('.selector')
-    allSelectors.forEach(function(el){
-        el.classList.remove('selector__active')
-    })
-    allSlides.forEach(function (element) {
-        element.style.display = 'none'
-    })
-    allTexts.forEach(function (element) {
-        element.style.display = 'none'
-    })
-
-    var slide = document.querySelector(`.slide${nextSlide}`)
-    var text = document.querySelector(`.text${nextSlide}`)
-    var selectors = document.querySelectorAll(`.selector${nextSlide}`)
-    selectors.forEach(function(el){
-        el.classList.add('selector__active')
-    })
-    slide.style.display = 'block'
-    text.style.display = 'block'
-     
- }
     render() {
-        let title = 'walls2paint'
-        let description = ''
-        let i = 1
 
-        // let func = () => {
-        //     if(i===5){
-        //         i=1
-        //     }
-            
-        //     this.changeSlide(i)
-        //     i++
-        // }
 
-        // setInterval(func, 2000)
+
+
 
 
         return (
             <div className='hero'>
+
                 <div className="arrow__left arrow">
                     <div onClick={this.handleArrowLeft} className="arrow__image left"></div>
 
@@ -133,9 +131,9 @@ class Hero extends Component {
                                     walls<span className='title__number'>2</span>paint
                     </p>
                                 <p className="right__description">
-                                    Nowe ściany gotowe od zaraz! <br /> 1.Instalujesz 2.Malujesz 3.Dużo czasu i oszczędności zyskujesz!
+                                    Nowe ściany gotowe od zaraz! <br /> 1. Instalujesz <br />  2. Malujesz <br /> 3. Dużo czasu i oszczędności zyskujesz!
                     </p>
-                              <Link to='/Produkty/'>  <button className="right__button button1">Sprawdz</button></Link>
+                                <Link to='/Produkty/'>  <button className="right__button button1">Sprawdź</button></Link>
                                 <div className="line">
                                 </div>
                             </div>
@@ -144,10 +142,10 @@ class Hero extends Component {
                                     walls<span className='title__number'>4</span>you
                     </p>
                                 <p className="right__description">
-                                    Płyty ścienne z nałożoną tapetą.
-            Wybierz Swoją kombinację i zaoszczędź wiele godzin pracy!
+                                    Płyty ścienne z nałożoną tapetą. <br />
+                                    Wybierz Swoją kombinację i zaoszczędź wiele godzin pracy!
                     </p>
-                    <Link to='/Produkty/'>  <button className="right__button button2">Sprawdz</button></Link>
+                                <Link to='/Produkty/'>  <button className="right__button button2">Sprawdź</button></Link>
                                 <div className="line">
                                 </div>
                             </div>
@@ -156,10 +154,10 @@ class Hero extends Component {
                                     eliteX
                     </p>
                                 <p className="right__description">
-                                    Mocne i solidne płyty ścienne odporne na uszkodzenia.
-            Idealny wybór do garażu lub pomieszczeń gospodarczych.
+                                    Mocne i solidne płyty ścienne odporne na uszkodzenia. <br />
+                                    Idealny wybór do garażu lub pomieszczeń gospodarczych.
                     </p>
-                    <Link to='/Produkty/'>  <button className="right__button button3">Sprawdz</button></Link>
+                                <Link to='/Produkty/'>  <button className="right__button button3">Sprawdź</button></Link>
                                 <div className="line">
                                 </div>
                             </div>
@@ -169,10 +167,10 @@ class Hero extends Component {
                 One Step-Ceiling
                     </p>
                                 <p className="right__description">
-                                    Sufit w innym wydaniu? Zapoznaj się z ofertą Naszych płyt
-            i wybierz te, które najbardziej odpowiadają Twoim oczekiwaniom.
+                                    Sufit w innym wydaniu? Zapoznaj się z ofertą Naszych płyt <br />
+                                    i wybierz te, które najbardziej odpowiadają Twoim oczekiwaniom.
                     </p>
-                    <Link to='/Produkty/'>  <button className="right__button button4">Sprawdz</button></Link>
+                                <Link to='/Produkty/'>  <button className="right__button button4">Sprawdź</button></Link>
                                 <div className="line">
                                 </div>
 
@@ -181,8 +179,8 @@ class Hero extends Component {
 
                     </div>
                     <div className="hero__bottom">
-                    <div onClick={this.handleArrowLeft} className="arrow__image left">
-                    </div>
+                        <div onClick={this.handleArrowLeft} className="arrow__image left">
+                        </div>
                         <div className="left__selectors left__selectors--mobile">
                             <div data-select='1' onClick={this.handleChange} className="selector selector1 selector__active"></div>
                             <div data-select='2' onClick={this.handleChange} className="selector selector2"></div>
@@ -190,7 +188,7 @@ class Hero extends Component {
                             <div data-select='4' onClick={this.handleChange} className="selector selector4"></div>
                         </div>
                         <div onClick={this.handleArrowRight} className="arrow__image right">
-                    </div>
+                        </div>
                     </div>
                 </div>
                 <div className="arrow__right arrow">

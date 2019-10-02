@@ -22,3 +22,7 @@ div, p, button {
 .title, a{
   font-family: 'Gothic';
 }
+
+ol a{
+  font-family: 'Regular'
+}

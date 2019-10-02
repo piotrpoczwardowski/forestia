@@ -4,7 +4,14 @@
     background: url(../images/Zasób\ 5ikonkismartpanel.png);
     background-size: 500px auto;
     background-repeat: no-repeat;
-    background-position: 800px 200px;
+    background-position: right;
+}
+
+ol a{
+  text-decoration: none;
+  color: black;
+  font-size: 23px;
+  line-height: 50px;
 }
 
 .download__title{
@@ -59,41 +66,84 @@ height: 400px;
     position: relative;
 }
 .forestia__list, .huntonit__list {
-    background: rgba(141, 63, 63, 0);
+    background: rgb(255, 255, 255);
     height: 0px;
    overflow: hidden;
-    
+    z-index: 3;
     width: 700px;
-  
+  position: relative;
     transition: height 1s;
 }
 
 
 .active__list{
-    height: 400px;
+    height: 1000px;
+}
+.active__list--huntonit{
+    height: 300px;
 }
 
 .active__button{
     background: white;
     border-color: white;
 }
+.huntonit__button{
+    z-index: 2;
+}
 
-@media (max-width: 840px) {
+@media (max-width: 1250px) {
 .download{
     padding-left: 0;
     text-align: center;
     height: 500px;
+    background: none;
 }
 
 .download__forestia, .download__huntonit{
     display: block;
     }
     .forestia__list, .huntonit__list {
-       display: none;
+        width: 100%;
     }
 
    
 }
+
+@media (max-width: 700px) {
+    .active__list{
+        height: 1100px;
+    }
+
+    ol a{
+        line-height: 45px;
+    }
+}
+
+@media (max-width: 560px) {
+    
+
+    ol a{
+        line-height: 8vw;
+    }
+}
+@media (max-width: 460px) {
+    
+
+    ol a{
+        line-height: 9vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .active__list{
+        height: 1400px;
+    }
+
+    ol a{
+        line-height: 11vw;
+    }
+}
+
 
 @media (max-width: 520px) {
     .download__title {
