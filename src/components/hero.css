@@ -234,7 +234,11 @@ position: relative;
         transform: translateX(0px)
     }
 }
-
+@media (max-width: 1160px) {
+    .text4 br{
+        display: none;
+    }
+}
 
 @media (max-width: 900px) {
     .hero__right{

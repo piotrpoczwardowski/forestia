@@ -9,9 +9,9 @@ class Hero extends Component {
         selector: 1
     }
     componentDidMount() {
-        var intervalId = setInterval(this.handleArrowRight, 3500);
+        // var intervalId = setInterval(this.handleArrowRight, 6500);
 
-        this.setState({ intervalId: intervalId });
+        // this.setState({ intervalId: intervalId });
     }
     componentWillUnmount() {
 
@@ -167,8 +167,8 @@ class Hero extends Component {
                 One Step-Ceiling
                     </p>
                                 <p className="right__description">
-                                    Sufit w innym wydaniu? Zapoznaj się z ofertą Naszych płyt <br />
-                                    i wybierz te, które najbardziej odpowiadają Twoim oczekiwaniom.
+                                    Sufit w innym wydaniu? <br/> Zapoznaj się z ofertą Naszych płyt
+                                    i wybierz te, <br/> które najbardziej odpowiadają Twoim oczekiwaniom.
                     </p>
                                 <Link to='/Produkty/'>  <button className="right__button button4">Sprawdź</button></Link>
                                 <div className="line">
