@@ -14,10 +14,12 @@
 }
 
 .coop__image{
-    width: 100%;
-    height: 700px;
-    background: url(../images/wspolpracabaner.jpg) center no-repeat;
+ 
+    background: url(../images/wspolpraca.png) center no-repeat;
+  background-position: center;
+  background-size: 100%;
     margin-top: 20px;
+    height: 45vw;
 }
 
 .coop__contact{

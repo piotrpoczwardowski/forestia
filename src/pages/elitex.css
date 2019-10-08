@@ -1,0 +1,99 @@
+
+
+
+
+
+.elitex__content{
+    padding: 0 60px;
+}
+
+
+
+.elitex__description  {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+.elitex__panels{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 20px auto;
+}
+
+
+.p1{
+    background: url(../images/elitex/grey\ slate.jpg)
+}
+.p2{
+    background: url(../images/elitex/venezia.jpg)
+}
+.p3{
+    background: url(../images/elitex/panel-white.jpg)
+}
+.p4{
+    background: url(../images/elitex/grey\ sand.jpg)
+}
+.panel{
+    
+}
+.panel__img{
+   
+    height: 457px;
+    width: 125px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.panel__text{
+    text-align: center
+}
+.panels__description{
+    text-align: center;
+    font-size: 25px;
+    
+}
+
+.elitex__footer{
+  
+}
+
+@media (max-width: 1100px) {
+    .elitex__content{
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 990px) {
+
+    .elitex__description br  {
+       display: none;
+    }
+
+}
+
+@media (max-width: 720px) {
+    .elitex__panels{
+        width: 100%;
+    }
+    .panels__description p br{
+        display: block;
+    }
+}
+@media (max-width:600px) {
+    .panel__img{
+        background-position: center;
+        height: 53vw;
+        width: 19vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .elitex__description{
+        font-size: 5.5vw;
+    }
+    .panels__description{
+        font-size: 5.5vw;
+    }
+}

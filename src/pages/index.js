@@ -45,25 +45,24 @@ const IndexPage = (props) => (
         <div className="bot__image"></div>
         <div className="bot__text">
         <p>
-          Oferując produkty skandynawskich firm Forestia AS & Huntonit AS <br/>
-  opieramy się na doświadczeniu, które liczy sobie 45 lat i stale prężnie <br/>
-  się rozwija. <br/>
-  Żyjąc w czasach, w których nowe technologie mają ogromny wpływ <br/>
-  na środowisko a tym samym na zdrowie i jakość życia stawiamy na<br/>
-  produkty najwyższej jakości certyfikowanymi zgodnie systemem<br/>
-  Intertek NS-EN ISO 19001 oraz systemem zarządzania środowiskiem<br/>
-  zgodnie z Intertek NS-EN ISO 14001. Produkty posiadają również<br/>
-  certyfikaty CE i PEFC. Ponadto płyty marki Huntonit z rdzeniem<br/>
-  z włókna drzewnego wyróżniają się certyfikatem Norweskiego<br/>
-  Stowarzyszenia Astmy i Alergii<br/>
-  „Norges Astma- og Allergiforbund”, które ma na celu zapewnienie<br/>
-  jakości na najwyższym poziomie.<br/>
-  Wybór produktów marki Forestia & Huntonit gwarantuje znaczne skrócenie<br/>
-  czasu oczekiwania na realizację zamówienia.<br/><br/>
-  My wybraliśmy bezpieczeństwo i ochronę zdrowia, jakość<br/>
-  produktu i wykończenia wnętrz a do tego szybki i prosty montaż.<br/>
-  Dbajmy o siebie i żyjmy w zgodzie z naturą. Wybierajmy mądrze.<br/>
-  Stawiamy na rzetelność, uczciwość oraz ekologię !</p>
+        Oferujemy Państwu produkty skandynawskich firm Forestia AS &amp; Huntonit AS <br/>
+opierając się na doświadczeniu liczącym sobie 45 lat oraz ciągłym prężnym rozwoju.<br/>
+W czasach, gdzie nowe technologie mają ogromny wpływ na środowisko a tym samym<br/>
+na nasze zdrowie i jakość życia stawiamy na produkty najwyższej jakości<br/>
+certyfikowane zgodnie z systemem Intertek NS-EN ISO 19001 oraz systemem zarządzania<br/>
+środowiskiem zgodnie z Intertek NS-EN ISO 14001. Produkty posiadają również certyfikaty CE i PEFC.<br/>
+Ponadto płyty firmy Huntonit produkowane w 100% z naturalnych włókien drzewnych wyróżniają się<br/>
+certyfikatem Norweskiego Stowarzyszenia Astmy i Alergii „Norges Astma og Allergiforbund”, <br/>
+<br/>
+które ma celu zapewnienie jakości zdrowia na najwyższym poziomie.<br/>
+Wybór materiałów marki Forestia &amp; Huntonit gwarantuje najwyższą jakość,<br/>
+szybki i prosty montaż, skrócenie czasu prac wykończeniowych oraz przystępną cenę.<br/>
+<br/>
+Wybierajmy mądrze.<br/>
+Dbajmy o siebie i żyjmy w zgodzie z naturą.<br/>
+My wybraliśmy bezpieczeństwo i ochronę zdrowia.<br/>
+
+Zespół SMART-PANEL</p>
         </div>
       </div>
     </div>
