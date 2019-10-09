@@ -1,6 +1,112 @@
 
+.elitex__header{
+    margin: 0 20px;
+}
+.header__right{
+    text-align: right;
+    font-size: 25px;
+    margin-top: 5vw;
+}
+.header__topLine{
+    margin-left: auto;
+    margin-top: 10px;
+}
+.new{
+    margin-top: 30px;
+    font-size: 70px;
+}
+.header__description{
+    margin-top: 10px;
+}
+.elitex__title{
+    font-size: 70px;
+    margin-top: -30px;
+}
+.header__line{
+    background: black;
+    height: 2px;
+    width: 50%;
+}
+.elitex__slider{
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    align-items: center;
+    margin-top: 5vw;
+}
+.elitex__arrowLeft{
+    background: url(../images/arrowLeft.png)
+}
+.elitex__arrowRight{
+    background: url(../images/arrowRight.png)
+}
 
 
+.elitex__arrow{
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+.slider__images{
+    height: 100%;
+   
+    width: 600px;
+    position: relative;
+}
+
+
+
+.slider__img1{
+    background: url(../images/elitex/slider/slider1.jpg);
+  
+}
+.slider__img2{
+    background: url(../images/elitex/slider/slider2.jpg);
+    display: none;
+    
+}
+.slider__img3{
+    background: url(../images/elitex/slider/slider3.jpg);
+    display: none;
+    
+}
+.slider__img4{
+    background: url(../images/elitex/slider/slider4.jpg);
+    display: none;
+    
+}
+.slider__img5{
+    background: url(../images/elitex/slider/slider5.jpg);
+    display: none;
+    
+}
+.slider__img6{
+    background: url(../images/elitex/slider/slider6.jpg);
+    display: none;
+    
+}
+.slider__img7{
+    background: url(../images/elitex/slider/slider7.jpg);
+    display: none;
+    
+}
+.slider__img8{
+    background: url(../images/elitex/slider/slider8.jpg);
+    display: none;
+    
+}
+.slider__imgs{
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    
+}
 
 
 .elitex__content{
@@ -10,15 +116,16 @@
 
 
 .elitex__description  {
-    margin-top: 50px;
+  
     text-align: center;
     font-size: 25px;
+    margin-top: 5vw;
 }
 .elitex__panels{
     display: flex;
     justify-content: space-around;
     width: 80%;
-    margin: 20px auto;
+    margin: 5vw auto;
 }
 
 
@@ -47,16 +154,54 @@
 }
 
 .panel__text{
-    text-align: center
+    text-align: center;
+    font-size: 18px;
+    margin-top: 5px;
 }
 .panels__description{
     text-align: center;
     font-size: 25px;
     
 }
+.bar1{
+    background: url(../images/elitex/bar1.jpg)
+}
+.bar2{
+    background: url(../images/elitex/bar2.png)
+}
+.bar3{
+    background: url(../images/elitex/bar3.png)
+}
+.bar4{
+    background: url(../images/elitex/bar4.png)
+}
+.bar5{
+    background: url(../images/elitex/bar5.png)
+}
+.elitex__bars{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
-.elitex__footer{
-  
+}
+.bar{
+    margin: 0 auto;
+   
+}
+.bar__img{
+    width: 130px;
+    height: 200px;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+
+}
+.bar__text{
+    text-align: center;
+    width: 171px;
+    margin: 0 auto;
+    font-size: 18px;
 }
 
 @media (max-width: 1100px) {
@@ -74,11 +219,33 @@
 }
 
 @media (max-width: 720px) {
+
+    .header__right{
+        text-align: center;
+
+    }
+    .header__topLine{
+        margin-left: auto;
+
+    }
+    .elitex__title{
+        text-align: center;
+        margin-top: 0px;
+    }
     .elitex__panels{
         width: 100%;
     }
     .panels__description p br{
         display: block;
+    }
+    .elitex__slider{
+        height: 70vw;
+    }
+    .slider__images{
+        height: 100%;
+       
+        width: 60vw;
+        position: relative;
     }
 }
 @media (max-width:600px) {
@@ -93,7 +260,20 @@
     .elitex__description{
         font-size: 5.5vw;
     }
-    .panels__description{
+    .panels__description, .header__description{
         font-size: 5.5vw;
+    }
+    .new, .elitex__title{
+        font-size: 11vw;
+    }
+    .elitex__header{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .bar__img{
+        width: 210px;
     }
 }
