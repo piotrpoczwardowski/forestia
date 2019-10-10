@@ -29,6 +29,7 @@ class Elitex extends Component {
                                     <p>walls<span className='bigNumber'>2</span>paint</p>
                                     <div className="section1__logo">
                                     </div>
+                                    <div className="section1__image section1__image--mobile"></div>
                                 </div>
                                 <div className="section1__description walls__desc">
                                     <p><div className="black__line section1__line"></div>Panele ścienne gotowe do malowania. <br />

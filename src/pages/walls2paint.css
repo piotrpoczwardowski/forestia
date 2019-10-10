@@ -27,6 +27,9 @@
     justify-content: center;
    
 }
+.section1__image--mobile{
+    display: none;
+}
 .bigNumber{
     font-size: 2.2em;
 }
@@ -167,6 +170,7 @@
     width: 300px;
     height: 65px;
     background: url(../images/huntonit-logo.png) center no-repeat;
+    background-size: contain;
     
 }
 @media (max-width: 1200px) {
@@ -200,14 +204,21 @@
     .section1__image{
         height: 300px;
         margin: 0 auto;
+        display: none;
+        width: 400px;
+
+    }
+    .section1__image--mobile{
+        display: block;
     }
     .walls__section2{
-       flex-direction: column-reverse;
+       flex-direction: column;
         height: auto;
     }
     .section2__images{
         height: 300px;
         margin: 0 auto;
+        width: 400px;
     }
     .line__section2{
         display: none;
@@ -215,4 +226,30 @@
     .section2__text{
         text-align: center;
     }
+}
+
+@media (max-width: 750px) {
+.walls__section3{
+    border: none;
+    height: auto;
+
+}
+.walls__footer{
+    margin: 0 auto;
+    width: 100%;
+}
+.footer__bottom{
+display: block;
+}
+.walls__footer{
+    border: none;
+}
+.section3__text{
+    padding: 0;
+   
+    width: 100%;
+}
+.footer__top, .line__footer, .footerWalls__left, .footerWalls__right{
+    margin: 0 auto;
+}
 }
