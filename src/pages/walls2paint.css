@@ -1,0 +1,218 @@
+.walls2paint{
+    margin-top: 5vw;
+}
+
+.black__line{
+    height: 2px;
+    background: black;
+   
+}
+
+.walls__section1{
+    display: flex;
+    height: 700px;
+}
+
+.section1__text{
+    width: 50%;
+}
+.section1__header{
+    font-size: 80px;
+    margin-top: -60px;
+}
+.section1__header p{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.bigNumber{
+    font-size: 2.2em;
+}
+.section1__line{
+    width: 10vw;
+   position: absolute;
+   top: 14px;
+}
+.walls__desc{
+    font-size: 23px;
+    line-height: 32px;
+    text-align: right;
+}
+.section1__description{
+    
+    margin-top: 50px;
+    
+    position: relative;
+}
+.section1__logo{
+    background: url(../images/forestia-logo.png) center no-repeat;
+    width: 200px;
+    height: 60px;
+    margin-left: auto;
+    margin-top: -40px;
+}
+
+.section1__image{
+    width: 50%;
+    background: url(../images/walls2paint/chair.jpg) center no-repeat;
+    background-size: 90%;
+
+}
+
+.walls__section2{
+    display: flex;
+    justify-content: space-between;
+    height: 700px;
+    margin-top: 5vw;
+}
+
+.section2__images{
+    width: 40%;
+   
+    position: relative;
+
+}
+.section2__image1{
+    background: url(../images/walls2paint/slider/slider1.jpg) center no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 90%;
+}
+
+.section2__text{
+ text-align: right;   
+ margin-right: 20px;
+ padding-top: 50px;
+
+}
+.line__section2{
+    margin-left: auto;
+    margin-bottom: 50px;
+    width: 480px;
+}
+
+.walls__section3{
+    width: 88%;
+    margin: 0 auto;
+    border: 2px solid black;
+    position: relative;
+    border-bottom: none;
+    margin-top: 5vw;
+    height: 700px;
+}
+.section3__text{
+    text-align: left;
+    padding-top: 50px;
+    width: 400px;
+    padding-left: 100px;
+    font-size: 25px;
+}
+.section3__image{
+    position: absolute;
+    background: url(../images/walls2paint/wall.jpg) no-repeat center;
+  width: 580px;
+  height:690px;
+    top: -90px;
+    right: -30px;
+}
+
+.walls__footer{
+    border-right: 2px solid black;
+    width: 94%;
+   
+}
+.footer__top{
+    width: 70%;
+   
+    margin-left: 10px;
+}
+.footer__title{
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+}
+.footer__number{
+    font-size: 2em;
+}
+.footer__bottom{
+   
+    display: flex;
+    align-items: center;
+    height: 182px;
+   
+}
+.footer__subtitle{
+    text-align: center;
+    font-size: 22px;
+    margin-left: 60px;
+    margin-top: -30px;
+}
+.footerWalls__left{
+    text-align: center;
+    width: 70%;
+}
+.line__footer{
+    margin-top: 2vw;
+    width: 70%;
+}
+.footer__button{
+    
+    height: 75px;
+    width: 80%;
+    font-size: 25px;
+}
+.footerWalls__right{
+    width: 300px;
+    height: 65px;
+    background: url(../images/huntonit-logo.png) center no-repeat;
+    
+}
+@media (max-width: 1200px) {
+    .section3__image{
+        display: none;
+    }
+}
+@media (max-width: 1140px) {
+.section1__line{
+    display: none;
+}
+}
+
+@media (max-width: 1060px) {
+    .section1__line{
+        display: none;
+    }
+    .section1__text{
+        margin: 0 auto;
+        width: 90%;
+        
+    }
+    .section1__description{
+        text-align: center;
+    }
+    .walls__section1{
+        flex-direction: column;
+        height: auto;
+
+    }
+    .section1__image{
+        height: 300px;
+        margin: 0 auto;
+    }
+    .walls__section2{
+       flex-direction: column-reverse;
+        height: auto;
+    }
+    .section2__images{
+        height: 300px;
+        margin: 0 auto;
+    }
+    .line__section2{
+        display: none;
+    }
+    .section2__text{
+        text-align: center;
+    }
+}
