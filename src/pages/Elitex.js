@@ -11,7 +11,7 @@ class Elitex extends Component {
         slide: 1
     }
     componentDidMount() {
-        var intervalId = setInterval(this.changeSlideRight, 3500);
+        var intervalId = setInterval(this.changeSlideRight, 6000);
 
         this.setState({ intervalId: intervalId });
     }
