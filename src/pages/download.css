@@ -13,6 +13,9 @@ ol a{
   font-size: 23px;
   line-height: 50px;
 }
+ol{
+    list-style-type: none;
+}
 
 .download__title{
     font-size: 80px;
@@ -66,6 +69,8 @@ height: 400px;
     position: relative;
 }
 .forestia__list, .huntonit__list {
+   
+    padding-left: 30px;
     background: rgb(255, 255, 255);
     height: 0px;
    overflow: hidden;

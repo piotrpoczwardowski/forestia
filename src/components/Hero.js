@@ -154,7 +154,7 @@ class Hero extends Component {
                                     eliteX
                     </p>
                                 <p className="right__description">
-                                    Mocne i solidne płyty ścienne odporne na uszkodzenia. <br />
+                                    Mocne i solidne płyty ścienne <br/> odporne na uszkodzenia. <br />
                                     Idealny wybór do garażu lub pomieszczeń gospodarczych.
                     </p>
                                 <Link to='/Produkty/'>  <button className="right__button button3">Sprawdź</button></Link>
@@ -163,7 +163,7 @@ class Hero extends Component {
                             </div>
                             <div className="text4 text">
                                 <p className="right__title right__title4">
-                                    Płyty sufitowe
+                                    Płyty sufitowe <br/>
                 One Step-Ceiling
                     </p>
                                 <p className="right__description">

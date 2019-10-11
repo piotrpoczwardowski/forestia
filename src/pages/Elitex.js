@@ -105,15 +105,15 @@ class Elitex extends Component {
                                 gospodarczych, magazynów, pralni, rzeźni, mleczarni, <br />
                                 lokali działalności gastronomicznej, piekarni i innych rodzai pomieszczeń <br />
                                 pełniących funkcję działalności gospodarczej. <br />
-                                Solidne panele ścienne oraz sufitowe Forestia eliteX, pokryte są melaminą <br />
+                                Solidne płyty ścienne oraz sufitowe Forestia eliteX, pokryte są melaminą <br />
                                 charakteryzującą się wysoką twardością, odpornością na działanie wody, <br />
                                 temperatury oraz światła co gwarantuje najwyższą jakość produktu. <br />
-                                Ponadto panele eliteX zawierają odporny na wilgoć rdzeń (klasa klimatyczna 2) <br />
+                                Ponadto płyty eliteX zawierają odporny na wilgoć rdzeń (klasa klimatyczna 2) <br />
                                 i dlatego dobrze sprawdzają się w pomieszczeniach o wyższej wilgotności. <br />
                                 Płyty umożliwiają instalację wysokiej klasy wytrzymałości śrub i wkrętów, <br />
                                 a także są odporne na działania mechaniczne. Dzięki takim właściwościom <br />
                                 możesz zawiesić swój ulubiony rower i wiele innych obiektów na ścianie. <br />
-                                Panel ścienny nie wymaga dodatkowej obróbki powierzchni, zatem pozostaje <br />
+                                Płyta ścienny nie wymaga dodatkowej obróbki powierzchni, zatem pozostaje <br />
                                 wybrać dekor spośród czterech nowoczesnych dekoracji:</p>
                         </div>
 
@@ -138,10 +138,10 @@ class Elitex extends Component {
                         </div>
 
                         <div className="panels__description">
-                            <p>Panele ścienne eliteX są dostępne we wszystkich dekorach w wymiarach: <br />
+                            <p>Płyty ścienne eliteX są dostępne we wszystkich dekorach w wymiarach: <br />
                                 12 x 620 x 2390 mm <br />
                                 12 x 620 x 2600 mm <br />
-                                Panel sufitowy eliteX występuje w wymiarze: <br />
+                                Płyta sufitowy eliteX występuje w wymiarze: <br />
                                 12 x 620 x 1220 mm</p>
                         </div>
                         <div className="elitex__bars">

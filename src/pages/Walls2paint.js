@@ -65,12 +65,12 @@ class Elitex extends Component {
                                     </div>
                                 </div>
                                 <div className="section1__description walls__desc">
-                                    <p><div className="black__line section1__line"></div>Panele ścienne gotowe do malowania. <br />
+                                    <p><div className="black__line section1__line"></div>Płyty ścienne gotowe do malowania. <br />
                                         Nowe ściany w mgnieniu oka. <br />
                                         Walls2Paint to genialny produkt zarówno <br />
                                         do nowej budowy, jak i renowacji. <br />
                                         <br />
-                                        1.Zamontuj panele ścienne <br />
+                                        1.Zamontuj płyty ścienne <br />
                                         2. Pomaluj na wybrany kolor <br />
                                         (możesz również tapetować z wybraną tapetą) <br />
                                         3. Wykończona ściana <br />
@@ -111,19 +111,19 @@ class Elitex extends Component {
                             </div>
                             <div className="section2__text walls__desc">
                                 <div className="black__line line__section2"></div>
-                                Pomysłowe panele ścienne dla tych, którzy nie <br />
+                                Pomysłowe płyty ścienne dla tych, którzy nie <br />
                                 przepadają za szlifowaniem i polerowaniem. <br />
                                 Walls2Paint ma taki sam profil blokujący jak Walls4You. <br />
-                                Panele są łatwe w montażu i mogą być pomalowane <br />
+                                Płyty są łatwe w montażu i mogą być pomalowane <br />
                                 na wybrany kolor, jak i tapetowane. <br />
                                 Tak więc nie ma potrzeby tynkowania i wykańczania. <br />
                                 Oszczędzasz czas, zapewniając jednocześnie <br />
                                 lepsze środowisko pracy. <br />
-                                Ważne jest, aby panele były dopasowane do bardzo <br />
+                                Ważne jest, aby płyty były dopasowane do bardzo <br />
                                 dobrze wykonanych podtrzymujących ram <br />
                                 zainstalowanych do ściany. <br />
                                 <br />
-                                Panele ścienne można również wykorzystać podczas prac <br />
+                                Płyty ścienne można również wykorzystać podczas prac <br />
                                 konserwatorskich i remontu. <br />
                             </div>
                         </div>
@@ -132,17 +132,15 @@ class Elitex extends Component {
                                 <ul>
 
                                     <li>Unikalny profil blokujący</li>
-                                    <li>Brak szlifowania-brak występowa-
-nia pyłu</li>
+                                    <li>Brak szlifowania-brak występowania pyłu</li>
                                     <li>Złącza płyt należy połączyć
                                     jednym pełnym pociągnięciem
 kleju</li>
                                     <li>Płyty ścienne są przykręcane,
 
-                                    mają dobrą wytrzymałość na wkrę-
-                                    canie śrub
-
-                                    Wymiary:
+                                    mają dobrą wytrzymałość na wkręcanie śrub
+</li>
+                                  <li>  Wymiary:
                                     Płyty występują w długościach 2,39
                                     m, 2,60 m, 2,80 m i 3 m.
                                     Szerokość wynosi standardowo 60
@@ -155,7 +153,7 @@ Grubość wynosi 12 mm.</li>
                         <div className="walls__footer">
                             <div className="footer__top">
                                 <div className="footer__title">walls<span className='footer__number'>2</span>paint</div>
-                                <div className="footer__subtitle">dla marki huntonit</div>
+                                
                             </div>
                             <div className="black__line line__footer"></div>
                             <div className="footer__bottom">
