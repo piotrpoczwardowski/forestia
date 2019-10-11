@@ -11,6 +11,7 @@
 .walls__section1{
     display: flex;
     height: 700px;
+    margin-top: 5vw;
 }
 
 .section1__text{
@@ -59,11 +60,29 @@
 
 .section1__image{
     width: 50%;
-    background: url(../images/walls2paint/chair.jpg) center no-repeat;
-    background-size: 90%;
+    position: relative;
+  
 
 }
+.first__image{
+    background: url(../images/walls2paint/chair.jpg) center no-repeat;
+    background-size: 90%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: opacity 0.3s;
+}
+.first__image:hover{
+    opacity: 0;
+}
+.second__image{
 
+    background: url(../images/walls2paint/second.jpg) center no-repeat;
+    background-size: 90%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
 .walls__section2{
     display: flex;
     justify-content: space-between;
@@ -79,11 +98,43 @@
 }
 .section2__image1{
     background: url(../images/walls2paint/slider/slider1.jpg) center no-repeat;
+  
+}
+.section2__image2{
+    background: url(../images/walls2paint/slider/slider2.jpg) center no-repeat;
+    display: none;
+    
+}
+.section2__image3{
+    background: url(../images/walls2paint/slider/slider3.jpg) center no-repeat;
+    display: none;
+}
+.section2__image4{
+    background: url(../images/walls2paint/slider/slider4.jpg) center no-repeat;
+    display: none;
+}
+.section2__image5{
+    background: url(../images/walls2paint/slider/slider5.jpg) center no-repeat;
+    display: none;
+}
+.section2__image6{
+    background: url(../images/walls2paint/slider/slider6.jpg) center no-repeat;
+    display: none;
+}
+.section2__image{
     width: 100%;
     height: 100%;
     background-size: 90%;
+    animation: slider 1s;
 }
-
+@keyframes slider{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 .section2__text{
  text-align: right;   
  margin-right: 20px;
@@ -119,6 +170,11 @@
   height:690px;
     top: -90px;
     right: -30px;
+    background-size: 100%;
+    transition: background 0.3s;
+}
+.section3__image:hover{
+    background-size: 110%;
 }
 
 .walls__footer{
@@ -175,7 +231,8 @@
 }
 @media (max-width: 1200px) {
     .section3__image{
-        display: none;
+        width: 43vw;
+        height: 60vw;
     }
 }
 @media (max-width: 1140px) {
@@ -192,6 +249,9 @@
         margin: 0 auto;
         width: 90%;
         
+    }
+    .section3__image{
+        display: none;
     }
     .section1__description{
         text-align: center;
@@ -210,6 +270,9 @@
     }
     .section1__image--mobile{
         display: block;
+    }
+    .first__image:hover{
+        opacity: 1;
     }
     .walls__section2{
        flex-direction: column;
@@ -238,11 +301,27 @@
     margin: 0 auto;
     width: 100%;
 }
+.footer__top{
+    width: 100%;
+   
+}
+.footer__title{
+   justify-content: center;
+   font-size: 10vw;
+}
+.footer__subtitle{
+    margin-left: 0;
+    margin-top: 0;
+}
+
 .footer__bottom{
 display: block;
 }
 .walls__footer{
     border: none;
+}
+.footerWalls__left{
+    width: 100%;
 }
 .section3__text{
     padding: 0;
@@ -252,4 +331,50 @@ display: block;
 .footer__top, .line__footer, .footerWalls__left, .footerWalls__right{
     margin: 0 auto;
 }
+.line__footer, .footerWalls__right{
+    margin-top: 3vw;
+}
+.footer__button{
+    margin-top: 3vw;    
+    width: 370px;
+}
+}
+
+@media (max-width: 600px) {
+    .section1__header{
+        font-size: 10vw;
+        margin-top: 0;
+    }
+}
+@media (max-width: 450px) {
+    .section1__logo{
+margin-top: -20px;
+margin-left: 0;
+width: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .section1__description{
+        margin-top: 5vw;
+    }
+    .section1__image--mobile, .section2__images{
+        width: 70vw;
+        height: 60vw;
+    }
+    .footer__button{
+        width: 60vw;
+        height: 15vw;
+        font-size: 5vw;
+    }
+    .footerWalls__right{
+        width: 60vw;
+    }
+    .line__footer{
+        display: none;
+    }
+    .walls__desc{
+        font-size: 6vw;
+        line-height: 30px;
+    }
 }

@@ -10,6 +10,37 @@ class Elitex extends Component {
     state = {
         slide: 1
     }
+    componentDidMount() {
+        var intervalId = setInterval(this.changeSlideRight, 3500);
+
+        this.setState({ intervalId: intervalId });
+    }
+    componentWillUnmount() {
+
+        clearInterval(this.state.intervalId);
+    }
+
+    changeSlideRight = () => {
+        let currentSlide = this.state.slide
+
+        let nextSlide
+        nextSlide = currentSlide + 1
+        if (nextSlide > 6) {
+            nextSlide = 1
+        }
+        this.changeSlide(nextSlide)
+    }
+
+    changeSlide = (next) => {
+        let allSlides = document.querySelectorAll('.section2__image')
+        let nextSlide = document.querySelector(`.section2__image${next}`)
+        allSlides.forEach(function (el) {
+            el.style.display = 'none'
+        })
+        nextSlide.style.display = 'block'
+        this.setState({ slide: next })
+
+    }
 
 
     render() {
@@ -29,7 +60,9 @@ class Elitex extends Component {
                                     <p>walls<span className='bigNumber'>2</span>paint</p>
                                     <div className="section1__logo">
                                     </div>
-                                    <div className="section1__image section1__image--mobile"></div>
+                                    <div className="section1__image section1__image--mobile">
+                                        <div className="first__image "></div>
+                                    </div>
                                 </div>
                                 <div className="section1__description walls__desc">
                                     <p><div className="black__line section1__line"></div>Panele ścienne gotowe do malowania. <br />
@@ -48,13 +81,33 @@ class Elitex extends Component {
                                 </div>
 
                             </div>
-                            <div className="section1__image"></div>
+                            <div className="section1__image">
+
+                                <div className="second__image "></div>
+                                <div className="first__image "></div>
+                            </div>
+
                         </div>
                         <div className="walls__section2">
                             <div className="section2__images">
-                            <div className="section2__image1">
-                            
-                            </div>
+                                <div className="section2__image section2__image1">
+
+                                </div>
+                                <div className="section2__image section2__image2">
+
+                                </div>
+                                <div className="section2__image section2__image3">
+
+                                </div>
+                                <div className="section2__image section2__image4">
+
+                                </div>
+                                <div className="section2__image section2__image5">
+
+                                </div>
+                                <div className="section2__image section2__image6">
+
+                                </div>
                             </div>
                             <div className="section2__text walls__desc">
                                 <div className="black__line line__section2"></div>
@@ -107,7 +160,7 @@ Grubość wynosi 12 mm.</li>
                             <div className="black__line line__footer"></div>
                             <div className="footer__bottom">
                                 <div className="footerWalls__left">
-                                   
+
                                     <button className="footer__button">Zobacz ofertę produktów ></button>
                                 </div>
                                 <div className="footerWalls__right"></div>
