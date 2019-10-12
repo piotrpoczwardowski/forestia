@@ -1,6 +1,36 @@
+
+.modal__container{
+    background: rgba(0, 0, 0, 0.39);
+    position: fixed;
+    width: 100vw;
+    height:100vh;
+   top: 0px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.modal__active{
+    display: flex;
+}
+
+.modal{
+    background: white;
+    width: 90vw;
+    height: 90vh;
+    
+    
+}
+
 .black__line{
     height: 2px;
     background: black;
+}
+.walls4you button{
+    border: 2px solid black;
+    color: black;
+    width: 200px;
 }
 *{
     box-sizing: border-box;
@@ -24,6 +54,7 @@
     font-size: 80px;
     display: flex;
     align-items: center;
+    margin-left: 60px;
 }
 .section1__top span{
     font-size: 2em;
@@ -32,11 +63,14 @@
     width: 200px;
     height: 50px;
     background: url(../images/forestia-logo.png) center no-repeat;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-size: 100%;
 }
 .section1__mid{
-    background: black;
+    background: rgb(158, 154, 154);
     color: white;
-    font-size: 30px;
+    font-size: 32px;
     text-align: right;
     width: 85%;
     height: 500px;
@@ -51,7 +85,10 @@
     color: white;
     background: linear-gradient(to left, #4D4D4D, rgb(0, 0, 0));
     width: 70%;
-    font-size: 27px;
+    font-size: 30px;
+    margin-top: -100px;
+    position: relative;
+    z-index: -1;
     
 }
 .section1__bot p{
@@ -64,17 +101,162 @@
 }
 
 .section2{
-    height: 500px;
+ 
     padding-top: 50px;
     width: 95%;
     border-left: 2px solid black;
     margin-left: 5%;
+    padding-bottom: 180px;
 }
+
 
 .section2__top, .section2__bot{
     display: flex;
+    justify-content: space-between
+}
+.black__lineLeft, .black__lineRight{
+    width: 100px;
+}
+.top__left, .bot__right{
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.left__head, .right__head{
+    font-size: 1.5em;
+}
+.top__left p, .top__left button, .top__left .black__line{
+    margin-top: 25px;
+}
+.bot__right p, .bot__right button, .bot__right .black__line{
+    margin-top: 25px;
+}
+.section2__top{
+    height: 500px;
+}
+.top__left{
+    padding-left: 40px;
+}
+.top__right{
+    background: purple;
+    width: 50%;
+}
+.section2__bot{
+    margin-top: 110px;
+    height: 450px;
+    margin-left: -5%;
+}
+.bot__left{
+    width: 50%;
+    background: red;
+    position: relative;
+    z-index: -1;
+}
+.bot__right{
+    padding-right: 40px;
+    text-align: right;
+}
+.black__lineRight, .right__button{
+    margin-left: auto;
 }
 
-.black__lineLeft, .black__lineRight{
+
+.black__lineBot{
+    width: 95%;
+    margin-left: auto;
+}
+
+
+.section3{
+    width: 700px;
+    height: 600px;
+    background: rgb(207, 207, 207);
+    text-align: center;
+    font-size: 28px;
+    margin-left: auto;
+    margin-top: -100px;
+}
+
+.section3__line, .section3__description{
+    margin-top: 40px;
+}
+.section3__line{
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.section3__head{
+    font-size: 1.5em;
+    padding-top: 50px;
+}
+.section3__button{
+    margin-top: 80px;
+}
+
+.section4{
+    display: flex;
+    font-size: 28px;
+    margin-top: -250px;
+}
+
+
+.section4__black{
+    background: linear-gradient(to top, #4D4D4D, rgb(0, 0, 0));
+    color: white;
+    position: relative;
+    z-index: -1;
+   
+}
+.section4__line{
+    background: white;
     width: 200px;
+}
+.black__head{
+    font-size: 1.5em;
+    padding: 60px 40px;
+}
+.black__description{
+    padding: 50px 80px 70px;
+}
+
+.white__description{
+    padding: 272px 0px 0px 60px;
+}
+
+
+.section5__head p{
+    font-size: 80px;
+display: flex;
+align-items: center;
+margin-left: 60px;
+}
+
+.section5__head span{
+    font-size: 2em;
+}
+.section5__line{
+width: 70%;
+margin-top: -10px;
+}
+.section5__bot{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+.section5__logo{
+    width: 300px;
+    height: 100px;
+    background: url(../images/huntonit-logo.png) center no-repeat;
+    background-size: 100%;
+
+}
+.section5 button{
+    height: 80px;
+    width: 600px;
+    font-size: 25px;
 }

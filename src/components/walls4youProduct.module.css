@@ -1,0 +1,49 @@
+.walls4youProduct{
+   
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.block{
+
+    width: 200px;
+    height: 80px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:23px;
+    cursor: pointer;
+
+}
+.board{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  
+   width: 80%;
+    overflow-y: auto;
+    height: 60vh;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.panel{
+    position: relative;
+    margin: 10px 20px;
+   
+}
+.panel__img{
+   
+}
+
+.panel__button{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+}
