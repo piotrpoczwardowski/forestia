@@ -16,7 +16,7 @@ class walls4youProduct extends Component {
 
     render() {
 
-       
+
 
 
 
@@ -24,8 +24,16 @@ class walls4youProduct extends Component {
         return (
             <Container>
                 <div className={styles.productView}>
-                  
-dsadProdu
+
+                    <div className={styles.left}>
+                        <img src={this.props.img2} alt="" />
+                    </div>
+                    <div className={styles.right}>
+                        <p> {this.props.title}</p>
+                        <p>{this.props.description}</p>
+                    </div>
+
+
 
 
                 </div>

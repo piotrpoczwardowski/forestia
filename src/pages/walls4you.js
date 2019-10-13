@@ -41,6 +41,7 @@ class Walls4you extends Component {
                 <Container>
                     <div close='true' onClick={this.handleClick} className={this.state.modal ? `${styles.modal__container} ${styles.modal__active}` : `${styles.modal__container}`}>
                         <div className={styles.modal}>
+                        <div onClick={this.handleCloseModal} className={styles.exit}>X</div>
                          {this.state.modal && <Walls4youProduct type={this.state.type} />}   
                         </div>
 

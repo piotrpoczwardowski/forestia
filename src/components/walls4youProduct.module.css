@@ -1,5 +1,15 @@
 .walls4youProduct{
-   
+  
+}
+.back{
+    width: 200px;
+    height: 60px;
+    background: grey;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
 .menu{
@@ -42,8 +52,10 @@
 }
 
 .panel__button{
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     background-color: black;
     position: absolute;
+    right: 0px;
+    cursor: pointer;
 }

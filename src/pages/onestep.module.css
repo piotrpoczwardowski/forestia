@@ -1,0 +1,70 @@
+.header{
+    background: grey;
+    font-size: 35px;
+    padding-left: 20px;
+    height: 800px;
+    margin-top: 100px;
+}
+.header h1{
+    
+transform: translateY(-85px);
+}
+.logo__forestia{
+    background: url(../images/forestia-logo.png) center no-repeat ;
+    background-size: 100%;
+    width: 150px;
+    height: 70px;
+    transform: translateY(-85px);
+}
+
+.section1{
+    border-left: 2px solid black;
+    font-size: 25px;
+    margin: 60px 80px;
+    padding-left: 30px;
+}
+.section1 p:nth-child(1){
+font-weight: bold;
+}
+.section1 p:nth-child(2){
+    margin-top: 20px;
+    }
+
+.section2__content{
+    width: 1000px;
+    margin-left: auto;
+}
+.section2__top{
+    border-top: 2px solid black;
+    text-align: right;
+    font-size: 25px;
+    padding: 40px 20px 30px;
+}    
+
+.section2__bot{
+    border: 2px solid black;
+    border-right: none;
+    padding: 130px 0px 130px 190px;
+}
+.section2__black{
+    background: linear-gradient(to top, #4D4D4D, rgb(0, 0, 0));
+    color: white;
+    font-size: 25px;
+    text-align: right;
+   padding: 20px 10px;
+}
+
+.section2__lineTop, .section2__lineBot{
+    background: white;
+    height: 2px;
+    width: 35%;
+    margin-top: 40px;
+    margin-left: auto;
+}
+.section2__lineTop{
+    margin-bottom: 150px;
+}
+.section2__lineBot{
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
