@@ -41,7 +41,16 @@ class Walls4you extends Component {
                                 różnych rozmiarach, aby stworzyć imponujące tekstury i nadać charakter wnętrzu.</p>
                         </div>
                         <div className={styles.section2}>
-                            <div className={styles.section2__images}></div>
+                            <div className={styles.section2__images}>
+                            <div className={styles.section2__image1}>
+                            <div className={styles.section2__image1First}></div>
+                            <div className={styles.section2__image1Second}></div>
+                            </div>
+                            <div className={styles.section2__image2}>
+                            <div className={styles.section2__image2First}></div>
+                            <div className={styles.section2__image2Second}></div>
+                            </div>
+                            </div>
                             <div className={styles.section2__content}>
                                 <div className={styles.section2__top}>
                                     Płyty nadają się do montażu opraw typu downlight. <br />
@@ -88,9 +97,68 @@ są łatwe do pomalowania.</p>
                         
                         </div>
                         <div className={styles.section3__panels}>
-                        
-                        
-                        
+                        <div className={styles.panels1}>
+                        <div className={styles.panel}>
+                        <div className={`${styles.panel__img} ${styles.panel__img1}`}>
+
+                        </div>
+                        <div className={styles.panel__text}>
+                        45TF WHITE RUSTIC
+                        </div>
+                        </div>
+                        <div className={styles.panel}>
+                        <div className={`${styles.panel__img} ${styles.panel__img2}`}>
+
+                        </div>
+                        <div className={styles.panel__text}>
+                        40TF WHITE SILK
+                        </div>
+                        </div>
+                        <div className={styles.panel}>
+                        <div className={`${styles.panel__img} ${styles.panel__img3}`}>
+
+                        </div>
+                        <div className={styles.panel__text}>
+                        21TF SIRIUS
+                        </div>
+                        </div>
+                        </div>
+                        <div className={styles.panels1}>
+                        <div className={styles.panel}>
+                        <div className={`${styles.panel__img} ${styles.panel__img4}`}>
+
+                        </div>
+                        <div className={styles.panel__text}>
+                        14TFL WHITE INSPIRATION
+                        </div>
+                        </div>
+                        <div className={styles.panel}>
+                        <div className={`${styles.panel__img} ${styles.panel__img5}`}>
+
+                        </div>
+                        <div className={styles.panel__text}>
+                        12TF WHITE LINNEN
+                        </div>
+                        </div>
+                        <div className={styles.panel}>
+                        <div className={`${styles.panel__img} ${styles.panel__img6}`}>
+
+                        </div>
+                        <div className={styles.panel__text}>
+                        02TF WHITE STUCCO
+                        </div>
+                        </div>
+                        </div>
+
+
+                        </div>
+                        <div className={styles.section5}>
+                          
+                            <div className={`${styles.black__line} ${styles.section5__line}`}></div>
+                            <div className={styles.section5__bot}>
+                                <button className={styles.section5__button}>Zobacz ofertę produktów ></button>
+                                <div className={styles.section5__logo}></div>
+                            </div>
                         </div>
                         
                         </div>

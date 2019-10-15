@@ -1,20 +1,21 @@
 .header{
-    background: grey;
+    background: url(../images/onestep/main.png) center no-repeat;
+    background-size: 100%;
     font-size: 35px;
     padding-left: 20px;
-    height: 800px;
+    height: 80vw;
     margin-top: 100px;
 }
 .header h1{
     
-transform: translateY(-85px);
+
 }
 .logo__forestia{
     background: url(../images/forestia-logo.png) center no-repeat ;
     background-size: 100%;
     width: 150px;
     height: 70px;
-    transform: translateY(-85px);
+  
 }
 
 .section1{
@@ -30,8 +31,65 @@ font-weight: bold;
     margin-top: 20px;
     }
 
+  
+
+.section2{
+    margin-top: 114px;
+
+}
+.section2__image1{
+    margin-top: -40px;
+   
+}
+.section2__image1First{
+    background: url(../images/onestep/image1.png) center no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.section2__image1Second{
+    background: url(../images/onestep/image21.png) center no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.section2__image2First{
+    background: url(../images/onestep/image2.png) center no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.section2__image2Second{
+    background: url(../images/onestep/image12.png) center no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.section2__image2{
+  margin-top: 340px;
+  
+}
+.section2__image1First, .section2__image1Second, .section2__image2First, .section2__image2Second{
+    transition: opacity 0.3s;
+    background-size: 110%;
+}
+.section2__image1First:hover, .section2__image2First:hover{
+    opacity: 0;
+}
+
+.section2__images{
+    position: absolute;
+  
+    
+}
+.section2__image1, .section2__image2{
+    height: 700px;
+    width: 500px;
+    position: relative;
+
+   
+}  
+
 .section2__content{
-    width: 1000px;
+    width: 90%;
     margin-left: auto;
 }
 .section2__top{
@@ -67,4 +125,211 @@ font-weight: bold;
 .section2__lineBot{
     margin-top: 150px;
     margin-bottom: 20px;
+}
+.section3__title{
+    font-size: 30px;
+    margin-left: 40px;
+    margin-top: 100px;
+}
+.section3__panels{
+   margin-top: 30px;
+}
+.panel{
+    margin: 20px 0px;
+}
+.panels1, .panels2{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.panel__img1{
+    background: url(../images/onestep/panel1.png) center no-repeat;
+}
+.panel__img2{
+    background: url(../images/onestep/panel2.png) center no-repeat;
+}
+.panel__img3{
+    background: url(../images/onestep/panel3.png) center no-repeat;
+}
+.panel__img4{
+    background: url(../images/onestep/panel4.png) center no-repeat;
+}
+.panel__img5{
+    background: url(../images/onestep/panel5.png) center no-repeat;
+}
+.panel__img6{
+    background: url(../images/onestep/panel6.png) center no-repeat;
+}
+.panel__img{
+    width: 300px;
+    height: 400px;
+    background-size: 100%;
+   transition: background 0.3s;
+}
+.panel__img:hover{
+    background-size: 120%;
+}
+.panel__text{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.section5__head p{
+    font-size: 80px;
+display: flex;
+align-items: center;
+margin-left: 60px;
+}
+
+.section5__head span{
+    font-size: 2em;
+}
+.section5__line{
+width: 70%;
+margin-top: 80px;
+height: 2px;
+background: black;
+}
+.section5__bot{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+.section5__logo{
+    width: 300px;
+    height: 100px;
+    background: url(../images/huntonit-logo.png) center no-repeat;
+    background-size: 100%;
+
+}
+.section5 button{
+    height: 80px;
+    width: 600px;
+    font-size: 25px;
+}
+
+@media (max-width: 1180px) {
+    .section2__image1, .section2__image2{
+        height: 50vw;
+        width: 40vw;
+        
+    }   
+}
+
+@media (max-width: 1108px) {
+    .section2__images{
+        position: relative;
+       display: flex;
+       justify-content: space-around;
+        
+    }
+    .section2__top{
+        margin-top: 5vw;
+    }
+
+    .section2__image2{
+        margin-top: 0px;
+      }
+      .section2__image1{
+          margin-top: 0px;
+      }
+}
+
+@media (max-width: 1000px) {
+    .section5__bot{
+        display: block;
+        text-align: center;
+    }
+    .section5 button{
+        width: 90%;
+    }
+    .section5__logo{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section5__line{
+        margin: 5vw auto;
+    }
+}
+
+@media (max-width: 920px) {
+    .section2{
+        margin-top: 5vw;
+    }
+    .section2__content{
+        width: 100%;
+    }
+    .section2__top{
+        text-align: center;
+        padding: 40px 0px;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 5vw;
+    }
+    .section2__bot{
+        padding: 0;
+       
+    }
+    .section2__black{
+        padding: 30px 20px;
+        text-align: center;
+    }
+    .section2__lineTop, .section2__lineBot{
+        margin: 30px auto;
+    }
+    .section3__title{
+        margin-top: 5vw;
+    }
+    .panel{
+        margin: 20px 10px;
+    }
+    .panel__img{
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .panels1, .panels2{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 640px) {
+.header{
+    font-size: 5vw;
+}
+}
+
+@media (max-width: 540px) {
+.section1{
+    margin: 0;
+    border: none;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 5vw;
+}
+.section3__title{
+    text-align: center;
+    margin-left: 0;
+}
+.section2__black{
+    padding: 30px 5px;
+  
+}
+}
+
+@media (max-width: 360px) {
+    .section1{
+        padding: 0;
+    }
+    .section2__top{
+        padding: 2vw 0px;
+        width: 100%;
+    }
+    .section5__logo{
+        width: 80vw;
+    }
 }

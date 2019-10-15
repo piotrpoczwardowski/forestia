@@ -14,12 +14,12 @@ const Products = (props) => (
     <div className="products">
       <div className="products__left">
         <div className="products__title">Strona w budowie</div>
-        <div className="products__description">Zapraszamy do obejrzenia katalogu produktów <br/>
-w wersji angielskiej. <br/>
-Jeśli mają Państwo jakieś pytania to prosimy o kontakt <br/>
-telefoniczny lub mailowy.</div> 
-     <a target='__blank' href=" https://www.forestia.no/"> <button className="products__button">Zobacz ofertę produktów FORESTIA ></button></a> <br/> 
-     <a target='__blank' href=" https://huntonit.com/"><button className="products__button">Zobacz ofertę produktów HUNTONIT ></button></a>
+        <div className="products__description">Zapraszamy do obejrzenia katalogu produktów <br />
+          w wersji angielskiej. <br />
+          Jeśli mają Państwo jakieś pytania to prosimy o kontakt <br />
+          telefoniczny lub mailowy.</div>
+        <a target='__blank' href=" https://www.forestia.no/"> <button className="products__button">Zobacz ofertę produktów FORESTIA ></button></a> <br />
+        <a target='__blank' href=" https://huntonit.com/"><button className="products__button">Zobacz ofertę produktów HUNTONIT ></button></a>
       </div>
       <div className="products__right"></div>
     </div>
