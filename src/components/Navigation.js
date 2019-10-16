@@ -6,7 +6,10 @@ import "./navigation.css"
 class Navigation extends Component  {
   state={
     activeWrapper: false,
-    mobile: false
+    mobile: false,
+    walls: true,
+    ceiling: false,
+    floors: false
   }
 componentDidMount(){
  
@@ -36,8 +39,25 @@ componentDidMount(){
   
  
   }
-handleWrapperRight = () => {
-  document.querySelector('.wrapper__right').classList.toggle('active__wrapper__right')
+handleWrapperRight = (e) => {
+  let type = e.target.getAttribute('type')
+  document.querySelector('.wrapper__right').classList.add('active__wrapper__right')
+
+  if(type === 'walls'){
+    this.setState({walls:true, ceiling:false, floor:false})
+    
+  }
+
+  if(type === 'ceiling'){
+    this.setState({walls:false, ceiling:true, floor:false})
+    
+  }
+  if(type === 'floor'){
+    this.setState({walls:false, ceiling:false, floor:true})
+    
+  }
+console.log(e.target.parent)
+
 }
 
 handleBlur = () => {
@@ -69,15 +89,26 @@ handleHamburgerMenu =() => {
             </a>
             <div className={`products__wrapper + ${this.state.activeWrapper && ' active__wrapper'}`}>
                 <div className="wrapper__left">
-                  <div onClick={this.handleWrapperRight} className="walls --flex"> <p>Płyty ścienne</p> <p>></p> </div>
-                  <div onClick={this.handleWrapperRight} className="ceiling --flex"><p>Płyty sufitowe</p> <p>></p> </div>
-                  <div onClick={this.handleWrapperRight} className="floor --flex"><p>Płyty podłogowe</p> <p>></p> </div>
+                  <div type='walls' onClick={this.handleWrapperRight} className="walls --flex"> <p type='walls'>Płyty ścienne</p> <p type='walls'>></p> </div>
+                  <div type='ceiling' onClick={this.handleWrapperRight} className="ceiling --flex"><p type='ceiling'>Płyty sufitowe</p> <p type='ceiling'>></p> </div>
+                  <div type='floor' onClick={this.handleWrapperRight} className="floor --flex"><p type='floor'>Płyty podłogowe</p> <p type='floor'>></p> </div>
                 </div>
                 <div className="wrapper__right">
                   <div className="wrapper__right__content">
-                    <p><Link to='/Produkty/'>Forestia</Link> </p>
+                  {this.state.walls && <div className='wrapper__walls'>
+                  <Link to='/Walls2paint/'> <div className="walls__walls2paint">walls2paint</div></Link>
+                  <Link to='/walls4you/'> <div className="walls__walls4you">walls4you</div></Link>
+                  <Link to='/Elitex/'><div className="walls__elitex">eliteX</div></Link>
+                  </div>}
+                  {this.state.ceiling && <div className='wrapper__ceiling'>
+                  <Link to='/onestep/'>  <div className="ceiling__onestep">One-step ceiling</div></Link>
+                  </div>}
+                  {this.state.floor && <div className='wrapper__floor'>
+                  <p><Link to='/Produkty/'>Forestia</Link> </p>
                     <div className="wrapper__line"></div>
                     <p><Link to='/Produkty/'>Huntonit</Link></p>
+                  </div>}
+                  
                   </div>
 
                 </div>

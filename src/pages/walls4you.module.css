@@ -17,7 +17,7 @@
 .exit{
     width: 30px;
     height: 30px;
-    background: red;
+    
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -26,6 +26,8 @@
     right: -15px;
     top: -15px;
     cursor: pointer;
+    font-weight: bold;
+    background: white;
 }
 
 .modal{
@@ -44,6 +46,11 @@
     border: 2px solid black;
     color: black;
     width: 200px;
+}
+.walls4you button:hover{
+   
+    color: rgb(255, 255, 255);
+   background: black;
 }
 *{
     box-sizing: border-box;
@@ -406,5 +413,42 @@ margin-top: -10px;
         width: 95%;
         justify-content: center;
       
+    }
+}
+
+
+@media (max-width: 450px) {
+    .section1{
+        padding-bottom: 5vw;
+    }
+    .section1__mid p{
+        padding: 0;
+        text-align:  center;
+    }
+    .section1__mid{
+        height: auto;
+        background: none;
+        padding: 20px 0;
+        color: black;
+        font-size: 23px;
+    }
+    .section1__bot{
+        font-size: 23px;
+        text-align: center;
+    }
+    .section1__bot p{
+        padding: 20px;
+    }
+    .top__left, .bot__right, .section3, .section4__black{
+        font-size: 23px;
+    }
+    .top__right, .bot__left{
+        height: 88vw;
+    }
+    .section3__line, .section3__description, .section3__button{
+        margin-top: 5vw;
+    }
+    .section3{
+        background-size: 500px;
     }
 }

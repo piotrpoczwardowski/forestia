@@ -252,6 +252,10 @@
         width: 60vw;
         position: relative;
     }
+    .elitex__arrow{
+        height: 10vw;
+        widows: 10vw;;
+    }
 }
 @media (max-width:600px) {
     .panel__img{
