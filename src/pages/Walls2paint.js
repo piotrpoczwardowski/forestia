@@ -3,6 +3,7 @@ import React, { Component } from "react"
 import { Link } from "gatsby"
 import "./walls2paint.css"
 import Layout from "../components/layout"
+import walls2paint from '../pdf1/walls2paint.pdf'
 
 
 class Elitex extends Component {
@@ -150,6 +151,9 @@ Grubość wynosi 12 mm.</li>
                             </div>
                             <div className="section3__image"></div>
                         </div>
+                        <div className="mont__content">
+            <a download='Instrukcja montażu walls2paint' href={walls2paint}>Instrukcja montażu walls2paint</a>
+            </div>
                         <div className="walls__footer">
                             <div className="footer__top">
                                 <div className="footer__title">walls<span className='footer__number'>2</span>paint</div>
@@ -159,7 +163,7 @@ Grubość wynosi 12 mm.</li>
                             <div className="footer__bottom">
                                 <div className="footerWalls__left">
 
-                                    <button className="footer__button">Zobacz ofertę produktów ></button>
+                                   <Link to='/Produkty/'>   <button className="footer__button">Zobacz ofertę produktów ></button></Link>
                                 </div>
                                 <div className="footerWalls__right"></div>
 
@@ -167,7 +171,7 @@ Grubość wynosi 12 mm.</li>
                         </div>
 
                     </div>
-
+                   
                 </div>
             </Layout>
         )

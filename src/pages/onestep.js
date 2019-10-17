@@ -156,7 +156,7 @@ są łatwe do pomalowania.</p>
                           
                             <div className={`${styles.black__line} ${styles.section5__line}`}></div>
                             <div className={styles.section5__bot}>
-                                <button className={styles.section5__button}>Zobacz ofertę produktów ></button>
+                            <Link to='/Produkty/'>    <button className={styles.section5__button}>Zobacz ofertę produktów ></button></Link>
                                 <div className={styles.section5__logo}></div>
                             </div>
                         </div>

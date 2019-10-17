@@ -3,7 +3,7 @@ import React, { Component } from "react"
 import { Link } from "gatsby"
 import "./elitex.css"
 import Layout from "../components/layout"
-
+import elite from '../pdf1/elitex.pdf'
 
 class Elitex extends Component {
 
@@ -168,7 +168,9 @@ class Elitex extends Component {
 
                         </div>
                     </div>
-
+            <div className="mont__content">
+            <a download='Instrukcja montażu eliteX' href={elite}>Instrukcja montażu eliteX</a>
+            </div>
                 </div>
             </Layout>
         )

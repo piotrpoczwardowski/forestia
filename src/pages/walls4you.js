@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import Container from '../components/container'
 import Modal from '../components/walls4youProduct'
 import Walls4youProduct from "../components/walls4youProduct";
+import walls4you from '../pdf1/walls4you.pdf'
 
 
 class Walls4you extends Component {
@@ -41,7 +42,7 @@ class Walls4you extends Component {
                 <Container>
                     <div close='true' onClick={this.handleClick} className={this.state.modal ? `${styles.modal__container} ${styles.modal__active}` : `${styles.modal__container}`}>
                         <div className={styles.modal}>
-                            <div onClick={this.handleCloseModal} className={styles.exit}>X</div>
+                            <div onClick={this.handleCloseModal} className={styles.exit}>Wyjście</div>
                             {this.state.modal && <Walls4youProduct type={this.state.type} />}
                         </div>
 
@@ -156,13 +157,16 @@ class Walls4you extends Component {
                             </div>
 
                         </div>
+                        <div className="mont__content">
+            <a download='Instrukcja montażu walls4you' href={walls4you}>Instrukcja montażu walls4you</a>
+            </div>
                         <div className={styles.section5}>
                             <div className={styles.section5__head}>
                                 <p>walls<span>4</span>you</p>
                             </div>
                             <div className={`${styles.black__line} ${styles.section5__line}`}></div>
                             <div className={styles.section5__bot}>
-                                <button className={styles.section5__button}>Zobacz ofertę produktów ></button>
+                               <Link to='/Produkty/'> <button className={styles.section5__button}>Zobacz ofertę produktów ></button></Link>
                                 <div className={styles.section5__logo}></div>
                             </div>
                         </div>

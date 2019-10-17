@@ -36,3 +36,14 @@ ol a{
 .gilroy{
   font-family: 'Gilroy'
 }
+
+.mont__content{
+  text-align: center;
+  margin-top: 5vw;
+
+}
+.mont__content a{
+  color: black;
+  font-size: 25px;
+
+}
