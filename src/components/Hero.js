@@ -9,9 +9,9 @@ class Hero extends Component {
         selector: 1
     }
     componentDidMount() {
-        // var intervalId = setInterval(this.handleArrowRight, 6500);
+        var intervalId = setInterval(this.handleArrowRight, 6500);
 
-        // this.setState({ intervalId: intervalId });
+        this.setState({ intervalId: intervalId });
     }
     componentWillUnmount() {
 

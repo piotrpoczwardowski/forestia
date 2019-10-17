@@ -123,8 +123,7 @@ class Walls4you extends Component {
                                         <li>Kombinacje różnych wzorów i kolorów</li>
                                         <li>Łatwy montaż z inteligentnym profilem <br />
                                             zamykającym</li>
-                                        <li>Przemyślane i stylowe rozwiązania naroż- <br />
-                                            ne / listwy</li>
+                                        <li>Przemyślane i stylowe rozwiązania <br /> narożne/listwy</li>
                                         <li>Do nowej budowy, renowacji i remontu</li>
                                         <li>Listwy do narożników wewnętrznych / <br />
                                             zewnętrznych <br />

@@ -109,9 +109,9 @@ class Elitex extends Component {
                                 charakteryzującą się wysoką twardością, odpornością na działanie wody, <br />
                                 temperatury oraz światła co gwarantuje najwyższą jakość produktu. <br />
                                 Ponadto płyty eliteX zawierają odporny na wilgoć rdzeń (klasa klimatyczna 2) <br />
-                                i dlatego dobrze sprawdzają się w pomieszczeniach o wyższej wilgotności. <br />
+                                i dlatego dobrze sprawdzają się w pomieszczeniach o podwyższonej wilgotności. <br />
                                 Płyty umożliwiają instalację wysokiej klasy wytrzymałości śrub i wkrętów, <br />
-                                a także są odporne na działania mechaniczne. Dzięki takim właściwościom <br />
+                                a także są odporne na uszkodzenia mechaniczne. Dzięki takim właściwościom <br />
                                 możesz zawiesić swój ulubiony rower i wiele innych obiektów na ścianie. <br />
                                 Płyta ścienny nie wymaga dodatkowej obróbki powierzchni, zatem pozostaje <br />
                                 wybrać dekor spośród czterech nowoczesnych dekoracji:</p>

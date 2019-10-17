@@ -133,20 +133,18 @@ class Elitex extends Component {
                                 <ul>
 
                                     <li>Unikalny profil blokujący</li>
-                                    <li>Brak szlifowania-brak występowania pyłu</li>
-                                    <li>Złącza płyt należy połączyć
-                                    jednym pełnym pociągnięciem
+                                    <li>Brak szlifowania-brak <br/> występowania pyłu</li>
+                                    <li>Złącza płyt należy połączyć <br/>
+                                    jednym pełnym pociągnięciem <br/>
 kleju</li>
-                                    <li>Płyty ścienne są przykręcane,
+                                    <li>Płyty ścienne są przykręcane, <br/>
 
-                                    mają dobrą wytrzymałość na wkręcanie śrub
+                                    mają dobrą wytrzymałość na <br/> wkręcanie śrub
 </li>
-                                  <li>  Wymiary:
-                                    Płyty występują w długościach 2,39
-                                    m, 2,60 m, 2,80 m i 3 m.
-                                    Szerokość wynosi standardowo 60
-                                    cm,
-Grubość wynosi 12 mm.</li>
+                                  <li>  Wymiary: <br/>
+                                    Długość: 2,39m, 2,60m, 2,80m, 3m <br/>
+                                    Szerokość  60cm <br/>
+                                   Grubość: 12mm</li>
                                 </ul>
                             </div>
                             <div className="section3__image"></div>
