@@ -15,6 +15,12 @@
  
   src: url(../fonts/gothic-regular.ttf); /* IE9 Compat Modes */
 }
+@font-face {
+  font-family: 'Gilroy';
+ 
+  src: url(../fonts/Gilroy-ExtraBold.otf); /* IE9 Compat Modes */
+}
+
 
 div, p, button {
   font-family: 'Regular'
@@ -25,4 +31,8 @@ div, p, button {
 
 ol a{
   font-family: 'Regular'
+}
+
+.gilroy{
+  font-family: 'Gilroy'
 }

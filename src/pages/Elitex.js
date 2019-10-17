@@ -76,9 +76,9 @@ class Elitex extends Component {
                             <h1 className="new">NOWOŚĆ!</h1>
                             <div className="header__line header__topLine"></div>
                             <div className="header__description">
-                                <p>Panele Forestia eliteX</p>
+                                <p>Płyty Forestia eliteX</p>
                                 <br />
-                                <p>Mocne i solidne panele ścienne do <br /> najbardziej wymagających wnętrz</p>
+                                <p>Mocne i solidne płyty ścienne do <br /> najbardziej wymagających wnętrz</p>
                             </div>
                         </div>
                         <h1 className="elitex__title">eliteX</h1>

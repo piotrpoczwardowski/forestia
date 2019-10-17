@@ -73,7 +73,7 @@ handleHamburgerMenu =() => {
     <div className='navigation'>
     
       <div className="navigation__header">
-        <div className="header__number"> <div className="navigation__number--icon"></div> <p>+48 666-982-260</p> </div>
+        <div className="header__number"> <div className="navigation__number--icon"></div> <p>+48 666 982 260</p> </div>
         <div className="header__email"> <div className="navigation__email--icon"></div> <p>biuro@smart-panel.pl</p> </div>
       </div>
       <div className='navigation__block'>

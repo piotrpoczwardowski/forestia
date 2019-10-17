@@ -23,9 +23,9 @@ class Walls4you extends Component {
         this.setState({ modal: false })
     }
     handleClick = (e) => {
-      
-        if(e.target.getAttribute('close')){
-           this.handleCloseModal()
+
+        if (e.target.getAttribute('close')) {
+            this.handleCloseModal()
         }
     }
 
@@ -41,8 +41,8 @@ class Walls4you extends Component {
                 <Container>
                     <div close='true' onClick={this.handleClick} className={this.state.modal ? `${styles.modal__container} ${styles.modal__active}` : `${styles.modal__container}`}>
                         <div className={styles.modal}>
-                        <div onClick={this.handleCloseModal} className={styles.exit}>X</div>
-                         {this.state.modal && <Walls4youProduct type={this.state.type} />}   
+                            <div onClick={this.handleCloseModal} className={styles.exit}>X</div>
+                            {this.state.modal && <Walls4youProduct type={this.state.type} />}
                         </div>
 
                     </div>
@@ -66,8 +66,8 @@ class Walls4you extends Component {
                                     mamy przyjemność zaprezentować wiórowe <br />
                                     płyty ścienne ze stylową tapetą najwyższej jakości. <br />
                                     <br />
-                                    Dysponujemy szeroką gamą tapet, które <br />
-                                    podzieliliśmy na trzy kolekcje:</p>
+                                    Dysponujemy szeroką gamą tapet, <br />
+                                    które podzieliliśmy na trzy kolekcje:</p>
                             </div>
                         </div>
                         <div className={`${styles.black__line} ${styles.black__lineMid}`}></div>
@@ -78,9 +78,9 @@ class Walls4you extends Component {
                                     <div className={`${styles.black__line} ${styles.black__lineLeft}`}></div>
                                     <p className={styles.left__description}>Stworzona dla tych, którzy podążają <br />
                                         za najnowszym designem. <br />
-                                        Stylowe tapety zarówno mają <br />
-                                        zastosowanie jako ściana funkcyjna, <br />
-                                        jak i do całego pomieszczenia</p>
+                                        Stylowe tapety mają
+                                        zastosowanie <br /> jako ściana funkcyjna,
+                                        jak i całego <br /> pomieszczenia</p>
                                     <button type='TREND' onClick={this.handleOpenModal} className={styles.left__button}>Sprawdź</button>
                                 </div>
                                 <div className={styles.top__right}>
@@ -94,9 +94,9 @@ class Walls4you extends Component {
                                     <div className={`${styles.black__line} ${styles.black__lineRight}`}></div>
                                     <p className={styles.right__description}>Kolekcja obejmuje klasyczne <br />
                                         wykończenia i powierzchnie <br />
-                                        dekoracyjne. Liczne <br />
-                                        kombinacje gwarantują <br />
-                                        ekskluzywne i trwałe rezultaty</p>
+                                        dekoracyjne. <br />
+                                       Liczne kombinacje <br/> gwarantują
+                                        ekskluzywne <br/> i trwałe rezultaty</p>
                                     <button type='CLASSIC' onClick={this.handleOpenModal} className={styles.right__button}>Sprawdź</button>
                                 </div>
                             </div>
@@ -125,7 +125,6 @@ class Walls4you extends Component {
                                         <li>Przemyślane i stylowe rozwiązania naroż- <br />
                                             ne / listwy</li>
                                         <li>Do nowej budowy, renowacji i remontu</li>
-                                        <li>Bez kleju</li>
                                         <li>Listwy do narożników wewnętrznych / <br />
                                             zewnętrznych <br />
                                             mogą być dostarczane w wybranych de- <br />
@@ -138,18 +137,22 @@ class Walls4you extends Component {
                                 </div>
                             </div>
                             <div className={styles.section4__white}>
-                                <p className={styles.white__description}>Listwy do narożników wewnętrznych/ <br />
-                                    zewnętrznych mogą być dostarczane <br />
-                                    w wybranych dekorach: <br />
-                                    10432 winebox, <br />
-                                    40291 verve plain uni, <br />
-                                    40592 flow plain light concrete, <br />
-                                    14213 plain offwhite, <br />
-                                    14238 metallic snow white, <br />
-                                    14243 light textile, <br />
-                                    14244 grey textile, <br />
-                                    14240 driftwood <br />
-                                    10462 rustic oak</p>
+                                <div className={styles.white__description}>Listwy do narożników  <br /> 
+                                wewnętrznych/zewnętrznych mogą  <br /> być  <br /> dostarczane
+                                    w dekorach: <br />
+                                    <ul>
+                                        <li>  10432 winebox  </li> <br />
+                                        <li>  40291 verve plain uni  </li><br />
+                                        <li>  40592 flow plain light concrete </li> <br />
+                                        <li>  14213 plain offwhit  </li> <br />
+                                        <li>  14238 metallic snow white  </li> <br />
+                                        <li>  14243 light textile  </li> <br />
+                                        <li>  14244 grey textile  </li> <br />
+                                        <li>  14240 driftwood  </li> <br />
+                                        <li>  10462 rustic oak  </li>
+                                    </ul>
+                                </div>
+
                             </div>
 
                         </div>

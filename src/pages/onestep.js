@@ -35,7 +35,7 @@ class Walls4you extends Component {
                         </div>
                         <div className={styles.section1}>
                             <p className={styles.section1__title}>Gotowe płyty sufitowe !</p>
-                            <p className={styles.section1__description}>Niezależnie od tego, czy po raz pierwszy wykańczasz, czy odnawiasz pomieszczenie, możesz <br />
+                            <p className={styles.section1__description}>Niezależnie od tego, czy po raz pierwszy wykańczasz, czy odnawiasz pomieszczenie, <br /> możesz
                                 spełnić marzenie o spektakularnym i stylowym suficie dzięki sufitowi One-Step. <br />
                                 Płyty oferują wiele możliwości stworzenia charakterystycznego sufitu, są dostępne w dwóch <br />
                                 różnych rozmiarach, aby stworzyć imponujące tekstury i nadać charakter wnętrzu.</p>
@@ -54,7 +54,7 @@ class Walls4you extends Component {
                             <div className={styles.section2__content}>
                                 <div className={styles.section2__top}>
                                     Płyty nadają się do montażu opraw typu downlight. <br />
-                                    Tylko wyobraźnia wyznacza granice, <br /> <br />
+                                    Tylko wyobraźnia wyznacza granice. <br /> <br />
                                     Płyty są ponadczasowe i wtapiają się we wnętrze <br />
                                     klasyczne, jak i nowoczesne. <br /> <br />
                                     Sufit Forestia One-Step to płyta pokryta folią, <br />

@@ -84,7 +84,8 @@
     height: 50px;
     background: url(../images/forestia-logo.png) center no-repeat;
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: auto;
+    margin-right: 40px;
     background-size: 100%;
 }
 .section1__mid{
@@ -105,7 +106,7 @@
 .section1__bot{
     color: white;
     background: linear-gradient(to left, #4D4D4D, rgb(0, 0, 0));
-    width: 70%;
+    width: 900px;
     font-size: 30px;
     margin-top: -100px;
     position: relative;
@@ -178,10 +179,10 @@
 }
 .bot__right{
     padding-right: 40px;
-    text-align: right;
+   
 }
 .black__lineRight, .right__button{
-    margin-left: auto;
+   
 }
 
 
@@ -249,6 +250,10 @@
 .white__description{
     padding: 272px 0px 0px 60px;
 }
+.white__description ul{
+    line-height: 23px;
+    padding: 20px;
+}
 
 
 .section5__head p{
@@ -289,6 +294,7 @@ margin-top: -10px;
         display: block;
         text-align: center;
     }
+   
     .section5 button{
         width: 90%;
     }
@@ -314,7 +320,9 @@ margin-top: -10px;
     }
     .white__description{
         padding: 30px 0 0 0;
-        text-align: center
+        width: 70%;
+        margin: 0 auto;
+
     }
 }
 
@@ -396,6 +404,10 @@ margin-top: -10px;
     }
     .section1__mid{
         margin-top: 5vw;
+    }
+    .white__description ul{
+        line-height: 41px;
+       
     }
 }
 

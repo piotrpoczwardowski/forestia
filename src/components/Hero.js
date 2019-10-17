@@ -133,7 +133,7 @@ class Hero extends Component {
                                 <p className="right__description">
                                     Nowe ściany gotowe od zaraz! <br /> 1. Instalujesz <br />  2. Malujesz <br /> 3. Dużo czasu i oszczędności zyskujesz!
                     </p>
-                                <Link to='/Produkty/'>  <button className="right__button button1">Sprawdź</button></Link>
+                                <Link to='/Walls2paint/'>  <button className="right__button ">Sprawdź</button></Link>
                                 <div className="line">
                                 </div>
                             </div>
@@ -145,7 +145,7 @@ class Hero extends Component {
                                     Płyty ścienne z nałożoną tapetą. <br />
                                     Wybierz Swoją kombinację i zaoszczędź wiele godzin pracy!
                     </p>
-                                <Link to='/Produkty/'>  <button className="right__button button2">Sprawdź</button></Link>
+                                <Link to='/walls4you/'>  <button className="right__button button2">Sprawdź</button></Link>
                                 <div className="line">
                                 </div>
                             </div>
@@ -157,7 +157,7 @@ class Hero extends Component {
                                     Mocne i solidne płyty ścienne <br/> odporne na uszkodzenia. <br />
                                     Idealny wybór do garażu lub pomieszczeń gospodarczych.
                     </p>
-                                <Link to='/Produkty/'>  <button className="right__button button3">Sprawdź</button></Link>
+                                <Link to='/Elitex/'>  <button className="right__button button3">Sprawdź</button></Link>
                                 <div className="line">
                                 </div>
                             </div>
@@ -170,7 +170,7 @@ class Hero extends Component {
                                     Sufit w innym wydaniu? <br/> Zapoznaj się z ofertą Naszych płyt
                                     i wybierz te, <br/> które najbardziej odpowiadają Twoim oczekiwaniom.
                     </p>
-                                <Link to='/Produkty/'>  <button className="right__button button4">Sprawdź</button></Link>
+                                <Link to='/onestep/'>  <button className="right__button button4">Sprawdź</button></Link>
                                 <div className="line">
                                 </div>
 
