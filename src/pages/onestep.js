@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import styles from "./onestep.module.css"
 import Layout from "../components/layout"
 import Container from '../components/container'
+import onestep from '../pdf1/onestep.pdf'
 
 
 
@@ -34,7 +35,7 @@ class Walls4you extends Component {
                             <div className={styles.logo__forestia}></div>
                         </div>
                         <div className={styles.section1}>
-                            <p className={styles.section1__title}>Gotowe płyty sufitowe !</p>
+                            <p className={styles.section1__title}>Gotowe płyty sufitowe!</p>
                             <p className={styles.section1__description}>Niezależnie od tego, czy po raz pierwszy wykańczasz, czy odnawiasz pomieszczenie, <br /> możesz
                                 spełnić marzenie o spektakularnym i stylowym suficie dzięki sufitowi One-Step. <br />
                                 Płyty oferują wiele możliwości stworzenia charakterystycznego sufitu, są dostępne w dwóch <br />
@@ -152,6 +153,9 @@ są łatwe do pomalowania.</p>
 
 
                         </div>
+                        <div className="mont__content">
+            <a download='Instrukcja montażu one-step ceiling' href={onestep}>Instrukcja montażu One-step ceiling</a>
+            </div>
                         <div className={styles.section5}>
                           
                             <div className={`${styles.black__line} ${styles.section5__line}`}></div>

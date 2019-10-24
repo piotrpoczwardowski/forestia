@@ -4,7 +4,9 @@
     font-size: 35px;
     padding-left: 20px;
     height: 80vw;
-    margin-top: 100px;
+    margin-top: 5vw;
+    display: flex;
+    justify-content: space-between;
 }
 .header h1{
     
@@ -15,6 +17,7 @@
     background-size: 100%;
     width: 150px;
     height: 70px;
+    margin-right: 20px;
   
 }
 
@@ -238,6 +241,9 @@ background: black;
       .section2__image1{
           margin-top: 0px;
       }
+      .header{
+          font-size: 3vw;
+      }
 }
 
 @media (max-width: 1000px) {
@@ -297,9 +303,18 @@ background: black;
         flex-wrap: wrap;
     }
 }
-@media (max-width: 640px) {
+@media (max-width: 800px) {
+    .header{
+        font-size: 3vw;
+    }
+}
+@media (max-width: 700px) {
 .header{
-    font-size: 5vw;
+  
+    
+}
+.header br{
+    display: block;
 }
 }
 
@@ -320,7 +335,21 @@ background: black;
   
 }
 }
-
+@media (max-width: 450px) {
+    .header{
+        display: block;
+        padding: 0;
+        margin: 5vw auto;
+        text-align: center;
+        background-position-y: 150px;
+        height: 400px;
+        font-size: 15px;
+        background-size: 400px;
+    }
+    .logo__forestia{
+        margin: 0 auto;
+    }
+}
 @media (max-width: 360px) {
     .section1{
         padding: 0;
@@ -332,4 +361,9 @@ background: black;
     .section5__logo{
         width: 80vw;
     }
+}
+@media (max-width: 270px) {
+.header{
+    font-size: 5vw;
+}
 }
