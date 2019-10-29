@@ -97,7 +97,7 @@
 .products__wrapper{
     width: 450px;
     height: 0;
-    left: 51vw;
+    left: 48vw;
     position: absolute;
     top: 13vw;
     display: flex;
@@ -106,7 +106,7 @@
     z-index: 5;
 }
 .active__wrapper{
-    height: 240px;
+    height: auto;
 }
 .wrapper__left{
    background: rgb(255, 255, 255);
@@ -116,14 +116,14 @@
     color: black;
     cursor: pointer;
     width: 280px;
-   
-    height: 80px;
+   padding-bottom: 20px;
+    height: 90px;
     align-items: center;
 }
 .--flex p:nth-child(1){
     margin-left: 20px;
     width: 150px;
-    white-space: nowrap;
+    text-align: center;
     font-size: 20px;
 }
 
@@ -318,6 +318,11 @@ color: white;
     .--flex{
         width: auto;
         justify-content: start;
+        
+        
+    }
+    .--flex p:nth-child(1){
+       text-align: left;
     }
     .wrapper__left{
         width: 50%;

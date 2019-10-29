@@ -257,6 +257,9 @@
     font-size: 1.5em;
     padding: 60px 40px;
 }
+.black__head br{
+    display: none;
+}
 .black__description{
     padding: 50px 80px 70px;
 }
@@ -303,6 +306,11 @@ margin-top: -10px;
     width: 600px;
     font-size: 25px;
 }
+@media (max-width: 1100px) {
+    .black__head br{
+        display: block;
+    }
+}
 @media (max-width: 1000px) {
     .section5__bot{
         display: block;
@@ -319,6 +327,7 @@ margin-top: -10px;
     .section5__line{
         margin: 5vw auto;
     }
+    
 }
 
 @media (max-width: 952px) {
@@ -337,6 +346,9 @@ margin-top: -10px;
         width: 70%;
         margin: 0 auto;
 
+    }
+    .black__head br{
+        display: none;
     }
 }
 
@@ -397,6 +409,7 @@ margin-top: -10px;
     .black__lineRight, .right__button, .left__button, .black__lineLeft{
         margin: 0 auto;
     }
+   
     
 }
 

@@ -31,7 +31,7 @@ class Walls4you extends Component {
                     <div className={styles.onestep}>
                         <div className={styles.header}>
                             <h1>Płyty sufitowe <br />
-                                One Step-Ceiling</h1>
+                                One-Step Ceiling</h1>
                             <div className={styles.logo__forestia}></div>
                         </div>
                         <div className={styles.section1}>

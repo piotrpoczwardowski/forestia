@@ -27,7 +27,7 @@ const Coop = (props) => (
             <div className="coop__contact coop__contact--mobile">
                 <div className="contact__number">
                     <div className="coop__number icon">
-                    </div> +48 666-982-260</div>
+                    </div> +48 666 982 260</div>
                     <div className="coop__line--mobile coop__line--bottom"></div>
                 <div className="contact__email">
                     <div className="coop__email icon">

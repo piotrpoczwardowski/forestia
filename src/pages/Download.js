@@ -30,7 +30,8 @@ import pdf15 from '../pdf/huntonit/hun2.pdf'
 class Download extends Component {
     state = {
         active1: false,
-        active2: false
+        active2: false,
+        active3: false
     }
 
     forestiaWrapper = (e) => {
@@ -43,6 +44,9 @@ class Download extends Component {
     huntonitWrapper = () => {
         this.setState({ active2: !this.state.active2, active1: false })
     }
+    forestiaCert = () => {
+        this.setState({ active2: !this.state.active2, active1: false })
+    }
     render() {
 
         return (
@@ -53,7 +57,7 @@ class Download extends Component {
                         na temat produktów Naszej firmy.</div>
                     <div className="download__bottom">
                         <div className="download__forestia">
-                            <button onClick={this.forestiaWrapper} className={this.state.active1 ? 'forestia__button active__button' : 'forestia__button'}>Karta produktów FORESTIA</button>
+                            <button onClick={this.forestiaWrapper} className={this.state.active1 ? 'forestia__button active__button' : 'forestia__button'}>Karty produktów FORESTIA</button>
                             <div className={this.state.active1 ? 'active__list forestia__list' : 'forestia__list'}>
                                 <ol>
                                     <li><a download='Forestia 22mm Podłoga Profesjonalna Standard i Ekstra' href={pdf1}>1. Forestia 22mm Podłoga Profesjonalna Standard i Ekstra</a></li>
@@ -86,7 +90,7 @@ Standard, Podłoga Profesjonalna Ekstra</a></li>
                         </div>
                         <div className="download__huntonit">
 
-                            <button onClick={this.huntonitWrapper} className={this.state.active2 ? 'huntonit__button active__button' : 'huntonit__button'}>Karta produktów HUNTONIT</button>
+                            <button onClick={this.huntonitWrapper} className={this.state.active2 ? 'huntonit__button active__button' : 'huntonit__button'}>Karty produktów HUNTONIT</button>
                             <div className={this.state.active2 ? 'active__list--huntonit huntonit__list' : 'huntonit__list'}>
                                 <ol>
                                     <li><a download='Właściwości użytkowe Huntonit Płyta ścienna malowana
@@ -100,6 +104,22 @@ Sufit malowany wałkiem/pędzlem</a></li>
 
                             </div>
                         </div>
+                        <div className="download__huntonit">
+
+<button onClick={this.forestiaCert} className={this.state.active2 ? 'huntonit__button active__button' : 'huntonit__button'}>Karty produktów HUNTONIT</button>
+<div className={this.state.active2 ? 'active__list--huntonit huntonit__list' : 'huntonit__list'}>
+    <ol>
+        <li><a download='Właściwości użytkowe Huntonit Płyta ścienna malowana
+wałkiem/pędzlem, Panele z Mikrofugą i Fazowane' href={pdf14}>1. Właściwości użytkowe Huntonit Płyta ścienna malowana
+wałkiem/pędzlem, Panele z Mikrofugą i Fazowane</a></li>
+        <li><a download='Właściwości użytkowe Huntonit
+Sufit malowany wałkiem/pędzlem' href={pdf15}>2. Właściwości użytkowe Huntonit
+Sufit malowany wałkiem/pędzlem</a></li>
+
+    </ol>
+
+</div>
+</div>
                     </div>
 
                 </div>

@@ -27,7 +27,7 @@ const IndexPage = (props) => (
       </Link>
       <Link to='/Produkty/'> 
       <div className="features__block features3">
-        <p className="block__title gilroy title">Płyty podłogowe</p>
+        <p className="block__title gilroy title">Płyty konstrukcyjne podłogowe</p>
       </div>
       </Link>
     </div>

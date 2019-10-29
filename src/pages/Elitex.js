@@ -113,7 +113,7 @@ class Elitex extends Component {
                                 Płyty umożliwiają instalację wysokiej klasy wytrzymałości śrub i wkrętów, <br />
                                 a także są odporne na uszkodzenia mechaniczne. Dzięki takim właściwościom <br />
                                 możesz zawiesić swój ulubiony rower i wiele innych obiektów na ścianie. <br />
-                                Płyta ścienny nie wymaga dodatkowej obróbki powierzchni, zatem pozostaje <br />
+                                Płyta ścienna nie wymaga dodatkowej obróbki powierzchni, zatem pozostaje <br />
                                 wybrać dekor spośród czterech nowoczesnych dekoracji:</p>
                         </div>
 
@@ -141,7 +141,7 @@ class Elitex extends Component {
                             <p>Płyty ścienne eliteX są dostępne we wszystkich dekorach w wymiarach: <br />
                                 12 x 620 x 2390 mm <br />
                                 12 x 620 x 2600 mm <br />
-                                Płyta sufitowy eliteX występuje w wymiarze: <br />
+                                Płyta sufitowa eliteX występuje w wymiarze: <br />
                                 12 x 620 x 1220 mm</p>
                         </div>
                         <div className="elitex__bars">

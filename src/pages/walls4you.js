@@ -63,8 +63,8 @@ class Walls4you extends Component {
                                     Szeroki wybór dekorów.</p>
                             </div>
                             <div className={styles.section1__bot}>
-                                <p>W wyniku wieloletniego rozwoju produktu Forestia <br />
-                                    mamy przyjemność zaprezentować wiórowe <br />
+                                <p>W wyniku wieloletniego rozwoju firmy Forestia <br />
+                                    mamy przyjemność zaprezentować  <br />
                                     płyty ścienne ze stylową tapetą najwyższej jakości. <br />
                                     <br />
                                     Dysponujemy szeroką gamą tapet, <br />
@@ -79,9 +79,9 @@ class Walls4you extends Component {
                                     <div className={`${styles.black__line} ${styles.black__lineLeft}`}></div>
                                     <p className={styles.left__description}>Stworzona dla tych, którzy podążają <br />
                                         za najnowszym designem. <br />
-                                        Stylowe tapety mają
-                                        zastosowanie <br /> jako ściana funkcyjna,
-                                        jak i całego <br /> pomieszczenia</p>
+                                        Panele ze stylową tapetą można <br/>
+                                        zastosować jako ścianę funkcyjną, <br/>
+                                        lub w całym pomieszczeniu.</p>
                                     <button type='TREND' onClick={this.handleOpenModal} className={styles.left__button}>Sprawdź</button>
                                 </div>
                                 <div className={styles.top__right}>
@@ -93,11 +93,11 @@ class Walls4you extends Component {
                                 <div className={styles.bot__right}>
                                     <p className={styles.right__head}>Kolekcja CLASSIC</p>
                                     <div className={`${styles.black__line} ${styles.black__lineRight}`}></div>
-                                    <p className={styles.right__description}>Kolekcja obejmuje klasyczne <br />
+                                    <p className={styles.right__description}>Obejmuje klasyczne <br />
                                         wykończenia i powierzchnie <br />
                                         dekoracyjne. <br />
                                        Liczne kombinacje <br/> gwarantują
-                                        ekskluzywne <br/> i trwałe rezultaty</p>
+                                        ekskluzywne <br/> i trwałe rezultaty.</p>
                                     <button type='CLASSIC' onClick={this.handleOpenModal} className={styles.right__button}>Sprawdź</button>
                                 </div>
                             </div>
@@ -106,7 +106,7 @@ class Walls4you extends Component {
                         <div className={styles.section3}>
                             <p className={styles.section3__head}>Kolekcja BASIC</p>
                             <div className={`${styles.black__line} ${styles.section3__line}`}></div>
-                            <p className={styles.section3__description}>Kolekcja składa się z klasycznych <br />
+                            <p className={styles.section3__description}>Składa się z klasycznych <br />
                                 dekoracyjnych tapet o delikatnej, <br />
                                 lekkiej i ponadczasowej strukturze.</p>
                             <button type='BASIC' onClick={this.handleOpenModal} className={styles.section3__button}>Sprawdź</button>

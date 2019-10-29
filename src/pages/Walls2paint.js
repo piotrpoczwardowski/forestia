@@ -113,7 +113,7 @@ class Elitex extends Component {
                             <div className="section2__text walls__desc">
                                 <div className="black__line line__section2"></div>
                                 Pomysłowe płyty ścienne dla tych, którzy nie <br />
-                                przepadają za szlifowaniem i polerowaniem. <br />
+                                przepadają za gipsowaniem i szlifowaniem. <br />
                                 Walls2Paint ma taki sam profil blokujący jak Walls4You. <br />
                                 Płyty są łatwe w montażu i mogą być pomalowane <br />
                                 na wybrany kolor, jak i tapetowane. <br />
