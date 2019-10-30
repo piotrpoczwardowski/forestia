@@ -7,15 +7,7 @@
     background-position: right;
 }
 
-ol a{
-  text-decoration: none;
-  color: black;
-  font-size: 23px;
-  line-height: 50px;
-}
-ol{
-    list-style-type: none;
-}
+
 
 .download__title{
     font-size: 80px;
@@ -28,9 +20,7 @@ ol{
     margin-top: 10px;
 }
 
-.download__bottom{
-   margin-top: 50px;
-}
+
 
 button{
 
@@ -45,108 +35,138 @@ button{
     cursor: pointer;
     transition-duration: 0.3s;
     transition-property: color background;
+    
    
 }
 button:hover{
     background: #006451;
     color: white;
 }
-.download__bottom{
-    position: relative;
-}
-
-.download__forestia, .download__huntonit{
-margin-top: 50px;
-display: flex;
-position: relative;
-height: 400px;
-}
-.download__huntonit{
-    top: -350px;
-   
-}
-.forestia__button, .huntonit__button{
-    position: relative;
-}
-.forestia__list, .huntonit__list {
-   
-    padding-left: 30px;
-    background: rgb(255, 255, 255);
-    height: 0px;
-   overflow: hidden;
-    z-index: 3;
-    width: 700px;
-  position: relative;
-    transition: height 1s;
-}
-
-
-.active__list{
-    height: 1000px;
-}
-.active__list--huntonit{
-    height: 300px;
-}
 
 .active__button{
     background: white;
     border-color: white;
 }
-.huntonit__button{
-    z-index: 2;
+.download__section{
+    margin-top: 50px;
+}
+.download__block{
+  
+    position: relative;
+
+}
+.block__content{
+    position: absolute;
+    display: flex;
+}
+.list{
+    background: rgba(255, 0, 0, 0);
+    width: 50vw;
+   
+    overflow: hidden;
+    animation-name: lists;
+    animation-duration: 2s;
+   
+}
+.active__list{
+    height: auto;
+}
+.block2{
+    top: 100px;
+}
+.block3{
+    top: 200px;
+}
+.block4{
+    top: 300px;
 }
 
-@media (max-width: 1250px) {
+.list ol{
+    padding: 10px 0px 20px 40px;
+    background: white;
+}
+.list li{
+    margin: 10px 0px;
+}
+.list a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+@keyframes lists{
+    0%{
+        height: 0;
+    }
+
+    100%{
+        height: 800px;
+    }
+}
+
+@media (max-width: 1000px) {
+
 .download{
-    padding-left: 0;
-    text-align: center;
-    height: 500px;
     background: none;
 }
-
-.download__forestia, .download__huntonit{
+.download__title{
+    text-align: center;
+}
+.donwload__description{
+    text-align: center;
+}
+.block__content{
     display: block;
-    }
-    .forestia__list, .huntonit__list {
-        width: 100%;
-    }
+    
+}
+  .block__content  {
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 90%;
+    text-align: center;
+  }
+  .block__content button{
+z-index: -1;
+  }
+  .download{
+      padding: 0;
+  }
+  .list{
+      margin: 0 auto;
+      width: 90vw;
+      position: relative;
+      z-index: 1;
+      text-align: left;
+  }
 
    
 }
 
-@media (max-width: 700px) {
-    .active__list{
-        height: 1100px;
-    }
 
-    ol a{
-        line-height: 45px;
-    }
-}
 
 @media (max-width: 560px) {
-    
-
-    ol a{
-        line-height: 8vw;
+    .download__title{
+        font-size: 10vw;
     }
+    .donwload__description{
+        font-size: 5vw;
+    }
+
+    .download button{
+        width: 90%;
+    }
+
+   
 }
 @media (max-width: 460px) {
     
 
-    ol a{
-        line-height: 9vw;
-    }
+   
 }
 
 @media (max-width: 400px) {
-    .active__list{
-        height: 1400px;
-    }
-
-    ol a{
-        line-height: 11vw;
-    }
+   
 }
 
 
@@ -155,10 +175,21 @@ height: 400px;
       font-size: 10vw;
     }
     .donwload__description{
-        font-size: 8vw;
+        font-size: 5vw;
     }
-    .forestia__button, .huntonit__button{
-       width: 90%;
-       font-size: 6vw;
+    .download__section{
+        margin-top: 5vw;
+    }
+    
+}
+
+@media (max-width: 380px) {
+    .download button{
+        font-size: 5vw;
+        height: 20vw;
+
+    }
+    .list a{
+        font-size: 5vw;
     }
 }

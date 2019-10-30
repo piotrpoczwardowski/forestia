@@ -271,7 +271,9 @@
     line-height: 23px;
     padding: 20px;
 }
-
+.section5{
+    margin-top: -170px;
+}
 
 .section5__head p{
     font-size: 80px;
@@ -305,6 +307,30 @@ margin-top: -10px;
     height: 80px;
     width: 600px;
     font-size: 25px;
+}
+.mont{
+    display: flex;
+   
+}
+
+.bars{
+    display: flex;
+    width: 50%;
+    margin-top: -70px;
+}
+.bar1{
+    background: url(../images/walls4you/listwy/3.png) center no-repeat;
+}
+.bar2{
+    background: url(../images/walls4you/listwy/2.png) center no-repeat;
+}
+.bar3{
+    background: url(../images/walls4you/listwy/1.png) center no-repeat;
+}
+.bar1, .bar2, .bar3{
+    background-size: 100%;
+    width: 30%;
+    height: 500px;
 }
 @media (max-width: 1100px) {
     .black__head br{
@@ -418,6 +444,21 @@ margin-top: -10px;
     background-size: 800px;
 }
 }
+@media (max-width: 750px) {
+    .mont{
+        display: block;
+    }
+    .bars{
+        width: 100%;
+        margin-top: 5vw;
+    }
+    .section5{
+        margin-top: 5vw;
+    }
+    .bar1, .bar2, .bar3{
+        height: 400px;
+    }
+}
 @media (max-width: 700px) {
     .section1__top{
         flex-direction: column;
@@ -490,5 +531,14 @@ margin-top: -10px;
     }
     .section3{
         background-size: 500px;
+    }
+}
+
+@media (max-width: 380px) {
+    .white__description{
+        width: 90%;
+    }
+    .white__description ul{
+        padding-right: 0;
     }
 }

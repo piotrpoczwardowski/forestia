@@ -79,8 +79,8 @@ class Walls4you extends Component {
                                     <div className={`${styles.black__line} ${styles.black__lineLeft}`}></div>
                                     <p className={styles.left__description}>Stworzona dla tych, którzy podążają <br />
                                         za najnowszym designem. <br />
-                                        Panele ze stylową tapetą można <br/>
-                                        zastosować jako ścianę funkcyjną, <br/>
+                                        Panele ze stylową tapetą można <br />
+                                        zastosować jako ścianę funkcyjną, <br />
                                         lub w całym pomieszczeniu.</p>
                                     <button type='TREND' onClick={this.handleOpenModal} className={styles.left__button}>Sprawdź</button>
                                 </div>
@@ -96,8 +96,8 @@ class Walls4you extends Component {
                                     <p className={styles.right__description}>Obejmuje klasyczne <br />
                                         wykończenia i powierzchnie <br />
                                         dekoracyjne. <br />
-                                       Liczne kombinacje <br/> gwarantują
-                                        ekskluzywne <br/> i trwałe rezultaty.</p>
+                                        Liczne kombinacje <br /> gwarantują
+                                        ekskluzywne <br /> i trwałe rezultaty.</p>
                                     <button type='CLASSIC' onClick={this.handleOpenModal} className={styles.right__button}>Sprawdź</button>
                                 </div>
                             </div>
@@ -137,8 +137,8 @@ class Walls4you extends Component {
                                 </div>
                             </div>
                             <div className={styles.section4__white}>
-                                <div className={styles.white__description}>Listwy do narożników  <br /> 
-                                wewnętrznych/zewnętrznych mogą  <br /> być  <br /> dostarczane
+                                <div className={styles.white__description}>Listwy do narożników  <br />
+                                    wewnętrznych / zewnętrznych mogą  <br /> być  <br /> dostarczane
                                     w dekorach: <br />
                                     <ul>
                                         <li>  10432 winebox  </li> <br />
@@ -156,16 +156,24 @@ class Walls4you extends Component {
                             </div>
 
                         </div>
-                        <div className="mont__content">
-            <a download='Instrukcja montażu walls4you' href={walls4you}>Instrukcja montażu walls4you</a>
-            </div>
+                        <div className={styles.mont}>
+                            <div className="mont__content mont__walls4you">
+                                <a download='Instrukcja montażu walls4you' href={walls4you}>Instrukcja montażu walls4you</a>
+                            </div>
+                            <div className={styles.bars}>
+                                <div className={styles.bar1}></div>
+                                <div className={styles.bar2}></div>
+                                <div className={styles.bar3}></div>
+                            </div>
+                        </div>
+
                         <div className={styles.section5}>
                             <div className={styles.section5__head}>
                                 <p>walls<span>4</span>you</p>
                             </div>
                             <div className={`${styles.black__line} ${styles.section5__line}`}></div>
                             <div className={styles.section5__bot}>
-                               <Link to='/Produkty/'> <button className={styles.section5__button}>Zobacz ofertę produktów ></button></Link>
+                                <Link to='/Produkty/'> <button className={styles.section5__button}>Zobacz ofertę produktów ></button></Link>
                                 <div className={styles.section5__logo}></div>
                             </div>
                         </div>

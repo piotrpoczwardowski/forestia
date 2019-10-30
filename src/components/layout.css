@@ -47,3 +47,14 @@ ol a{
   font-size: 25px;
 
 }
+.mont__walls4you{
+ 
+  width: 50%;
+}
+
+@media (max-width: 750px) {
+  .mont__walls4you{
+ 
+    width: 100%;
+  }
+}
