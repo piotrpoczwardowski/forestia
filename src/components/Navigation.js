@@ -91,7 +91,7 @@ handleHamburgerMenu =() => {
                 <div className="wrapper__left">
                   <div type='walls' onClick={this.handleWrapperRight} className="walls --flex"> <p type='walls'>Płyty ścienne</p> <p type='walls'>></p> </div>
                   <div type='ceiling' onClick={this.handleWrapperRight} className="ceiling --flex"><p type='ceiling'>Płyty sufitowe</p> <p type='ceiling'>></p> </div>
-                  <div type='floor' onClick={this.handleWrapperRight} className="floor --flex"><p type='floor'>Płyty konstrukcyjne podłogowe</p> <p type='floor'>></p> </div>
+                  <div type='floor' onClick={this.handleWrapperRight} className="floor --flex"><p type='floor'>Płyty konstrukcyjne </p> <p type='floor'>></p> </div>
                 </div>
                 <div className="wrapper__right">
                   <div className="wrapper__right__content">

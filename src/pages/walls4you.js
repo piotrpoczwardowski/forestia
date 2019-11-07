@@ -13,7 +13,8 @@ class Walls4you extends Component {
 
     state = {
         modal: false,
-        type: 'none'
+        type: 'none',
+        exit: true
     }
 
 
@@ -29,7 +30,15 @@ class Walls4you extends Component {
             this.handleCloseModal()
         }
     }
-
+    exitOn = () => {
+        this.setState({ exit: true })
+    }
+    exitOff = () => {
+        this.setState({ exit: false })
+    }
+    show = () => {
+        console.log(this.state)
+    }
     render() {
 
 
@@ -42,8 +51,9 @@ class Walls4you extends Component {
                 <Container>
                     <div close='true' onClick={this.handleClick} className={this.state.modal ? `${styles.modal__container} ${styles.modal__active}` : `${styles.modal__container}`}>
                         <div className={styles.modal}>
-                            <div onClick={this.handleCloseModal} className={styles.exit}>Wyjście</div>
-                            {this.state.modal && <Walls4youProduct type={this.state.type} />}
+                            {this.state.exit && <div onClick={this.handleCloseModal} className={styles.exit}>Wyjście</div>}
+
+                            {this.state.modal && <Walls4youProduct exitOn={this.exitOn} exitOff={this.exitOff} type={this.state.type} />}
                         </div>
 
                     </div>

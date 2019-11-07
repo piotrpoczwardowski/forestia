@@ -101,11 +101,13 @@ class walls4youProduct extends Component {
         productView: false,
         img2: '',
         title: '',
-        description: ''
+        description: '',
+
     }
 
     componentDidMount() {
         this.setState({ type: this.props.type })
+      
     }
 
     handleMenuChange = (e) => {
@@ -123,6 +125,7 @@ class walls4youProduct extends Component {
 
     handleBack = () => {
         this.setState({productView: false})
+        this.props.exitOn()
     }
 
     render() {
@@ -177,7 +180,7 @@ class walls4youProduct extends Component {
             <Container>
                 {this.state.productView ? <div className={styles.walls4youProduct}>
                 <div onClick={this.handleBack} className={styles.back}>Powrót</div>
-                    <ProductView img2={this.state.img} title={this.state.title} description={this.state.description} />
+                    <ProductView exitOff={this.props.exitOff} img2={this.state.img} title={this.state.title} description={this.state.description} />
                 </div> : <div className={styles.walls4youProduct}>
                         <div className={styles.menu}>
                             <div onClick={this.handleMenuChange} className={styles.block}>

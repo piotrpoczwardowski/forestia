@@ -13,6 +13,10 @@ class walls4youProduct extends Component {
         type: 'TREND'
     }
 
+    componentDidMount(){
+        this.props.exitOff()
+    }
+
 
     render() {
 

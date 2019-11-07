@@ -19,7 +19,7 @@ const Coop = (props) => (
             </div>
             <div className="coop__image">
                 <div className="coop__contact">
-                    <div className="contact__number"> <div className="coop__number icon"></div> +48 666-982-260
+                    <div className="contact__number"> <div className="coop__number icon"></div> +48 666 982 260
 </div>
                     <div className="contact__email"><div className="coop__email icon"></div> biuro@smart-panel.pl</div>
                 </div>

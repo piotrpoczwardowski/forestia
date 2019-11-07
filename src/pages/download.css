@@ -92,6 +92,10 @@ button:hover{
     text-decoration: none;
     color: black;
     font-size: 22px;
+    transition: color 0.3s;
+}
+.list a:hover{
+    color: #006451;
 }
 @keyframes lists{
     0%{

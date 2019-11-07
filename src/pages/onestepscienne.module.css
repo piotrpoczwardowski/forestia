@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.black__line{
+    background: black;
+    height: 2px;
+}
+
+.onestep{
+    font-size: 25px;
+    margin-top: 5vw;
+}
+.onestep__header{
+    font-size: 1.4em;
+   
+}
+.onestep__header h1{
+    margin-left: 50px;
+}
+.header__logo{
+    width: 280px;
+    height: 80px;
+    background: url(../images/forestia-logo.png) center no-repeat;
+    background-size: 100%;
+   
+ 
+    margin: -15px 25px 0px auto;
+}
+
+.onestep__section1{
+    display: flex;
+    margin-top: 2vw;
+    
+}
+.section1__img{
+    width: 40%;
+    height: 700px;
+    background: url(../images/onestepScienne/img1.jpg) center no-repeat;
+    background-size: 700px;
+}
+.section1__text{
+    width: 60%;
+    text-align: center;
+    font-size: 1.2em;
+}
+.line__s1{
+    width: 90%;
+    margin-left: auto;
+    margin-right: 25px;
+}
+.img2{
+    background: url(../images/onestepScienne/img2.jpg) center no-repeat;
+}
+.img3{
+    background: url(../images/onestepScienne/img3.jpg) center no-repeat;
+}
+.img4{
+    background: url(../images/onestepScienne/img4.jpg) center no-repeat;
+}
+.img5{
+    background: url(../images/onestepScienne/img5.jpg) center no-repeat;
+}
+.s2__img{
+    width: 500px;
+    height: 680px;
+ 
+   
+    background-size: 700px;
+}
+.onestep__section2{
+    display: flex;
+    margin-top: 5vw;
+    font-size: 1.1em;
+}
+.section2__left{
+    width: 60%;
+}
+.line__s2{
+    width: 300px;
+    margin-left: auto;
+    margin-right: 30px;
+}
+.section2__left p{
+    margin-top: 5vw;
+    padding-left: 70px;
+}
+.section2__left ul{
+    padding-left: 100px;
+    margin-top: 2vw;
+}
+.left__bot{
+    border: 2px solid black;
+    border-bottom: none;
+    border-left: none;
+    width: 85%;
+    margin-top: 5vw;
+}
+.left__bot .s2__img{
+    margin: 0 auto;
+    margin-top: 2vw;
+}
+.left__bot li{
+    margin-top: 20px;
+}
+.section2__right{
+    width: 40%;
+}
+.section2__right .s2__img{
+
+}
+.img4{
+    margin-left: auto;
+}
+.img5{
+  
+    margin-left: -60px;
+    margin-top: 5vw;
+}
+.section2__right p{
+    text-align: right;
+    margin-top: 5vw;
+    padding-right: 80px;
+}
+.section2__right p{
+    width: 500px;
+}
+
+.section2__right p:last-child{
+  text-align: left;
+  margin-left: -60px;
+}
+
+.section5__head p{
+    font-size: 80px;
+display: flex;
+align-items: center;
+margin-left: 60px;
+}
+
+.section5__head span{
+    font-size: 2em;
+}
+.section5__line{
+width: 70%;
+margin-top: 80px;
+height: 2px;
+background: black;
+}
+.section5__bot{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+.section5__logo{
+    width: 300px;
+    height: 100px;
+    background: url(../images/huntonit-logo.png) center no-repeat;
+    background-size: 100%;
+
+}
+.section5 button{
+    height: 80px;
+    width: 600px;
+    font-size: 25px;
+}
+
+@media (max-width: 1230px){
+    .header__logo{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1060px){
+    .onestep__section1{
+        flex-direction: column-reverse;
+    }
+    .section1__text{
+        width: 100%;
+    }
+    .line__s1{
+        margin: 0 auto;
+    }
+    .section1__img{
+        width: 100%;
+        margin-top: 5vw;
+    }
+    .onestep__section2{
+        display: block;
+    }
+    .section2__left{
+        width: 100%;
+
+    }
+    .section2__right{
+        width: 100%;
+    }
+    .left__bot{
+        border-bottom: 2px solid black;
+        padding-bottom: 5vw;
+    }
+    .left__bot .s2__img{
+        margin-top: 5vw;
+    }
+    .s2__img{
+        width: 700px;
+    }
+    
+    .left__bot p, .left__bot ul{
+        padding: 0;
+        width: 700px;
+        margin: 0 auto;
+    }
+    .left__bot p{
+        margin-top: 5vw;
+    }
+    .img4, .img5{
+        margin: 0 auto;
+        margin-top: 5vw;
+    }
+    .section2__right p{
+        padding: 0;
+        margin: 5vw auto;
+        width: 700px;
+        text-align: center;
+    }
+    .section2__right p:last-child {
+        margin: 5vw auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    .section5__bot{
+        display: block;
+        text-align: center;
+    }
+    .section5 button{
+        width: 90%;
+    }
+    .section5__logo{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section5__line{
+        margin: 5vw auto;
+    }
+}
+
+@media (max-width: 900px){
+.onestep__header h1{
+    margin: 0 auto;
+    text-align: center;
+}
+.left__bot{
+    border: none;
+    width: 100%;
+}
+.section2__right p:last-child {
+   text-align: center;
+}
+.left__bot li{
+    margin: 0;
+}
+.section2__left p{
+    padding: 0;
+    margin: 5vw auto;
+    width: 70vw;;
+}
+.section2__left ul{
+    padding: 0;
+    margin: 5vw auto;
+    width: 70vw;
+}
+}
+
+@media (max-width: 740px){
+    .section1__img{
+        margin: 5vw auto;
+    }
+    .section1__img, .s2__img{
+        background-size: 100%;
+        width: 90%;
+    }
+    .section2__right p{
+        width: auto;
+    }
+}
+
+@media (max-width: 650px){
+    .onestep{
+        font-size: 23px;
+    }
+    .section1__text{
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .section1__text br{
+        display: none;
+        
+    }
+    .line__s1{
+        margin: 5vw auto;
+    }
+    .section1__img, .s2__img{
+        height: 70vw;
+    }
+    .line__s2{
+        width: 90%;
+        margin: 5vw auto;
+    }
+    .header__logo{
+        margin-right: auto;
+        width: 51vw;
+        height: 14vw;
+    }
+}
+
+@media (max-width: 430px){
+    .onestep__header h1{
+        font-size: 12vw;
+    }
+    .section2__right br{
+        display: none;
+        margin-top: 5vw;
+    }
+    .onestep{
+        font-size: 20px;
+    }
+}
+.section3__title{
+    font-size: 30px;
+    margin-left: 40px;
+    margin-top: 100px;
+}
+.section3__panels{
+   margin-top: 30px;
+}
+.panel{
+    margin: 20px 0px;
+}
+.panels1, .panels2{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.panel__img1{
+    background: url(../images/onestep/panel1.png) center no-repeat;
+}
+.panel__img2{
+    background: url(../images/onestep/panel2.png) center no-repeat;
+}
+.panel__img3{
+    background: url(../images/onestep/panel3.png) center no-repeat;
+}
+.panel__img4{
+    background: url(../images/onestep/panel4.png) center no-repeat;
+}
+.panel__img5{
+    background: url(../images/onestep/panel5.png) center no-repeat;
+}
+.panel__img6{
+    background: url(../images/onestep/panel6.png) center no-repeat;
+}
+.panel__img7{
+    background: url(../images/onestep/panel7.jpg) center no-repeat;
+}
+.panel__img8{
+    background: url(../images/onestep/panel8.jpg) center no-repeat;
+}
+.panel__img9{
+    background: url(../images/onestep/panel9.jpg) center no-repeat;
+}
+.panel__img10{
+    background: url(../images/onestep/panel10.jpg) center no-repeat;
+}
+.panel__img11{
+    background: url(../images/onestep/panel11.jpg) center no-repeat;
+}
+.panel__img12{
+    background: url(../images/onestep/panel12.jpg) center no-repeat;
+}
+.panel__img13{
+    background: url(../images/onestep/panel13.jpg) center no-repeat;
+}
+.panel__img14{
+    background: url(../images/onestep/panel14.jpg) center no-repeat;
+}
+.panel__img15{
+    background: url(../images/onestep/panel15.jpg) center no-repeat;
+}
+.panel__img16{
+    background: url(../images/onestep/panel16.jpg) center no-repeat;
+}
+.panel__img17{
+    background: url(../images/onestep/panel17.jpg) center no-repeat;
+}
+.panel__img18{
+    background: url(../images/onestep/panel18.jpg) center no-repeat;
+}
+
+
+.panel__img{
+    width: 300px;
+    height: 400px;
+    background-size: 110%;
+   transition: background 0.3s;
+   margin: 0 auto;
+}
+.panel__img18{
+    background-size: 200%;
+}
+
+.panel__img:hover{
+    background-size: 120%;
+}
+.panel__img18:hover{
+    background-size: 220%;
+}
+.panel__text{
+    margin: 0 auto;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+    width: 200px;
+   
+}
+
+@media (max-width: 920px) {
+   
+    .section3__title{
+        margin-top: 5vw;
+    }
+    .panel{
+        margin: 20px 10px;
+    }
+    .panel__img{
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .panels1, .panels2{
+        flex-wrap: wrap;
+    }
+}

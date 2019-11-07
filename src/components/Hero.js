@@ -164,7 +164,7 @@ class Hero extends Component {
                             <div className="text4 text">
                                 <p className="right__title right__title4">
                                     Płyty sufitowe <br/>
-                One Step-Ceiling
+                One-Step Ceiling
                     </p>
                                 <p className="right__description">
                                     Sufit w innym wydaniu? <br/> Zapoznaj się z ofertą Naszych płyt

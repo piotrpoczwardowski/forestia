@@ -1,0 +1,116 @@
+.section3__title{
+    font-size: 30px;
+    margin-left: 40px;
+    margin-top: 100px;
+}
+.section3__panels{
+   margin-top: 30px;
+}
+.panel{
+    margin: 20px 0px;
+}
+.panels1, .panels2{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.panel__img1{
+    background: url(../images/onestep/panel1.png) center no-repeat;
+}
+.panel__img2{
+    background: url(../images/onestep/panel2.png) center no-repeat;
+}
+.panel__img3{
+    background: url(../images/onestep/panel3.png) center no-repeat;
+}
+.panel__img4{
+    background: url(../images/onestep/panel4.png) center no-repeat;
+}
+.panel__img5{
+    background: url(../images/onestep/panel5.png) center no-repeat;
+}
+.panel__img6{
+    background: url(../images/onestep/panel6.png) center no-repeat;
+}
+.panel__img7{
+    background: url(../images/onestep/panel7.jpg) center no-repeat;
+}
+.panel__img8{
+    background: url(../images/onestep/panel8.jpg) center no-repeat;
+}
+.panel__img9{
+    background: url(../images/onestep/panel9.jpg) center no-repeat;
+}
+.panel__img10{
+    background: url(../images/onestep/panel10.jpg) center no-repeat;
+}
+.panel__img11{
+    background: url(../images/onestep/panel11.jpg) center no-repeat;
+}
+.panel__img12{
+    background: url(../images/onestep/panel12.jpg) center no-repeat;
+}
+.panel__img13{
+    background: url(../images/onestep/panel13.jpg) center no-repeat;
+}
+.panel__img14{
+    background: url(../images/onestep/panel14.jpg) center no-repeat;
+}
+.panel__img15{
+    background: url(../images/onestep/panel15.jpg) center no-repeat;
+}
+.panel__img16{
+    background: url(../images/onestep/panel16.jpg) center no-repeat;
+}
+.panel__img17{
+    background: url(../images/onestep/panel17.jpg) center no-repeat;
+}
+.panel__img18{
+    background: url(../images/onestep/panel18.jpg) center no-repeat;
+}
+
+
+.panel__img{
+    width: 300px;
+    height: 400px;
+    background-size: 110%;
+   transition: background 0.3s;
+   margin: 0 auto;
+}
+.panel__img18{
+    background-size: 200%;
+}
+
+.panel__img:hover{
+    background-size: 120%;
+}
+.panel__img18:hover{
+    background-size: 220%;
+}
+.panel__text{
+    margin: 0 auto;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+    width: 200px;
+   
+}
+
+@media (max-width: 920px) {
+   
+    .section3__title{
+        margin-top: 5vw;
+    }
+    .panel{
+        margin: 20px 10px;
+    }
+    .panel__img{
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .panels1, .panels2{
+        flex-wrap: wrap;
+    }
+}
