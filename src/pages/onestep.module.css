@@ -411,6 +411,17 @@ background: black;
         width: 80vw;
     }
 }
+
+@media (max-width: 340px){
+    .section5__logo{
+        width: 66vw;
+        height: 24vw;
+    }
+    .section5 button{
+        font-size: 6vw;
+        height: 20vw;
+    }
+}
 @media (max-width: 270px) {
 .header{
     font-size: 5vw;

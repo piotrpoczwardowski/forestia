@@ -158,13 +158,9 @@
 
   
 }
-.wrapper__walls{
-    display: flex;
-    flex-direction: column;
-    height: 120px;
-    justify-content: space-between;
-   
 
+.wrapper__walls a{
+    margin: 2px ;
 }
 .wrapper__ceiling{
     padding-left: 20px;
@@ -203,7 +199,12 @@ color: white;
 }
 
 
-
+@media (max-width: 900px) {
+    .products__wrapper{
+        left: auto;
+        right: 0;
+    }
+}
 @media (max-width: 850px) {
     .block__left {
         
@@ -233,7 +234,7 @@ color: white;
       width: 100%;
       text-align: center;
       background: rgba(255, 255, 255, 0.938);
-      z-index: 5;
+      z-index: 15;
       top: 13vw;
       height: 0px;
       overflow: hidden;
@@ -345,6 +346,9 @@ color: white;
     .navigation__email--icon, .navigation__number--icon{
         width: 4vw;
         height: 4vw;
+    }
+    .wrapper__walls{
+        font-size: 6vw;
     }
 }
 

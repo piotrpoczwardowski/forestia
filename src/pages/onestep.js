@@ -94,12 +94,20 @@ są łatwe do pomalowania.</p>
                         
                         <div className={styles.section3__title}>
                         
-                        Wybierz jeden z 18 różnych wykończeń dekoracyjnych ! <br/>
+                        Wybierz jeden z 6 różnych wykończeń dekoracyjnych ! <br/>
 Świetny sufit pomaga podnieść standard pomieszczenia.
                         
                         </div>
                         <div className={styles.section3__panels}>
                         <div className={styles.panels1}>
+                        <div className={styles.panel}>
+                        <div className={`${styles.panel__img} ${styles.panel__img16}`}>
+
+                        </div>
+                        <div className={styles.panel__text}>
+                        305 Glazed Ash
+                        </div>
+                        </div>
                         <div className={styles.panel}>
                         <div className={`${styles.panel__img} ${styles.panel__img1}`}>
 
@@ -116,14 +124,7 @@ są łatwe do pomalowania.</p>
                         40TF White silk
                         </div>
                         </div>
-                        <div className={styles.panel}>
-                        <div className={`${styles.panel__img} ${styles.panel__img3}`}>
-
-                        </div>
-                        <div className={styles.panel__text}>
-                        21TF Sirius
-                        </div>
-                        </div>
+                        
                         </div>
                         <div className={styles.panels1}>
                         <div className={styles.panel}>
@@ -152,109 +153,12 @@ są łatwe do pomalowania.</p>
                         </div>
                         </div>
                         <div className={styles.panels1}>
-                        <div className={styles.panel}>
-                        <div className={`${styles.panel__img} ${styles.panel__img7}`}>
-
+                        
+                       
+                       
                         </div>
-                        <div className={styles.panel__text}>
-                        07F Antique white hessian
-                        </div>
-                        </div>
-                        <div className={styles.panel}>
-                        <div className={`${styles.panel__img} ${styles.panel__img8}`}>
-
-                        </div>
-                        <div className={styles.panel__text}>
-                        08F White Hessain
-                        </div>
-                        </div>
-                        <div className={styles.panel}>
-                        <div className={`${styles.panel__img} ${styles.panel__img9}`}>
-
-                        </div>
-                        <div className={styles.panel__text}>
-                        010 PVC White Hessain (PVC)
-                        </div>
-                        </div>
-                        </div>
-                        <div className={styles.panels1}>
-                        <div className={styles.panel}>
-                        <div className={`${styles.panel__img} ${styles.panel__img10}`}>
-
-                        </div>
-                        <div className={styles.panel__text}>
-                        030PVC Grey Hessain (PVC)
-                        </div>
-                        </div>
-                        <div className={styles.panel}>
-                        <div className={`${styles.panel__img} ${styles.panel__img11}`}>
-
-                        </div>
-                        <div className={styles.panel__text}>
-                        50F Bohemian Beige
-                        </div>
-                        </div>
-                        <div className={styles.panel}>
-                        <div className={`${styles.panel__img} ${styles.panel__img12}`}>
-
-                        </div>
-                        <div className={styles.panel__text}>
-                        53F Melinga Silver
-                        </div>
-                        </div>
-                        </div>
-                        <div className={styles.panels1}>
-                        <div className={styles.panel}>
-                        <div className={`${styles.panel__img} ${styles.panel__img13}`}>
-
-                        </div>
-                        <div className={styles.panel__text}>
-                        54F Melinga Crystal White
-                        </div>
-                        </div>
-                        <div className={styles.panel}>
-                        <div className={`${styles.panel__img} ${styles.panel__img14}`}>
-
-                        </div>
-                        <div className={styles.panel__text}>
-                        55F Beige Linnen
-                        </div>
-                        </div>
-                        <div className={styles.panel}>
-                        <div className={`${styles.panel__img} ${styles.panel__img15}`}>
-
-                        </div>
-                        <div className={styles.panel__text}>
-                        060 PVC White Brickwall (PVC)
-                        </div>
-                        </div>
-                        </div>
-                        <div className={styles.panels1}>
-                        <div className={styles.panel}>
-                        <div className={`${styles.panel__img} ${styles.panel__img16}`}>
-
-                        </div>
-                        <div className={styles.panel__text}>
-                        305 Glazed Ash
-                        </div>
-                        </div>
-                        <div className={styles.panel}>
-                        <div className={`${styles.panel__img} ${styles.panel__img17}`}>
-
-                        </div>
-                        <div className={styles.panel__text}>
-                        14243 Light Textile
-                        </div>
-                        </div>
-                        <div className={styles.panel}>
-                        <div className={`${styles.panel__img} ${styles.panel__img18}`}>
-
-                        </div>
-                        <div className={styles.panel__text}>
-                        14244 Grey Textile
-                        </div>
-                        </div>
-                        </div>
+                      
+                       
 
 
                         </div>

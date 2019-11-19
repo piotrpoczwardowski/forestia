@@ -1,0 +1,338 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pedzlemMalowalne{
+    font-size: 25px;
+    margin-top: 5vw;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+.header h1{
+    font-size: 3em;
+    font-weight: normal;
+}
+
+.header__logo{
+    height: 60px;
+    width: 250px;
+    background: url(../images/forestia-logo.png) center no-repeat;
+    margin-top: 116px;
+    background-size: 100%;
+}
+
+.section1{
+    display: flex;
+    margin-top: 5vw;
+}
+.black__line{
+    height: 2px;
+    background: black;
+    width: 140px;
+    margin-left: 20px;
+}
+.section1__left{
+    width: 45%;
+}
+.section1__right{
+    width: 65%;
+    position: relative;
+}
+.black__text{
+    background: linear-gradient(to right, #4D4D4D, rgb(0, 0, 0));
+    color: white;
+   width: 470px;
+    margin: 0 auto;
+    padding: 40px;
+    margin-top: 5vw;
+}
+.right__border{
+    border: 2px solid black;
+    border-right: none;
+    height: 600px;
+    position: absolute;
+    width: 100%;
+    margin-top: 50px;
+}
+.right__slider{
+    background: purple;
+    height: 750px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+.slide1{
+    background: url(../images/pedzlemMalowane/slider1.jpg) center no-repeat;
+}
+.slide2{
+    background: url(../images/pedzlemMalowane/slider2.jpg) center no-repeat;
+    display: none;
+}
+.slide3{
+    background: url(../images/pedzlemMalowane/slider3.jpg) center no-repeat;
+    display: none;
+}
+.slide4{
+    background: url(../images/pedzlemMalowane/slider4.jpg) center no-repeat;
+
+display: none;
+}
+
+.slide{
+  background-size: 750px;
+   position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+
+}
+
+
+.section2{
+    width: 95%;
+    border: 2px solid black;
+    border-left: none;
+    height: 550px;
+    margin-top: 8vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.section2__left{
+    height: 650px;
+    width: 43%;
+    background: url(../images/pedzlemMalowane/section2img1.jpg) no-repeat center;
+    background-size: 650px;
+    margin-top: 50px;
+    transition: background 0.3s; 
+}
+.section2__left:hover{
+    background-size: 750px;
+}
+.section2__right{
+    height: 570px;
+    width: 43%;
+    position: relative;
+    margin-top: -80px;
+}
+.right__image1{
+    background: url(../images/pedzlemMalowane/rightimg1.jpg) center no-repeat;
+    background-size: 570px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.3s;
+}
+.right__image1:hover{
+    opacity: 0;
+}
+.right__image2{
+    background: url(../images/pedzlemMalowane/rightimg2.jpg) center no-repeat;
+    background-size: 570px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.section3 {
+   
+    width: 90%;
+}
+.section3__text{
+    text-align: center;
+    width: 45%;
+    margin-left: auto;
+    margin-top: 40px;
+}
+.section3 a{
+    color: black;
+    font-size: 1.2em
+    
+}
+
+.section5__head p{
+    font-size: 80px;
+display: flex;
+align-items: center;
+margin-left: 60px;
+}
+
+.section5__head span{
+    font-size: 2em;
+}
+.section5__line{
+width: 70%;
+margin-top: 80px;
+height: 2px;
+background: black;
+}
+.section5__bot{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+.section5__logo{
+    width: 300px;
+    height: 100px;
+    background: url(../images/huntonit-logo.png) center no-repeat;
+    background-size: 100%;
+
+}
+.section5 button{
+    height: 80px;
+    width: 600px;
+    font-size: 25px;
+}
+
+@media (max-width: 1160px){
+    .right__border{
+        border: none;
+    }
+    
+    .black__text{
+        margin-top: 0;
+        padding: 39px;
+    }
+    .black__line{
+        display: none;
+    }
+    .right__slider{
+        margin-right: 0;
+        height: 100%;
+    }
+    .section2{
+        margin-top: 12vw;
+    }
+    .header{
+        display: block;
+    }
+    .header__logo{
+        margin-top: 5vw;
+    }
+}
+@media (max-width: 1000px) {
+    .section5__bot{
+        display: block;
+        text-align: center;
+    }
+    .section5 button{
+        width: 90%;
+    }
+    .section5__logo{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section5__line{
+        margin: 5vw auto;
+    }
+}
+
+
+@media (max-width: 940px){
+    .section1{
+        flex-direction: column-reverse;
+    }
+    .section1__right{
+        width: 90%;
+    }
+    .section1__left{
+        width: 100%;
+    }
+    .black__text{
+        width: 100%;
+        margin-top: 5vw;
+    }
+    .right__slider{
+        height: 700px;
+    }
+    .black__text br{
+        display: none;
+    }
+    .section2{
+        border: none;
+        width: 100%;
+    }
+    .section2__left, .section2__right{
+        margin: 0;
+        height: 500px;
+    }
+    .section3{
+        width: 100%;
+    }
+    .section3__text{
+        width: 100%;
+    }
+}
+
+@media (max-width: 820px){
+    .header h1{
+        font-size: 10vw;
+    }
+}
+
+@media (max-width: 700px){
+    .right__slider{
+        height: 75vw;
+    }
+    .section2{
+        height: auto;
+        margin-top: 5vw;
+    }
+    .section2__left, .section2__right{
+        height: 50vw;
+    }
+    .header__logo{
+        height: 8vw;
+        width: 30vw;
+    }
+}
+
+@media (max-width: 500px){
+    .header h1{
+        text-align: center;
+    }
+    .header__logo{
+        margin: 5vw auto;
+    }
+    .black__text{
+        font-size: 7vw;
+        padding: 5vw;;
+    }
+    .section2{
+        display: block;
+    }
+    .section2__left, .section2__right{
+        width: 90%;
+        height: 70vw;
+        margin: 5vw auto;
+    }
+    .section3__text{
+        font-size: 7vw;
+        margin-top: 5vw;
+    }
+    .section3{
+      
+    }
+}
+
+@media (max-width: 340px){
+    .section5__logo{
+        width: 66vw;
+        height: 24vw;
+    }
+    .section5 button{
+        font-size: 6vw;
+        height: 20vw;
+    }
+}

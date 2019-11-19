@@ -1,0 +1,277 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.threeWalls{
+font-size: 28px;
+margin-top: 5vw;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+.header h1{
+    font-size: 2.6em;
+    font-weight: normal;;
+}
+.header__logo{
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+.header__logo{
+    background: url(../images/forestia-logo.png) no-repeat center;
+    background-size: 100%;
+    width: 200px;
+    height: 60px;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+.main__left{
+    width: 48%;
+}
+.black__line{
+    height: 2px;
+    background: black;
+    width: 150px;
+    margin: 35px 0;
+}
+.left__text{
+    padding-left: 20px;
+}
+.main__right{
+    width: 60%;
+    margin-top: -80px;
+    z-index: -1;
+
+}
+.right__img{
+    background: url(../images/3wall/main.jpg) center no-repeat;
+    background-size: 820px;
+  
+    height: 637px;
+    margin-left: auto;
+    
+}
+.right__border{
+    height: 70px;
+    width: 90%;
+    margin-left: auto;
+    border: 2px solid black;
+    border-top: none;
+    border-right: none;
+}
+
+.bottom{
+    display: flex;
+    margin-top: 5vw;
+}
+.bottom__left{
+    background: linear-gradient(to right, #4D4D4D, rgb(0, 0, 0));
+    color: white;
+    width: 400px;
+    height: 320px;
+}
+.bottom__left p{
+    border: 2px solid white;
+  width: 325px;
+    padding: 50px 20px;
+}
+.bottom__right{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.bottom__right a{
+    text-decoration: underline;
+    cursor: pointer;
+    color: black;
+}
+
+
+.section5__head p{
+    font-size: 80px;
+display: flex;
+align-items: center;
+margin-left: 60px;
+}
+
+.section5__head span{
+    font-size: 2em;
+}
+.section5__line{
+width: 70%;
+margin-top: 80px;
+height: 2px;
+background: black;
+}
+.section5__bot{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+.section5__logo{
+    width: 300px;
+    height: 100px;
+    background: url(../images/huntonit-logo.png) center no-repeat;
+    background-size: 100%;
+
+}
+.section5 button{
+    height: 80px;
+    width: 600px;
+    font-size: 25px;
+}
+
+@media (max-width: 1330px){
+.main__right{
+    margin-top: 0;
+    width: 50vw;
+}
+.main__left{
+    width: auto;
+}
+}
+@media (max-width: 1090px){
+.header{
+    display: block;
+}
+}
+@media (max-width: 1000px) {
+    .section5__bot{
+        display: block;
+        text-align: center;
+    }
+    .section5 button{
+        width: 90%;
+    }
+    .section5__logo{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section5__line{
+        margin: 5vw auto;
+    }
+}
+
+@media (max-width: 960px){
+.main{
+    flex-direction: column-reverse;
+    margin-top: 5vw;
+}
+.main__right{
+    width: 90%;
+    margin: 0 auto;
+}
+.right__border{
+   display: none;
+}
+.header__logo{
+    margin: 5vw auto;
+
+}
+.black__line{
+    margin: 5vw auto;
+    width: 80%;
+}
+.left__text{
+    text-align: center;
+    padding: 0;
+}
+}
+
+@media (max-width: 880px){
+.header h1{
+    text-align: center;
+    font-size: 9vw;
+}
+.header__logo{
+    height: 9vw;
+    width: 33vw;
+}
+}
+
+@media (max-width: 740px){
+    .bottom__left p {
+        border: none;
+        width: auto;
+    }
+    .bottom__right{
+        padding: 0 10px;
+    }
+}
+@media (max-width: 670px){
+.threeWalls br{
+    display: block;
+}
+}
+@media (max-width: 670px){
+.bottom{
+    display: block;
+}
+.right__img{
+    background-size: 100%;
+    height: 70vw;
+
+}
+.bottom__left{
+    width: 100%;
+    text-align: center;
+    height: auto;
+    line-height: 40px;
+}
+.bottom__right{
+    width: 100%;
+    text-align: center;
+    margin: 5vw 0;
+}
+}
+
+@media (max-width: 610px){
+    .left__text br{
+        display: none;
+       
+    }
+    .left__text{
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 340px){
+    .left__text br{
+        display: none;
+       
+    }
+    .left__text{
+       font-size: 7vw;
+    }
+    .bottom__left p {
+        padding: 20px 10px;
+        font-size: 7vw;
+        line-height: normal;
+    }
+    .bottom__right a {
+        font-size: 7vw;
+    }
+}
+
+@media (max-width: 340px){
+    .section5__logo{
+        width: 66vw;
+        height: 24vw;
+    }
+    .section5 button{
+        font-size: 6vw;
+        height: 20vw;
+    }
+}

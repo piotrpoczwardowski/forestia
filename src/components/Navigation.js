@@ -99,6 +99,9 @@ handleHamburgerMenu =() => {
                   <Link to='/Walls2paint/'> <div className="walls__walls2paint">walls2paint</div></Link>
                   <Link to='/walls4you/'> <div className="walls__walls4you">walls4you</div></Link>
                   <Link to='/Elitex/'><div className="walls__elitex">eliteX</div></Link>
+                  <Link to='/onestepscienne/'>  <div className="walls__onestep">One-step wall</div></Link>
+                  <Link to='/3WallPlytyScienne/'>  <div className="walls__onestep">3wall</div></Link>
+                  <Link to='/MalowanePedzlem/'>  <div className="walls__onestep">Pędzlem Malowane</div></Link>
                   </div>}
                   {this.state.ceiling && <div className='wrapper__ceiling'>
                   <Link to='/onestep/'>  <div className="ceiling__onestep">One-step ceiling</div></Link>
