@@ -63,7 +63,7 @@
     margin-top: 50px;
 }
 .right__slider{
-    background: purple;
+  
     height: 750px;
     width: 90%;
     margin: 0 auto;
@@ -295,6 +295,18 @@ background: black;
     .header__logo{
         height: 8vw;
         width: 30vw;
+    }
+    .slide{
+        background-size: 100%;
+    }
+    .section2__left{
+        background-size: 100%;
+    }
+    .section2__left:hover{
+        background-size: 110%;
+    }
+    .right__image1, .right__image2{
+        background-size: 100%;
     }
 }
 

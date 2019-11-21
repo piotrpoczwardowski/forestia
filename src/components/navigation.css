@@ -156,11 +156,15 @@
 
 .wrapper__right__content{
 
-  
+    height: 100%;
 }
 
-.wrapper__walls a{
-    margin: 2px ;
+.wrapper__walls {
+    height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   padding-left: 8px;
 }
 .wrapper__ceiling{
     padding-left: 20px;
@@ -301,14 +305,19 @@ color: white;
     display: none;
   }
   .wrapper__right{
-   
+   overflow: visible;
+   height: 100%;
       
   }
   .wrapper__line{
      
   }
   .active__wrapper--mobile{
-      height: 180px;
+      height: 250px;
+  }
+  .wrapper__walls{
+      height: 90%;
+      padding-left: 0;
   }
 }
 

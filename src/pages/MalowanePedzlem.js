@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import styles from "./PedzlemMalowane.module.css"
 import Layout from "../components/layout"
 import Container from '../components/container'
-import threewall from '../pdf1/threewall.pdf'
+import pdf from '../pdf1/malowanepedzlem.pdf'
 
 
 
@@ -13,38 +13,38 @@ class PedzlemMalowane extends Component {
     state = {
         slide: 1
     }
-    // componentDidMount() {
-    //     var intervalId = setInterval(this.changeSlideRight, 6000);
+    componentDidMount() {
+        var intervalId = setInterval(this.changeSlideRight, 5000);
 
-    //     this.setState({ intervalId: intervalId });
-    // }
-    // componentWillUnmount() {
+        this.setState({ intervalId: intervalId });
+    }
+    componentWillUnmount() {
 
-    //     clearInterval(this.state.intervalId);
-    // }
+        clearInterval(this.state.intervalId);
+    }
 
     
-    // changeSlideRight = () => {
-    //     let currentSlide = this.state.slide
+    changeSlideRight = () => {
+        let currentSlide = this.state.slide
 
-    //     let nextSlide
-    //     nextSlide = currentSlide + 1
-    //     if (nextSlide > 8) {
-    //         nextSlide = 1
-    //     }
-    //     this.changeSlide(nextSlide)
-    // }
+        let nextSlide
+        nextSlide = currentSlide + 1
+        if (nextSlide > 4) {
+            nextSlide = 1
+        }
+        this.changeSlide(nextSlide)
+    }
 
-    // changeSlide = (next) => {
-    //     let allSlides = document.querySelectorAll('.slider__imgs')
-    //     let nextSlide = document.querySelector(`.slider__img${next}`)
-    //     allSlides.forEach(function (el) {
-    //         el.style.display = 'none'
-    //     })
-    //     nextSlide.style.display = 'block'
-    //     this.setState({ slide: next })
+    changeSlide = (next) => {
+        let allSlides = document.querySelectorAll('.slide')
+        let nextSlide = document.querySelector(`.slide${next}`)
+        allSlides.forEach(function (el) {
+            el.style.display = 'none'
+        })
+        nextSlide.style.display = 'block'
+        this.setState({ slide: next })
 
-    // }
+    }
 
 
 
@@ -98,10 +98,10 @@ class PedzlemMalowane extends Component {
                             <div className={styles.section1__right}>
                                 <div className={styles.right__border}></div>
                                 <div className={styles.right__slider}>
-                                    <div className={`${styles.slide} ${styles.slide1}`}></div>
-                                    <div className={`${styles.slide} ${styles.slide2}`}></div>
-                                    <div className={`${styles.slide} ${styles.slide3}`}></div>
-                                    <div className={`${styles.slide} ${styles.slide4}`}></div>
+                                    <div className={`${styles.slide} ${styles.slide1} slide1 slide`}></div>
+                                    <div className={`${styles.slide} ${styles.slide2} slide2 slide`}></div>
+                                    <div className={`${styles.slide} ${styles.slide3} slide3 slide`}></div>
+                                    <div className={`${styles.slide} ${styles.slide4} slide4 slide`}></div>
                                 </div>
                             </div>
                         </div>
@@ -119,7 +119,7 @@ class PedzlemMalowane extends Component {
                         </div>
                         <div className={styles.section3}>
                             <div className={styles.section3__text}>
-                                <a href="">Instrukcja montażu płyt ściennych <br />
+                                <a download="Instrukcja montażu płyt ściennych malowanych pędzlem" href={pdf}>Instrukcja montażu płyt ściennych <br />
                                     malowanych pędzlem</a>
                             </div>
 
