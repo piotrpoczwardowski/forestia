@@ -96,12 +96,12 @@ handleHamburgerMenu =() => {
                 <div className="wrapper__right">
                   <div className="wrapper__right__content">
                   {this.state.walls && <div className='wrapper__walls'>
-                  <Link to='/Walls2paint/'> <div className="walls__walls2paint">walls2paint</div></Link>
-                  <Link to='/walls4you/'> <div className="walls__walls4you">walls4you</div></Link>
-                  <Link to='/Elitex/'><div className="walls__elitex">eliteX</div></Link>
+                  <Link to='/Walls2paint/'> <div className="walls__walls2paint">Walls2paint</div></Link>
+                  <Link to='/walls4you/'> <div className="walls__walls4you">Walls4you</div></Link>
+                  <Link to='/Elitex/'><div className="walls__elitex">EliteX</div></Link>
                   <Link to='/onestepscienne/'>  <div className="walls__onestep">One-step wall</div></Link>
-                  <Link to='/3WallPlytyScienne/'>  <div className="walls__onestep">3wall</div></Link>
-                  <Link to='/MalowanePedzlem/'>  <div className="walls__onestep">Pędzlem Malowane</div></Link>
+                  <Link to='/3WallPlytyScienne/'>  <div className="walls__onestep">3Wall</div></Link>
+                  <Link to='/MalowanePedzlem/'>  <div className="walls__onestep">Malowane Pędzlem</div></Link>
                   </div>}
                   {this.state.ceiling && <div className='wrapper__ceiling'>
                   <Link to='/onestep/'>  <div className="ceiling__onestep">One-step ceiling</div></Link>

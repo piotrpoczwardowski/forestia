@@ -15,7 +15,7 @@ const Coop = (props) => (
             <div className="coop__head">
                 <div className="coop__title">Współpraca</div>
                 <div className="coop__line--mobile coop__line--top"></div>
-                <div className="coop__description">Współpracujemy zarówno z dużymi jak i małymi firmami<br /> Zadzwoń, lub napisz do nas, aby dowiedzieć sę więcej</div>
+                <div className="coop__description">Współpracujemy zarówno z dużymi jak i małymi firmami<br /> Zadzwoń, lub napisz do nas, aby dowiedzieć się więcej</div>
             </div>
             <div className="coop__image">
                 <div className="coop__contact">

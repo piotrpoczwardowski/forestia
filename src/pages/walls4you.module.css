@@ -233,6 +233,7 @@
 }
 .section3__button{
     margin-top: 80px;
+    z-index: 100;
 }
 
 .section4{

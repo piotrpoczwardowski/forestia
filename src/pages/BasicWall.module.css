@@ -1,0 +1,293 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.basicWall{
+    font-size: 28px;
+    margin-top: 5vw;
+}
+
+.black__line{
+    height: 2px;
+    background: black;
+    margin: 3vw 0px;
+    width: 150px;
+}
+
+.basicWall h1{
+    font-weight: normal;
+    font-size: 3em;
+    margin-left: 100px;
+}
+.main{
+    display: flex;
+    width: 100%;
+
+}
+.main__left{
+    width: 40%;
+
+}
+.main__right{
+    width: 60%;
+}
+
+.left__img{
+    width: 45vw;
+    height: 800px;
+    background: url(../images/huntonit/basicWall/huntonitmain.png) center no-repeat;
+    background-size: 800px;
+    margin-left: 80px;
+    position: relative;
+    z-index: 10;
+}
+
+.right__logo, .logo__mobile{
+    width: 450px;
+    height: 80px;
+    background: url(../images/huntonit-logo.png) center no-repeat;
+    background-size: 100%;
+    margin-left: 250px;
+}
+.logo__mobile{
+    display: none;
+}
+
+.right__text{
+    margin-top: 5vw;
+    border: 2px solid black;
+    border-right: none;
+    padding: 5vw 0px 90px 180px;
+}
+.walls__title{
+    font-weight: bold;
+    text-align: center;
+    margin: 2vw 0;
+}
+.walls__plate{
+background: rgba(0, 0, 0, 0.671);
+color: white;
+font-size: 0.8em;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+padding-top: 20px;
+}
+.plate{
+    border: 1px solid white;
+    width: 175px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+.plate__img{
+    height: 120px;
+
+    background: white;
+    margin: 0 auto;
+}
+.plate__arrow{
+  
+    margin: 0 auto;
+    background: white;
+    height: 15px;
+}
+.plate__button{
+    border: 1px solid white;
+    background: none;
+    color: white;
+    width: 100%;
+    height: 70px;
+    font-size: 20px;
+}
+.plate__title, .plate__arrow, .plate__text, .plate__button{
+    margin-top: 12px;
+}
+.walls__wrapper{
+    display: flex;
+    justify-content: space-between;
+    background: grey;
+    color: white;
+}
+
+.right__title, .left__title, .sizes__title{
+    font-weight: bold;
+}
+.right__title, .left__title{
+    margin: 20px 0;
+}
+.left__title{
+    padding-left: 20px;
+}
+.sizes__title{
+    margin-top: 20px;
+}
+
+.wrapper__left{
+    width: 60%;
+   
+
+
+}
+.left__decors{
+    padding-left: 20px;
+    font-size: 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+   
+    width: 85%;
+}
+.decor__container{
+    height: 500px;
+}
+.decor{
+    background: white;
+    width: 140px;
+    height: 165px;
+    color: rgb(83, 83, 83);
+    padding: 5px;
+    margin: 5px;
+  
+}
+.decor__img{
+    background: rgb(206, 201, 201);
+    width: 100%;
+    height: 120px;
+    margin: 0 auto;
+}
+.decor__title{
+    margin-top: 2px;
+}
+.grey__line{
+    height: 2px;
+    background: rgb(207, 207, 207);
+    margin: 65px 0;
+    width: 80%;
+    margin-left: 10px;
+ 
+}
+.wrapper__right{
+    width: 40%;
+    padding-right: 30px;
+}
+.right__img{
+    height: 500px;
+    background: rgb(207, 207, 207);
+}
+.mont{
+  
+    text-align: center;
+    margin: 40px 0;
+}
+.mont a{
+    color: black;
+    font-weight: bold;
+}
+@media (max-width: 1220px){
+    .left__decors{
+        width: 95%;
+    }
+}
+@media (max-width: 1100px){
+    .decor__container{
+        height: auto;
+    }
+}
+@media (max-width: 1000px){
+    .basicWall h1{
+        margin-left: 20px;
+    }
+    .main{
+        display: block;
+    }
+    .logo__mobile{
+        display: block;
+        margin: 2vw auto;
+    }
+    .right__logo{
+        display: none;
+    }
+    .main__left{
+        width: 100%;
+    }
+    .main__right{
+        width: 100%;
+    }
+    .right__text{
+        padding: 40px;
+        border-left: none;
+    }
+    .left__img{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .walls__title{
+        margin: 5vw;
+    }
+    .right__img{
+        height: 50vw;
+    }
+}
+@media (max-width: 800px){
+    .left__img{
+        background-size: 100%;
+    }
+    .walls__wrapper{
+        flex-direction: column-reverse;
+    }
+    .wrapper__right{
+        width: 90%;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .wrapper__left{
+        width: 100%;
+    }
+    .left__decors{
+        padding: 0;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+    .left__title{
+        margin-left: 5%;
+        padding: 0;
+    }
+}
+
+@media (max-width: 700px){
+    .logo__mobile{
+        width: 50vw;
+        height: 10vw;
+    }
+    .left__img{
+        width: 90vw;
+        height: 80vw;
+    }
+    .basicWall h1{
+        font-size: 11vw;
+    }
+}
+
+@media (max-width: 450px){
+.right__text {
+    padding: 8vw 10px;
+    text-align: center;
+}
+.right__text br{
+    display: none;
+
+}
+.right__text strong{
+    font-weight: normal;
+}
+}
+
+@media (max-width: 350px){
+    .right__text{
+        font-size: 7vw;
+    }
+
+}

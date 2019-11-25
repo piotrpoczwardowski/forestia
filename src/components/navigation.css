@@ -157,6 +157,8 @@
 .wrapper__right__content{
 
     height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .wrapper__walls {
