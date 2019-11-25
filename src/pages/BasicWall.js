@@ -10,13 +10,29 @@ import pdf from '../pdf1/malowanepedzlem.pdf'
 
 class BasicWall extends Component {
 
-   
+
 
 
 
     render() {
 
-
+        let panels = [
+            {
+                img: "img1",
+                title: "title1",
+                fugue: "",
+                description: "",
+                colors: [
+                    {
+                        img: "",
+                        title: "",
+                        desc: "",
+                        view: "",
+                        sizes: ""
+                    }
+                ]
+            }
+        ]
 
 
 
@@ -81,8 +97,8 @@ class BasicWall extends Component {
                         <br /> 5 panelowa</div>
                                     <button className={styles.plate__button}>Zobacz</button>
                                 </div>
-                             
-                               
+
+
                             </div>
                             <div className={styles.walls__wrapper}>
                                 <div className={styles.wrapper__left}>
@@ -94,7 +110,7 @@ class BasicWall extends Component {
                                                 <div className={styles.decor__title}>Classic White</div>
                                                 <div className={styles.decor__number}>NCS S 0500 N</div>
                                             </div>
-                                           
+
                                         </div>
                                     </div>
                                     <div className={styles.grey__line}>
