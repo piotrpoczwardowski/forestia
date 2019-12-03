@@ -9,7 +9,7 @@
 .blur{
     position: fixed;
     width: 100%;
-    height: 100vw;
+    height: 100vh;
     background: rgba(0, 0, 0, 0.63);
     display: none;
     z-index: 50;
@@ -68,7 +68,7 @@
 }
 .navigation__bot{
     display: flex;
-    height: 90px;
+    height: 138px;
     padding: 2vw 0;
     background: white;
 }
@@ -105,13 +105,31 @@
     transition: height 0.3s;
     position: absolute;
     z-index: 100;
+    left: 43vw;
 }
 .active__wrapper{
     height: 240px;
 }
 .wrapper__right{
     background: #006451;
-    width: 300px;
+    width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0;
+    overflow: hidden;
+    transition: width 0.3s;
+}
+.wrapperRight__active{
+    width: 211px;
+    padding: 0 10px;
+}
+.wrapper__right a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 5px 0;
+    text-align: center;
 }
 .wrapper__button{
     display: flex;
@@ -129,9 +147,24 @@
 }
 .right__links{
     display: none;
+    width:auto;
+    flex-direction: column;
 }
 .forestia__walls{
    
+}
+.hamburger__icon{
+    background: url(../images/hamburger.png) center no-repeat;
+    background-size: 100%;
+    height: 50px;
+    width: 50px;
+    display: none;
+}
+.mobile__wrapper{
+    position: relative;
+}
+.mobile__products{
+    display: none;
 }
 
 @media (max-width: 1000px) {
@@ -152,5 +185,109 @@
 }
 
 @media (max-width: 680px) {
+    .hamburger__icon{
+        display: block;
+    }
+    .links{
+        position: absolute;
+       background: white;
+       flex-direction: column;
+     margin: 0;
+       z-index: 100;
+       height: 0;
+       overflow: hidden;
+       transition: opacity 0.3s;
+       opacity: 0;
+    }
+    .mobileWrapper__active{
+        height: auto;
+        opacity: 1;
+    }
+    .links a{
+        padding-bottom: 15px;
+    }
+    .navigation__bot{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .logo__container{
+        margin: 0;
+    }
+    .logo{
+        margin: 0;
+    }
+    .links__product{
+        position: relative;
+    }
+    .mobile__products{
+        display: block;
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .navigation__wrapper{
+        left: 0;
+        position: relative;
+        width: 100%;
+    }
+    .wrapper__button{
+        width: 50vw;
+        padding: 20px 5px;
+        justify-content: space-evenly;
+    }
+    .wrapper__button p:nth-child(2) {
+        margin-left: 0;
+    }
+    .wrapper__right{
+        width: 0vw;
+    }
+    .wrapperRight__active{
+        width: 50vw;
+    }
+    .wrapper__right a{
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        margin: 0px 0;
+        text-align: center;
+    }
+}
 
+@media (max-width: 430px) {
+    .wrapper__button{
+        font-size: 4vw;
+    }
+    .wrapper__button p:nth-child(2) {
+        display: none;
+    }
+    .wrapper__right a{
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .navigation__top{
+        flex-direction: column;
+        height: auto;
+    }
+    .number {
+        padding-top: 10px;
+    }
+    .email{
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+    .navigation__bot{
+        flex-direction: column;
+    }
+    .logo{
+        margin: 0 auto;
+        background-size: 90vw;
+    }
+    .hamburger__icon{
+        width: 12vw;
+        height: 12vw;
+    }
 }
