@@ -7,6 +7,10 @@ import Container from '../components/container'
 import threewall from '../pdf1/threewall.pdf'
 import HuntonitWrapper from '../components/HuntonitWrapper'
 
+import antikkWhite from '../images/huntonit/basicCeiling/antikkWhite/antikkWhite.png'
+import antikkWhite1 from '../images/huntonit/basicCeiling/antikkWhite/white1.jpg'
+import antikkWhite2 from '../images/huntonit/basicCeiling/antikkWhite/white2.jpg'
+
 
 class BasicCeiling extends Component {
 
@@ -20,7 +24,46 @@ class BasicCeiling extends Component {
 
     render() {
 
-
+        let panels = [
+            {
+                img: antikkWhite,
+                name: 'Antikk White',
+                sizes: ['11x620x1220mm'],
+                colorNumber: 'NCS S0502Y',
+                
+                colors: [
+                    {
+                        img: antikkWhite1,
+                        descriptions: ['1', '1'],
+                        
+                    },
+                    {
+                        img: antikkWhite2,
+                        descriptions: ['1', '2'],
+                        
+                    }
+                ]
+            },
+            {
+                img: antikkWhite,
+                name: 'Antikk Brilliant White',
+                sizes: ['11x300x1220mm','11x620x1220mm' ],
+                colorNumber: 'NCS S0500N',
+                
+                colors: [
+                    {
+                        img: antikkWhite1,
+                        descriptions: ['Połączenie płyt ściennych Terracotta', 'z płytami sufitowymi Antikk Brilliant White'],
+                        
+                    },
+                    {
+                        img: antikkWhite2,
+                        descriptions: ['2', '2'],
+                        
+                    }
+                ]
+            }
+        ]
 
 
 
@@ -80,7 +123,7 @@ class BasicCeiling extends Component {
                             </div>
                         </div>
                         <div className={styles.menu__title}>Płyty sufitowe Basic Ceiling występują w wariantach:</div>
-<HuntonitWrapper/>
+<HuntonitWrapper panels={panels}/>
                       
                         <div className={styles.mont}>
                                 <a href=""> Instrukcja montażu płyt sufitowych Basic Ceiling </a>

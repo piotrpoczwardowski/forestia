@@ -55,6 +55,8 @@
     margin-bottom: 20px;
     color: black;
     font-size: 1.1em;
+    text-align: center;
+    padding: 0 10px;
 }
 .decor__button{
     width: 100%;
@@ -102,12 +104,39 @@
 .slider__center{
     width: 100%;
     height: 600px;
-    background: red;
+  
+    position: relative;
 }
 
 
 
+.slide{
+    width: 100%;
+    height: 100%;
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+}
 
+.right__bottom{
+    display: flex;
+    font-size: 0.7em;
+    margin-left: 90px;
+    margin-top: 5vw;
+    padding-bottom: 5vw;
+}
+.sizes__title{
+    font-weight: bold;
+}
+.bottom__sizes{
+    line-height: 30px;
+}
+.bottom__descriptions{
+    margin-left: 50px;
+    line-height: 40px;
+    padding-right: 10px;
+}
 
 
 @media (max-width: 1080px){
@@ -119,6 +148,14 @@
     .left__decors{
         display: block;
     }
+    .right__bottom{
+      width: 110%;
+    }
+}
+@media (max-width: 970px){
+    .right__bottom{
+        width: 100%;
+      }
 }
 
 @media (max-width: 850px){
@@ -140,8 +177,28 @@
     .slider__center{
         height: 100%;
     }
+    .right__bottom{
+        margin-left: 0;
+        justify-content: space-around;
+    }
 }
-
+@media (max-width: 620px){
+    .right__bottom{
+        flex-direction: column-reverse;
+    
+    
+    }    
+.right__title{
+    margin-left: 0;
+    font-size: 8vw;
+}
+    .bottom__descriptions, .bottom__sizes, .right__title{
+        width: 100%;
+        margin: 2vw auto;
+        text-align: center;
+        line-height: normal;
+    }
+}
 
 
 
