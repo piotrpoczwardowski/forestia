@@ -18,10 +18,11 @@ class HuntonitWrapper extends Component {
 
     componentDidMount() {
         let decor = this.props.panels[0]
-        this.handleDecor(decor);
+        this.setState({ decor: decor })
     }
     handleDecor = (decor) => {
         this.setState({ decor: decor })
+        this.changeSlide(0)
     }
     changeSlideRight = () => {
         let currentSlide = this.state.slide
@@ -81,7 +82,7 @@ class HuntonitWrapper extends Component {
                             <div className={styles.left__decors}>
 
                                 {panels.map(decor => <div className={styles.decor}>
-                                    <div className={styles.decor__img}>
+                                    <div style={{backgroundImage: `url(${decor.img})`}} className={styles.decor__img}>
                                         <div className={styles.decor__name}>{decor.name}</div>
                                     </div>
                                     <button onClick={() => this.handleDecor(decor)} className={styles.decor__button}>Sprawdź</button>
@@ -94,14 +95,14 @@ class HuntonitWrapper extends Component {
                             <div className={styles.right__title}>{this.state.decor.name}</div>
                             <div className={styles.right__slider}>
                                 <div className={styles.slider__left}>
-                                    <div onClick={this.changeSlideLeft} className={styles.left__arrow}>O</div>
+                                    <div onClick={this.changeSlideLeft} className={styles.left__arrow}></div>
                                 </div>
                                 <div className={styles.slider__center}>
 
                                     {this.state.decor.colors && this.state.decor.colors.map((color, i) => <div style={{ backgroundImage: `url(${color.img})`, display: `${i != 0 ? 'none' : 'block'}` }} className={`${styles.slide} slides slides${i}`}></div>)}
                                 </div>
                                 <div className={styles.slider__right}>
-                                    <div onClick={this.changeSlideRight} className={styles.right__arrow}>O</div>
+                                    <div onClick={this.changeSlideRight} className={styles.right__arrow}></div>
                                 </div>
                             </div>
                             <div className={styles.right__bottom}>

@@ -1,21 +1,25 @@
+@keyframes imageAnimation {
+    0%{
+        opacity: 0;
+       transform: translateX(-100px);
+       
+    }
 
-
-.menu__title, .mont{
-   
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.3em;
-    margin: 4vw auto;
-    color: black;
-    padding: 0 auto;
+    100%{
+        opacity: 1;
+        transform: translateX(0px)
+    }
 }
 
-.mont a{
-    padding: 0 auto;
+
+
+.menu__left button:hover{
+    background: rgb(163, 162, 162);
 }
+
 
 .menu__body{
-    background: rgb(66, 66, 66);
+    background: linear-gradient(to right,#4d4d4d,#000);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -46,10 +50,13 @@
 .decor__img{
    width: 100%;
     height: 200px;
-    background: rgb(214, 214, 214);
+    
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 .decor__name{
     margin-bottom: 20px;
@@ -73,6 +80,8 @@
     width: 55%;
 }
 
+
+
 .right__title{
     font-weight: bold;
     margin-top: 4vw;
@@ -95,10 +104,23 @@
     margin-left: 50px;
 }
 .left__arrow{
-    margin-right: 20px;
+    border: solid rgb(148, 148, 148);
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 23px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    cursor: pointer;
 }
 .right__arrow{
-    margin-left: 20px;
+    border: solid rgb(148, 148, 148);
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 23px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin-right: 13px;
+    cursor: pointer;
 }
 
 .slider__center{
@@ -117,6 +139,8 @@
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
+    animation-name: imageAnimation;
+    animation-duration: 0.3s;
 }
 
 .right__bottom{
@@ -180,6 +204,9 @@
     .right__bottom{
         margin-left: 0;
         justify-content: space-around;
+    }
+    .slide{
+        background-size: 100%;
     }
 }
 @media (max-width: 620px){

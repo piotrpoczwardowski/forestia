@@ -6,19 +6,24 @@ import Layout from "../components/layout"
 import Container from '../components/container'
 import threewall from '../pdf1/threewall.pdf'
 import HuntonitWrapper from '../components/HuntonitWrapper'
+import pdf from '../pdf1/basicCeiling.pdf'
 
 import antikkWhite from '../images/huntonit/basicCeiling/antikkWhite/antikkWhite.png'
 import antikkWhite1 from '../images/huntonit/basicCeiling/antikkWhite/white1.jpg'
 import antikkWhite2 from '../images/huntonit/basicCeiling/antikkWhite/white2.jpg'
 
+import antikkBrilliant from '../images/huntonit/basicCeiling/brilliant/brilliant.png'
+import antikkBrilliant1 from '../images/huntonit/basicCeiling/brilliant/brilliant1.jpg'
+import antikkBrilliant2 from '../images/huntonit/basicCeiling/brilliant/brilliant2.jpg'
+import antikkBrilliant3 from '../images/huntonit/basicCeiling/brilliant/brilliant3.jpg'
+import antikkBrilliant4 from '../images/huntonit/basicCeiling/brilliant/brilliant4.jpg'
+import antikkBrilliant5 from '../images/huntonit/basicCeiling/brilliant/brilliant5.jpg'
+import antikkBrilliant6 from '../images/huntonit/basicCeiling/brilliant/brilliant6.jpg'
+
 
 class BasicCeiling extends Component {
 
-    state = {
-        modal: false,
-        type: 'none',
-        exit: true
-    }
+   
 
 
 
@@ -34,31 +39,51 @@ class BasicCeiling extends Component {
                 colors: [
                     {
                         img: antikkWhite1,
-                        descriptions: ['1', '1'],
+                        descriptions: [' ',' '],
                         
                     },
                     {
                         img: antikkWhite2,
-                        descriptions: ['1', '2'],
+                        descriptions: [' ',' '],
                         
                     }
                 ]
             },
             {
-                img: antikkWhite,
+                img: antikkBrilliant,
                 name: 'Antikk Brilliant White',
                 sizes: ['11x300x1220mm','11x620x1220mm' ],
                 colorNumber: 'NCS S0500N',
                 
                 colors: [
                     {
-                        img: antikkWhite1,
-                        descriptions: ['Połączenie płyt ściennych Terracotta', 'z płytami sufitowymi Antikk Brilliant White'],
+                        img: antikkBrilliant1,
+                        descriptions: ['Połączenie płyt ściennych Skygge Sand', 'z płytami sufitowymi Antikk Brilliant White.'],
                         
                     },
                     {
-                        img: antikkWhite2,
-                        descriptions: ['2', '2'],
+                        img: antikkBrilliant2,
+                        descriptions: ['Połączenie płyt ściennych Terracotta', 'z płytami sufitowymi Antikk Brilliant White.'],
+                        
+                    },
+                    {
+                        img: antikkBrilliant3,
+                        descriptions: ['Połączenie płyt ściennych Forestia Walls2paint', 'z płytami sufitowymi Antikk Brilliant White.'],
+                        
+                    },
+                    {
+                        img: antikkBrilliant4,
+                        descriptions: ['Połączenie płyt ściennych Forestia Walls4you','40597 Flow plain light grey conrete', 'z płytami sufitowymi Antikk Brilliant White.'],
+                        
+                    },
+                    {
+                        img: antikkBrilliant5,
+                        descriptions: ['Połączenie płyt ściennych Huntonit','z Mikrofugą Frost', 'z płytami sufitowymi Antikk Brilliant White.'],
+                        
+                    },
+                    {
+                        img: antikkBrilliant6,
+                        descriptions: ['', ''],
                         
                     }
                 ]
@@ -126,7 +151,7 @@ class BasicCeiling extends Component {
 <HuntonitWrapper panels={panels}/>
                       
                         <div className={styles.mont}>
-                                <a href=""> Instrukcja montażu płyt sufitowych Basic Ceiling </a>
+                                <a download='Instrukcja montażu płyt sufitowych Basic Ceiling' href={pdf}> Instrukcja montażu płyt sufitowych Basic Ceiling </a>
                             </div>
                     </div>
 
