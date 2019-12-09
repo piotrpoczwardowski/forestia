@@ -1,0 +1,175 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.black__line{
+    height: 2px;
+    background: black;
+    width: 200px;
+    margin: 10px 20px;
+  
+}
+.textureCeiling{
+    font-size: 25px;
+}
+
+.logo{
+    width: 360px;
+    height: 80px;
+    background: green;
+}
+
+.header{
+    margin-left: auto;
+   
+    margin-right: 60px;
+    margin-top: 5vw;
+}
+.header h1{
+   text-align: right;
+   font-size: 3.3em;
+   font-weight: normal;
+}
+
+.header__bottom{
+    display: flex;
+    margin-top: 2vw;
+    justify-content: flex-end;
+}
+
+.section1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vw;
+}
+.section1__left{
+   position: relative;
+   width: 10%;
+}
+.left__img{
+    background: purple;
+    width: 46vw;
+    height: 550px;
+    position: absolute;
+    left: 50px;
+    top: -130px;
+}
+.section1__right{
+  
+}
+.right__text{
+    border: 1px solid black;
+    padding: 60px 50px 130px 190px;
+    line-height: 45px;
+    font-size: 0.9em;
+}
+.right__text p:first-child{
+    font-weight: bold;
+}
+.section2{
+    display: flex;
+    margin-top: 4vw;
+}
+
+.left__text{
+    padding: 40px 120px 30px 30px;
+    border: 1px solid black;
+    line-height: 40px;
+    font-size: 0.9em;
+}
+
+.left__logo{
+    background: green;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.section2__right{
+    position: relative;
+}
+
+.right__img{
+    
+    width: 30vw;
+    height: 640px;
+    background: purple;
+    margin-top: -130px;
+    margin-left: -80px;
+  
+}
+
+@media (max-width: 1290px){
+
+
+    .left__img{
+       
+        width: 43vw;
+    }
+    .right__img{
+    margin-left: -10px;
+    }
+}
+
+
+@media (max-width: 1120px){
+    .header{
+        width: 100%;
+        margin: 2vw auto;
+        
+    }
+    .header h1{
+        text-align: center;
+    }
+    .header__bottom{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .black__line{
+        margin: 2vw auto;
+        width: 95%;
+    }
+    .logo{
+        margin: 0 auto;
+    }
+    .section1{
+        flex-direction: column;
+    }
+    .section1__left{
+        width: 100%;
+    }
+    .section1__right{
+        margin-top: 2vw;
+    }
+
+    .left__img{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .section2{
+        flex-direction: column-reverse;
+    }
+    .left__text{
+        margin-top: 2vw;
+    }
+    .right__img{
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 880px){
+    .right__text{
+        padding: 30px;
+        width: 95%;
+        margin: 2vw auto;
+    }
+}
