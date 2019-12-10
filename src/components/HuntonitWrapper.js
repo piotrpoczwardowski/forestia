@@ -68,8 +68,16 @@ class HuntonitWrapper extends Component {
 
 
         let panels = this.props.panels
-
-
+        
+        let styl = {
+            decor: {},
+            decor__name: {}
+        }
+        if(this.props.page === '/textureCeiling/'){
+            styl.decor.width = '200px'
+            styl.decor__name.fontSize = '20px'
+        }
+        console.log()
 
         return (
             <Container>
@@ -81,9 +89,9 @@ class HuntonitWrapper extends Component {
                             <div className={styles.left__title}>Dostępne kolory:</div>
                             <div className={styles.left__decors}>
 
-                                {panels.map(decor => <div className={styles.decor}>
+                                {panels.map(decor => <div style={styl.decor} className={styles.decor}>
                                     <div style={{backgroundImage: `url(${decor.img})`}} className={styles.decor__img}>
-                                        <div className={styles.decor__name}>{decor.name}</div>
+                                        <div style={styl.decor__name} className={styles.decor__name}>{decor.name}</div>
                                     </div>
                                     <button onClick={() => this.handleDecor(decor)} className={styles.decor__button}>Sprawdź</button>
                                 </div>)}
@@ -91,7 +99,7 @@ class HuntonitWrapper extends Component {
 
                             </div>
                         </div>
-                        <div className={styles.menu__right}>
+                        <div  className={styles.menu__right}>
                             <div className={styles.right__title}>{this.state.decor.name}</div>
                             <div className={styles.right__slider}>
                                 <div className={styles.slider__left}>

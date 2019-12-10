@@ -18,7 +18,8 @@
 .logo{
     width: 360px;
     height: 80px;
-    background: green;
+    background: url(../images/huntonit-logo.png) center no-repeat;
+    background-size: 100%;
 }
 
 .header{
@@ -49,9 +50,10 @@
    width: 10%;
 }
 .left__img{
-    background: purple;
+    background: url(../images//huntonit/textureCeiling/main1.jpg) no-repeat center;
+    background-size: 700px;
     width: 46vw;
-    height: 550px;
+    height: 600px;
     position: absolute;
     left: 50px;
     top: -130px;
@@ -81,9 +83,10 @@
 }
 
 .left__logo{
-    background: green;
-    width: 150px;
-    height: 150px;
+    background: url(../images/huntonit/textureCeiling/stemple.png) center no-repeat;
+    background-size: 100%;
+    width: 170px;
+    height: 170px;
     border-radius: 50%;
     margin-top: 30px;
     margin-left: 50px;
@@ -95,12 +98,26 @@
 
 .right__img{
     
-    width: 30vw;
+    width: 33vw;
     height: 640px;
-    background: purple;
+    background: url(../images//huntonit/textureCeiling/main2.jpg) no-repeat center;
+    background-size: 100%;
     margin-top: -130px;
-    margin-left: -80px;
+    margin-left: -30px;
   
+}
+
+.wrapper__title, .mont{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 3vw auto;
+    padding: 0 10px;
+    
+}
+
+.mont a{
+    color: black;
 }
 
 @media (max-width: 1290px){
@@ -152,24 +169,60 @@
         left: 0;
         width: 90%;
         margin: 0 auto;
+        background-size: 100%;
+        height: 60vw;
     }
     .section2{
         flex-direction: column-reverse;
     }
     .left__text{
-        margin-top: 2vw;
+        margin-top: 3vw;
     }
     .right__img{
         margin: 0 auto;
         width: 90%;
+        height: 80vw;;
     }
 }
 
 
 @media (max-width: 880px){
-    .right__text{
+    .right__text, .left__text{
         padding: 30px;
         width: 95%;
         margin: 2vw auto;
+    }
+    .left__text{
+        padding: 20px;
+    }
+}
+
+@media (max-width: 605px){
+    .header{
+        margin: 5vw auto;
+    }
+    .header h1{
+        font-size: 13vw;
+    }
+    .black__line{
+        margin: 5vw auto;
+    }
+
+    .logo{
+        width: 69vw;
+        height: 13vw;
+    }
+}
+
+@media (max-width: 420px){
+    .right__text, .left__text{
+        line-height: normal;
+        padding: 10px;
+        text-align: center;
+    }
+    .left__logo{
+        margin: 3vw auto;
+        width: 35vw;
+        height: 35vw;
     }
 }

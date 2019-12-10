@@ -124,6 +124,7 @@ class Navigation extends Component {
             <div type="3" className=" right__links right__link3">
               <Link  to='/onestep'>One-step ceiling</Link>
               <Link  to='/BasicCeiling'>Basic ceiling</Link>
+              <Link  to='/textureCeiling'>Texture ceiling</Link>
             </div>
             <div type="4" className=" right__links right__link4">
 
