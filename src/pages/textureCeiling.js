@@ -175,7 +175,7 @@ class TextureCeiling extends Component {
                     <br /> Płyty ścienne i sufitowe Huntonit wykonane
                     <br /> są z naturalnych włókien drzewnych, co warunkuje
                     <br /> ognioodporność przez dłuższy czas, jak i brak emisji
-                    <br /> niebezpiecznych gazów pod wpływem pożaru.
+                    <br /> niebezpiecznych gazów podczas pożaru.
                     <br />
                                     </p>
 
@@ -185,8 +185,8 @@ class TextureCeiling extends Component {
                         <div className={styles.section2}>
                             <div className={styles.section2__left}>
                                 <div className={styles.left__text}>
-                                    <p>Jeśli chcesz ekscytującego dachu z dużą ilością życia, sufit sufitowy
-                    <br /> Huntonit to naturalny wybór.
+                                    <p>Huntonit proponuje uzyskanie wyrafinowanego efektu sufitu w Twoim domu, 
+                    <br /> mieszkaniu, czy biurze.
                     <br /> W nowych budynkach oraz podczas remontu płyty sufitowe
                     <br /> są montowane w poprzek lub równolegle do stelażu.
                     <br /> Płyta jest odporna na wilgoć i może być instalowana w kuchni,
