@@ -21,6 +21,9 @@ const Layout = ({ children, path }) => {
   return (
     <div>
       <Navigation path={path}/>
+      <div>
+        
+      </div>
      {children}
 <Footer/>
     </div>
