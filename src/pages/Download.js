@@ -22,6 +22,10 @@ import pdf12 from '../pdf/forestia/Właściwości użytkowe Forestia Płyty sufi
 import pdf13 from '../pdf/forestia/Właściwości użytkowe Forestia Podłoga Standard i Ekstra.pdf'
 import pdf14 from '../pdf/huntonit/hun1.pdf'
 import pdf15 from '../pdf/huntonit/hun2.pdf'
+import pdf16 from '../pdf/forestia/Forestia 3 Wall.pdf'
+import pdf17 from '../pdf/forestia/Forestia Ognioodporne płyty ścienne.pdf'
+import pdf18 from '../pdf/forestia/Forestia płyty konstrukcyjne podłogowe do renowacji Standard.pdf'
+
 
 import forcert1 from '../forcert/forcert1.pdf'
 import forcert2 from '../forcert/forcert2.pdf'
@@ -123,6 +127,9 @@ Standard, Podłoga Profesjonalna Ekstra</a></li>
 <li><a download='Właściwości użytkowe Forestia Bygg Standard' href={pdf11}>Właściwości użytkowe Forestia Bygg Standard</a></li>
 <li><a download='Właściwości użytkowe Forestia Płyty sufitowe One-step ceiling' href={pdf12}>Właściwości użytkowe Forestia Płyty sufitowe One-step ceiling</a></li>
 <li><a download='Właściwości użytkowe Forestia Podłoga Standard i Ekstra' href={pdf13}>Właściwości użytkowe Forestia Podłoga Standard i Ekstra</a></li>
+<li><a download='Forestia 3 Wall' href={pdf16}>Forestia 3 Wall</a></li>
+<li><a download='Forestia Ognioodporne płyty ścienne' href={pdf17}>Forestia Ognioodporne płyty ścienne</a></li>
+<li><a download='Forestia płyty konstrukcyjne podłogowe do renowacji Standard' href={pdf18}>Forestia płyty konstrukcyjne podłogowe do renowacji Standard</a></li>
 </ol>
                     </div>}
                     

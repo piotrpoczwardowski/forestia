@@ -20,9 +20,58 @@
 
 .inspirations__left{
     width: 48%;
-    background: url(../images/inspirations.jpg) center no-repeat ;
-    background-size: contain;
+   
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   
+}
+
+.inspiration1{
+    background-image: url(../images/inspirations/inspiration1.png)
+}
+.inspiration2{
+    background-image: url(../images/inspirations/inspiration2.png)
+}
+.inspiration3{
+    background-image: url(../images/inspirations/inspiration3.png)
+}
+.inspiration4{
+    background-image: url(../images/inspirations/inspiration4.png)
+}
+.inspiration5{
+    background-image: url(../images/inspirations/inspiration5.png)
+}
+.inspiration6{
+    background-image: url(../images/inspirations/inspiration6.png)
+}
+.inspiration7{
+    background-image: url(../images/inspirations/inspiration7.png)
+}
+.inspiration8{
+    background-image: url(../images/inspirations/inspiration8.png)
+}
+.inspiration9{
+    background-image: url(../images/inspirations/inspiration9.png)
+}
+
+.inspiration__block{
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 157%;
+    width: 33%;
+    height: 33%;
+    transition: background-size 0.3s;
+
+}
+
+.inspiration__block:hover{
+
+   
+    background-size: 180%;
+   
+
 }
 
 .inspirations__right{

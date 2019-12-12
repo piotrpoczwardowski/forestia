@@ -16,11 +16,21 @@ const Inspirations = (props) => (
             {/* <div className="inspirations__topLine">
         </div> */}
             <div className="inspirations__content">
-                <div className="inspirations__title inspirations__title--mobile">Inspiracje wg<br />
+                <div className="inspirations__title inspirations__title--mobile">Inspiracje wg <br />
                     Vibeke Hoås</div>
                     <div className="inspirations__line--mobile"></div>
 
-                <div className="inspirations__left"></div>
+                <div className="inspirations__left">
+                    <div className="inspiration__block inspiration1"></div>
+                    <div className="inspiration__block inspiration2"></div>
+                    <div className="inspiration__block inspiration3"></div>
+                    <div className="inspiration__block inspiration4"></div>
+                    <div className="inspiration__block inspiration5"></div>
+                    <div className="inspiration__block inspiration6"></div>
+                    <div className="inspiration__block inspiration7"></div>
+                    <div className="inspiration__block inspiration8"></div>
+                    <div className="inspiration__block inspiration9"></div>
+                </div>
                 <div className="inspirations__right">
                     <div className="inspirations__title">Inspiracje wg<br />
                         Vibeke Hoås</div>
