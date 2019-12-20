@@ -56,7 +56,7 @@ class IndexPage extends Component {
           <Link to='/Elitex'>Elitex</Link>
           <Link to='/onestepscienne'>One-step wall</Link>
           <Link to='/3WallPlytyScienne'>3Wall</Link>
-          <Link to='/PedzlemMalowane.module'>Malowane Pędzlem</Link>
+          <Link to='/MalowanePedzlem'>Malowane Pędzlem</Link>
           <p>Huntonit</p>
           <Link to='/BasicWall'>Basic Wall</Link>
         </div>

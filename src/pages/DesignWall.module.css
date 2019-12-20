@@ -1,0 +1,138 @@
+.designWall{
+    font-size: 24px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    margin-top: 3vw; 
+}
+.header__line{
+    height: 2px;
+    background: black;
+    width: 50px;
+}
+
+.header h1{
+    font-size: 3em;
+    font-weight: normal;
+    margin-left: 40px;
+}
+
+.header__logo{
+    background: url(../images/huntonit-logo.png) center no-repeat;
+    background-size: 100%;
+    width: 280px;
+    height: 100px;
+    align-self: flex-end;
+    margin: 20px 20px 0px auto;
+}
+
+.section1{
+    background: purple;
+    height: 1000px;
+}
+
+.section1__text{
+    background: rgba(0, 0, 0, 0.767);
+    width: max-content;
+    color: white;
+    line-height: 50px;
+    padding-top: 30px;
+    padding-bottom: 150px;
+}
+
+.section1__text p{
+    font-weight: bold;
+    padding-left: 10px
+}
+.section1__text ul{
+    padding-left: 45px;
+}
+
+.section2{
+   
+}
+
+.section2__text{
+    padding-top: 40px;
+    margin: 0 auto;
+    line-height: 45px;
+    font-size: 0.9em;
+    text-align: center;
+    border: 2px solid black;
+    border-top: none;
+    width: 90%;
+}
+
+.section2__text span{
+    font-size: 1.3em;
+}
+
+.wrapper__title, .mont{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 5vw;
+}
+.mont a{
+    color: black;
+}
+
+@media (max-width: 1000px) {
+    .section2__text{
+        border: none;
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 850px) {
+    .header{
+        flex-direction: column;
+    }
+    .header h1{
+        margin: 0;
+    }
+    .header__line{
+        display: none;
+    }
+    .header__logo{
+        margin: 0 auto;
+    }
+    .section1{
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+    .section1__text{
+      
+    }
+}
+
+@media (max-width: 700px) {
+    .section2__text span{
+        font-size: 0.9em;
+    }
+}
+@media (max-width: 460px) {
+    .header h1{
+        font-size: 13vw;
+    }
+    .header__logo{
+        width: 54vw;
+        height: 19vw;
+    }
+}
+
+@media (max-width: 360px) {
+    .section1__text{
+        line-height: normal;
+        padding: 10px;
+    }
+    .wrapper__title, .mont{
+     
+        font-size: 0.9em;
+    
+    }
+}

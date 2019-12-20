@@ -26,6 +26,7 @@ const Layout = ({ children, path }) => {
       </div>
      {children}
 <Footer/>
+ <div className='privacy'>Wszelkie informacje i opisy są wynikiem indywidualnej i oryginalnej pracy twórczej, stanowiąc utwór w rozumieniu art. 1 ustawy z dnia 4 lutego 1994 r. o prawie autorskim i prawach pokrewnych. Całość osobistych i majątkowych praw autorskich do tej dokumentacji przysługuje Smart-Panel s.c. z siedzibą w Karpaczu. Powielanie lub rozpowszechnianie tych danych na jakimkolwiek polu eksploatacji bez pisemnej zgody Smart-Panel s.c. z siedzibą w Karpaczu stanowi naruszenie przysługujących Twórcy majątkowych praw autorskich i spotka się z konsekwencjami natury prawnej.</div>
     </div>
   )
 }

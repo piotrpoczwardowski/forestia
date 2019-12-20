@@ -27,6 +27,8 @@
     transition: all 2s ease-in;
     -webkit-transition: all 1s;
     position: relative;
+    cursor: pointer;
+   
 
 }
 

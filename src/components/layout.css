@@ -51,10 +51,25 @@ ol a{
  
   width: 50%;
 }
+.privacy{
+  text-align: center;
+  background: grey;
+  padding: 1.5vw 10px;
+  color: white;
+  font-size: 0.9em;
+
+  
+}
 
 @media (max-width: 750px) {
   .mont__walls4you{
  
     width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .privacy{
+    font-size: 4vw;
   }
 }

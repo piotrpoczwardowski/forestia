@@ -63,16 +63,26 @@
     width: 33%;
     height: 33%;
     transition: background-size 0.3s;
+    cursor: pointer;
+    transition: all 1s;
 
 }
 
-.inspiration__block:hover{
-
+.view{
+    position: fixed;
+    width: 90%;
+    height: 90%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    top: 50px;
+    z-index: 150;
+    background-size: 100%;
    
-    background-size: 180%;
-   
-
 }
+
+
 
 .inspirations__right{
     width: 50%;
