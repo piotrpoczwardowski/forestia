@@ -152,21 +152,7 @@ kleju</li>
                         <div className="mont__content">
             <a download='Instrukcja montażu walls2paint' href={walls2paint}>Instrukcja montażu walls2paint</a>
             </div>
-                        <div className="walls__footer">
-                            <div className="footer__top">
-                                <div className="footer__title">walls<span className='footer__number'>2</span>paint</div>
-                                
-                            </div>
-                            <div className="black__line line__footer"></div>
-                            <div className="footer__bottom">
-                                <div className="footerWalls__left">
-
-                                   <Link to='/Produkty/'>   <button className="footer__button">Zobacz ofertę produktów ></button></Link>
-                                </div>
-                                <div className="footerWalls__right"></div>
-
-                            </div>
-                        </div>
+                        
 
                     </div>
                    

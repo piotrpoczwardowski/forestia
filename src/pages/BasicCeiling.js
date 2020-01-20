@@ -37,11 +37,7 @@ class BasicCeiling extends Component {
                 colorNumber: 'NCS S0502Y',
                 
                 colors: [
-                    {
-                        img: antikkWhite1,
-                        descriptions: [' ',' '],
-                        
-                    },
+                    
                     {
                         img: antikkWhite2,
                         descriptions: [' ',' '],

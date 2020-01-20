@@ -165,14 +165,7 @@ są łatwe do pomalowania.</p>
                         <div className="mont__content">
             <a download='Instrukcja montażu one-step ceiling' href={onestep}>Instrukcja montażu One-step ceiling</a>
             </div>
-                        <div className={styles.section5}>
-                          
-                            <div className={`${styles.black__line} ${styles.section5__line}`}></div>
-                            <div className={styles.section5__bot}>
-                            <Link to='/Produkty/'>    <button className={styles.section5__button}>Zobacz ofertę produktów ></button></Link>
-                                <div className={styles.section5__logo}></div>
-                            </div>
-                        </div>
+                       
                         
                         </div>
                     </div>

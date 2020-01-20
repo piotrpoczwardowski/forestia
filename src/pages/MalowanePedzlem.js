@@ -124,14 +124,7 @@ class PedzlemMalowane extends Component {
                             </div>
 
                         </div>
-                        <div className={styles.section5}>
-
-                            <div className={`${styles.black__line} ${styles.section5__line}`}></div>
-                            <div className={styles.section5__bot}>
-                                <Link to='/Produkty/'>    <button className={styles.section5__button}>Zobacz ofertę produktów ></button></Link>
-                                <div className={styles.section5__logo}></div>
-                            </div>
-                        </div>
+                      
                     </div>
 
 

@@ -5,7 +5,13 @@ import styles from "./DesignWall.module.css"
 import Layout from "../components/layout"
 import Container from '../components/container'
 import pdf from '../pdf1/designwall.pdf'
-import HuntonitWrapper from '../components/HuntonitWrapper'
+import DesignWallWrapper from '../components/DesignWallWrapper'
+
+import wood from '../images/designWall/Antique Wood/woodPanel.jpg'
+import wood1 from '../images/designWall/Antique Wood/wood1.jpg'
+import wood2 from '../images/designWall/Antique Wood/wood2.jpg'
+import wood3 from '../images/designWall/Antique Wood/wood3.jpg'
+import wood4 from '../images/designWall/Antique Wood/wood4.jpg'
 
 
 class DesignWall extends Component {
@@ -17,7 +23,27 @@ class DesignWall extends Component {
     render() {
 
 
-
+        let panels = [
+            {
+                img: wood,
+                name: 'Antikk White',
+                description: ['Dekor jest dostosowany do 4 płyt. 2 płyty w paczce. ', 'Możesz wybrać dekor 1 lub 2, patrz nr art. lub zamontować wszystkie cztery płyty i uzyskać'],
+               
+                
+                colors: [
+                    {
+                        img: wood1,
+                       
+                        
+                    },
+                    {
+                        img: 'antikkWhite2',
+                      
+                        
+                    }
+                ]
+            }
+        ]
 
 
 
@@ -72,7 +98,9 @@ class DesignWall extends Component {
                                 Mogą wystąpić odchylenia kolorów z powodu ustawień wyświetlacza. <br />
                             </p>
                         </div>
+                      
                         <div className={styles.wrapper__title}>Płyty ścienne Design Wall występują w wariantach:</div>
+                        <DesignWallWrapper panels={panels}/>
                         <div className={styles.mont}>
                             <a download='Instrukcja montażu płyt ściennych Design Wall' href={pdf}>Instrukcja montażu płyt ściennych Design Wall</a>
                         </div>

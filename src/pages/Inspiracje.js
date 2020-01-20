@@ -13,7 +13,7 @@ class Inspirations extends Component {
 
 
     handleView = (e) => {
-        e.target.classList.add('view')
+        // e.target.classList.add('view')
     }
 
     render() {
