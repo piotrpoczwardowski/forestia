@@ -33,24 +33,26 @@
 }
 
 .left__title, .right__title{
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 
 .left__decors{
    display: flex;
    flex-wrap: wrap;
+   width: 600px;
+   margin-top: 30px;
 }
 .decor{
   border: 1px solid white;
-    padding: 7px 9px;
-    width: 230px;
-    margin: 3vw;
+    padding: 5px;
+    width: 140px;
+    margin: 5px;
     background: white;
 }
 
 .decor__img{
    width: 100%;
-    height: 200px;
+    height: 120px;
     
     display: flex;
     justify-content: center;
@@ -60,60 +62,39 @@
     background-repeat: no-repeat;
 }
 .decor__name{
-    margin-bottom: 20px;
-    color: black;
-    font-size: 1.1em;
-    text-align: center;
-    padding: 0 10px;
+    margin: 5px;
+    color: rgba(0, 0, 0, 0.452);
+    font-size: 0.7em;
+    text-align: center;padding: 0 10px;
 }
 
 
 .menu__right{
     width: 85%;
+    margin-top: 3vw;
+    padding-left: 50px;
+  
 }
 
 
 
 .right__title{
     font-weight: bold;
-    margin-top: 4vw;
+  
 }
 
-.right__title, .right__sizes{
-    margin-left: 50px;
-}
-.right__sizes{
-    margin-top: 20px;
-    font-size: 0.9em;
-    line-height: 40px;
-}
+
+
 .right__slider{
-    margin-top: 1vw;
+   
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
-    margin-left: 50px;
+    margin-top: 30px;
+   
+  
 }
-.left__arrow{
-    border: solid rgb(148, 148, 148);
-    border-width: 0 5px 5px 0;
-    display: inline-block;
-    padding: 23px;
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    cursor: pointer;
-}
-.right__arrow{
-    border: solid rgb(148, 148, 148);
-    border-width: 0 5px 5px 0;
-    display: inline-block;
-    padding: 23px;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    margin-right: 13px;
-    cursor: pointer;
-}
+
 
 .slider__center{
     width: 100%;
@@ -129,7 +110,7 @@
     height: 100%;
     background-size: 600px;
     background-repeat: no-repeat;
-    background-position: center;
+  
     position: absolute;
     animation-name: imageAnimation;
     animation-duration: 0.3s;
@@ -138,9 +119,7 @@
 .right__bottom{
     display: flex;
     font-size: 0.7em;
-    margin-left: 90px;
-    margin-top: 5vw;
-    padding-bottom: 5vw;
+  
 }
 
 

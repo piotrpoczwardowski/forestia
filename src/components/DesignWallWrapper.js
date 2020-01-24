@@ -103,19 +103,15 @@ class DesignWallWrapper extends Component {
                         <div  className={styles.menu__right}>
                             <div className={styles.right__title}>{this.state.decor.name}</div>
                             <div className={styles.right__slider}>
-                                <div className={styles.slider__left}>
-                                    <div onClick={this.changeSlideLeft} className={styles.left__arrow}></div>
-                                </div>
+                                
                                 <div className={styles.slider__center}>
 
                                     {this.state.decor.colors && this.state.decor.colors.map((color, i) => <div style={{ backgroundImage: `url(${color.img})`, display: `${i != 0 ? 'none' : 'block'}` }} className={`${styles.slide} slides slides${i}`}></div>)}
                                 </div>
-                                <div className={styles.slider__right}>
-                                    <div onClick={this.changeSlideRight} className={styles.right__arrow}></div>
-                                </div>
+                               
                             </div>
                             <div className={styles.right__bottom}>
-                                <div className={styles.bottom__description}>{this.state.decor.description && this.state.decor.description.map(desc => <p>-{desc}</p>)} </div>
+                                <div className={styles.bottom__description}>{this.state.decor.description && this.state.decor.description.map(desc => <p>{desc}</p>)} </div>
                                 
                             </div>
 
