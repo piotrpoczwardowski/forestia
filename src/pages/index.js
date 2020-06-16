@@ -2,7 +2,7 @@
 import { Link } from "gatsby"
 import React, { Component } from "react"
 import Layout from "../components/layout"
-import Image from "../components/image"
+
 import SEO from "../components/seo"
 import Hero from '../components/Hero'
 import aboutImage from '../images/about.png'
@@ -57,8 +57,11 @@ class IndexPage extends Component {
           <Link to='/onestepscienne'>One-step wall</Link>
           <Link to='/3WallPlytyScienne'>3Wall</Link>
           <Link to='/MalowanePedzlem'>Malowane Pędzlem</Link>
+          <Link to='/Ognioodporne'>Ognioodoporne</Link>
           <p>Huntonit</p>
           <Link to='/BasicWall'>Basic Wall</Link>
+          <Link to='/DesignWall'>Design Wall</Link>
+          <Link to='/TextureWall'>Texture Wall</Link>
         </div>
       </div>
       <div onClick={this.handleLinks} type='2' className="features__block features2">
@@ -75,7 +78,7 @@ class IndexPage extends Component {
         <p className="block__title gilroy title">Płyty konstrukcyjne </p>
         <div className="features__links features__link3">
           <p>Forestia</p>
-       
+          <Link to='/PlytyPodlogowe'>Forestia płyty podłogowe</Link>
           <p>Huntonit</p>
         
         </div>

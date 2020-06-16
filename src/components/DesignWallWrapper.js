@@ -86,11 +86,11 @@ class DesignWallWrapper extends Component {
                     <div className={styles.menu__body}>
 
                         <div className={styles.menu__left}>
-                            <div className={styles.left__title}>Dostępne kolory:</div>
+                            <div className={styles.left__title}>Dekory Huntonit</div>
                             <div className={styles.left__decors}>
 
                                 {panels.map(decor => <div style={styl.decor} className={styles.decor} onClick={() => this.handleDecor(decor)} >
-                                    <div style={{backgroundImage: `url(${decor.img})`}} className={styles.decor__img}>
+                                    <div className={styles.decor__img}>
                                         
                                     </div>
                                     <div style={styl.decor__name} className={styles.decor__name}>{decor.name}</div>

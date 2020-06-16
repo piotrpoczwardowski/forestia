@@ -35,6 +35,8 @@ class Walls4you extends Component {
                                 One-Step Ceiling</h1>
                             <div className={styles.logo__forestia}></div>
                         </div>
+                        <div className={styles.info}>Szanowni Państwo chcielibyśmy poinformować, że produkt dostępny jest tylko na zamówienie, oraz minimum logityczne obejmuje jedną paczkę</div>
+
                         <div className={styles.section1}>
                             <p className={styles.section1__title}>Gotowe płyty sufitowe!</p>
                             <p className={styles.section1__description}>Niezależnie od tego, czy po raz pierwszy wykańczasz, czy odnawiasz pomieszczenie, <br /> możesz

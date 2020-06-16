@@ -1,0 +1,181 @@
+.ognioodporne{
+    font-size: 22px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2vw 0;
+    
+}
+.left__line, .right__line{
+    height: 2px;
+    background: black;
+    width: 150px;
+}
+
+.title{
+    font-weight: normal;
+    font-size: 4vw;
+}
+
+.main{
+    height: 1000px;
+    background: url(../images//ognioodporne/main.jpg) center no-repeat;
+    background-size: 1500px;
+}
+
+.logo{
+    background: url(../images/forestia-logo.png) center no-repeat;
+    background-size: 100%;
+    width: 250px;
+    height: 110px;
+ 
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.section1{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    
+    position: relative;
+    margin-top: -180px;
+   
+}
+
+.border__top, .border__right, .border__bottom, .border__left{
+    position: absolute;
+}
+
+.border__top, .border__bottom{
+    background: black;
+    height: 2px;
+    width: 400px;
+}
+.border__right{
+    width: 2px;
+    background: black;
+    height: 650px;
+    right: 0;
+    bottom: 0;
+}
+.border__left{
+    width: 2px;
+    background: black;
+    height: 400px;
+    left: 0;
+    top: 0;
+}
+.border__top{
+    left: 0;
+  
+}
+.border__bottom{
+    bottom: 0;
+    right: 0;
+}
+
+.left__panel{
+    background: url(../images/ognioodporne/panel.png) center no-repeat;
+    background-size: 600px;
+    height: 720px;
+    width: 160px;
+    margin-top: 130px;
+    
+}
+
+.right__text{
+   margin-top: 260px;
+    line-height: 38px;
+    margin-bottom: 30px;
+}
+
+.mont{
+    text-align: center;
+    margin: 4vw;
+    font-size: 1.3em;
+}
+
+.mont a{
+    color: black;
+}
+
+@media (max-width: 1280px){
+
+
+    .section1{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1100px){
+    .left__panel{
+       margin: 0;
+       display: none;
+        
+    }
+    .main{
+        height: 250px;
+    }
+    .section1{
+       margin: 0;
+       display: block;
+       text-align: center;
+    }
+    .right__text{
+       margin: 0;
+    }
+    .border__top, .border__right, .border__bottom, .border__left{
+        display: none;
+    }
+}
+
+@media (max-width: 850px){
+    .title{
+        font-size: 30px;
+    }
+    .left__line, .right__line{
+       
+        width: 10%;
+    }
+    .section1 br{
+
+        display: none;
+    }
+    .right__text{
+        padding: 10px;
+    }
+}
+
+@media (max-width: 580px){
+    .left__line, .right__line{
+       
+        display: none;
+    }
+    .title{
+        font-size: 1.1em;
+        text-align: center;
+        margin: 5vw auto;
+    }
+    .main{
+        background-size: 100%;
+        height: 50vw;
+    }
+    .logo{
+        width: 38vw;
+        height: 15vw;
+        margin: 5px 5px 0 auto;
+    }
+}
+
+@media (max-width: 400px){
+    .right__text{
+        font-size: 0.8em;
+    }
+    .mont{
+        font-size: 1.1em;
+    }
+}

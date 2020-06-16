@@ -51,6 +51,38 @@ ol a{
  
   width: 50%;
 }
+
+.infoFibo{
+  position: fixed;
+  background: rgba(0, 0, 0, 0.61);
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.infoFibo__exit{
+  font-weight: bold;
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  transform: scaleX(1.5);
+  cursor: pointer;
+}
+
+.infoFibo__content{
+  z-index: 1000;
+  background: url(../images/InfoFibo.png) center no-repeat;
+  background-size: 100%;
+ 
+
+ 
+ height: 95%;
+  width: 500px;
+}
 .privacy{
   text-align: center;
   background: grey;
@@ -68,8 +100,60 @@ ol a{
   }
 }
 
+@media (max-width: 700px) {
+  .infoFibo__exit{
+    font-weight: bold;
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transform: scaleX(1.5);
+    cursor: pointer;
+  }
+
+  .infoFibo__content{
+ 
+    background: url(../images/infoFiboMobile.png) center no-repeat;
+    background-size: 90%;
+ 
+
+ 
+ height: 95%;
+  width: 90%;
+   
+  
+   
+  }
+}
+
+@media (max-width: 600px) {
+  .infoFibo__exit{
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 25px; /* Need a specific value to work */
+    z-index: 1001;
+  }
+
+  .infoFibo__content{
+    background-size: 100%;
+    height: 147vw;
+    width: 91%;
+  }
+  .infoFibo{
+    align-items: normal;
+  }
+}
+
 @media (max-width: 350px) {
   .privacy{
     font-size: 4vw;
+  }
+  .infoFibo__content{
+  
+    height: 167vw;
+  
   }
 }

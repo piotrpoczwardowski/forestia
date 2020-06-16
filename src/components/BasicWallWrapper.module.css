@@ -9,7 +9,7 @@
 .walls__wrapper{
     display: flex;
     justify-content: space-between;
-    background: grey;
+    background: linear-gradient(to right,#414141,rgb(0, 0, 0));
     color: white;
 }
 

@@ -69,7 +69,7 @@
     margin: 2vw 0;
 }
 .walls__plate{
-    background: linear-gradient(to right,#4d4d4d,#000);
+    background: linear-gradient(to right,#414141,rgb(0, 0, 0));
 color: white;
 font-size: 0.8em;
 display: flex;
@@ -119,7 +119,7 @@ padding-bottom: 20px;
 .walls__wrapper{
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(to right,#4d4d4d,#000);
+   
     color: white;
 }
 

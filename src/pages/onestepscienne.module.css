@@ -7,6 +7,11 @@
     height: 2px;
 }
 
+.info{
+    font-weight: bold;
+    text-align: center;
+    padding: 0 5px;
+}
 .onestep{
     font-size: 25px;
     margin-top: 5vw;

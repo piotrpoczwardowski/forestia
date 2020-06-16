@@ -102,34 +102,22 @@ class Download extends Component {
                     <button onClick={this.openList} className={this.state.active1 ? 'forestia__button active__button' : 'forestia__button'}>Karty produktów FORESTIA</button>
                     {this.state.active1 && <div className="list forestia__list">
                     <ol>
-<li><a download='Forestia 22mm Podłoga Profesjonalna Standard i Ekstra' href={pdf1}>Forestia 22mm Podłoga Profesjonalna Standard i Ekstra</a></li>
+<li><a download='Forestia 22 mm Podłoga Profesjonalna Standard i Ekstra; Proffgulv Standard og Ekstra' href={pdf1}>Forestia 22 mm Podłoga Profesjonalna Standard i Ekstra; Proffgulv Standard og Ekstra</a></li>
 <li><a download='Forestia EliteX' href={pdf2}>Forestia EliteX</a></li>
 <li><a download='Forestia Walls2Paint' href={pdf3}>Forestia Walls2Paint</a></li>
 <li><a download='Forestia Walls4you' href={pdf4}> Forestia Walls4you</a></li>
 <li><a download='Płyty sufitowe One-step ceiling' href={pdf5}>Płyty sufitowe One-step ceiling</a></li>
-<li><a download='Podłoga Forestia Standard i Ekstra
-Forestia Podłoga Rowkowana i Forestia Podłoga Projektowa' href={pdf6}> Podłoga Forestia Standard i Ekstra
-Forestia Podłoga Rowkowana i Forestia Podłoga Projektowa</a></li>
-<li><a download='Właściwości użytkowe Forestia 12 mm Forestia 3
-Ściana Elite - P7, Elitex P7, Ściana i Sufit podwieszany,
-eliteX, Ściana z profilem klik' href={pdf7}>Właściwości użytkowe Forestia 12 mm Forestia 3
-Ściana Elite - P7, Elitex P7, Ściana i Sufit podwieszany,
-eliteX, Ściana z profilem klik</a></li>
-<li><a download='Właściwości użytkowe Forestia 12 mm
-Gotowa ściana i Ściana z gruntowaniem' href={pdf8}>Właściwości użytkowe Forestia 12 mm
-Gotowa ściana i Ściana z gruntowaniem</a></li>
-<li><a download='Właściwości użytkowe Forestia 12 mm Walls4You,
-Walls2Paint, Ściana P4, Panel fazowany, malowany pędzlem' href={pdf9}>Właściwości użytkowe Forestia 12 mm Walls4You,
-Walls2Paint, Ściana P4, Panel fazowany, malowany pędzlem</a></li>
-<li><a download='Właściwości użytkowe Forestia 22 mm Podłoga Profesjonalna
-Standard, Podłoga Profesjonalna Ekstra' href={pdf10}>Właściwości użytkowe Forestia 22 mm Podłoga Profesjonalna
-Standard, Podłoga Profesjonalna Ekstra</a></li>
+<li><a download=' Płyty podłogowe Standard i Ekstra, Wygłuszające oraz Wieloformatowe płyty podłogowe' href={pdf6}>  Płyty podłogowe Standard i Ekstra, Wygłuszające oraz Wieloformatowe płyty podłogowe</a></li>
+<li><a download='Właściwości użytkowe 12 mm Forestia 3 Wall Elite-P7, 12 mm eliteX-P7 oraz 12 mm eliteX' href={pdf7}>Właściwości użytkowe 12 mm Forestia 3 Wall Elite-P7, 12 mm eliteX-P7 oraz 12 mm eliteX</a></li>
+<li><a download='Właściwości użytkowe 12 mm Forestia Gotowa foliowana płyta ścienna/ Ferdigvegg i 12 mm Forestia 3 Wall z gruntowaniem ' href={pdf8}>Właściwości użytkowe 12 mm Forestia Gotowa foliowana płyta ścienna/ Ferdigvegg i 12 mm Forestia 3 Wall z gruntowaniem </a></li>
+<li><a download='Właściwości użytkowe 12 mm Forestia Walls4You, Walls2Paint, Płyty ścienne jakości P4 oraz Płyty malowane opatentowanym systemem o strukturze 6-elementowej.' href={pdf9}>Właściwości użytkowe 12 mm Forestia Walls4You, Walls2Paint, Płyty ścienne jakości P4 oraz Płyty malowane opatentowanym systemem o strukturze 6-elementowej.</a></li>
+<li><a download='Właściwości użytkowe 22 mm Forestia Podłoga Profesjonalna Standard, Podłoga Profesjonalna Ekstra; Proffgulv' href={pdf10}>Właściwości użytkowe 22 mm Forestia Podłoga Profesjonalna Standard, Podłoga Profesjonalna Ekstra; Proffgulv</a></li>
 <li><a download='Właściwości użytkowe Forestia Bygg Standard' href={pdf11}>Właściwości użytkowe Forestia Bygg Standard</a></li>
-<li><a download='Właściwości użytkowe Forestia Płyty sufitowe One-step ceiling' href={pdf12}>Właściwości użytkowe Forestia Płyty sufitowe One-step ceiling</a></li>
-<li><a download='Właściwości użytkowe Forestia Podłoga Standard i Ekstra' href={pdf13}>Właściwości użytkowe Forestia Podłoga Standard i Ekstra</a></li>
+<li><a download='Właściwości użytkowe Forestia Płyty sufitowe One-Step ceiling' href={pdf12}>Właściwości użytkowe Forestia Płyty sufitowe One-Step ceiling</a></li>
+<li><a download='Właściwości użytkowe 22/25 mm Forestia Podłoga Standard i Ekstra; Gulv' href={pdf13}>Właściwości użytkowe 22/25 mm Forestia Podłoga Standard i Ekstra; Gulv</a></li>
 <li><a download='Forestia 3 Wall' href={pdf16}>Forestia 3 Wall</a></li>
 <li><a download='Forestia Ognioodporne płyty ścienne' href={pdf17}>Forestia Ognioodporne płyty ścienne</a></li>
-<li><a download='Forestia płyty konstrukcyjne podłogowe do renowacji Standard' href={pdf18}>Forestia płyty konstrukcyjne podłogowe do renowacji Standard</a></li>
+<li><a download='Forestia płyty podłogowe do Renowacji Standard P6 ' href={pdf18}>Forestia płyty podłogowe do Renowacji Standard P6 </a></li>
 </ol>
                     </div>}
                     
@@ -141,12 +129,8 @@ Standard, Podłoga Profesjonalna Ekstra</a></li>
                     {this.state.active2 &&  <div className="list huntonit__list">
                    
                    <ol>
-       <li><a download='Właściwości użytkowe Huntonit Płyta ścienna malowana
-wałkiem/pędzlem, Panele z Mikrofugą i Fazowane' href={pdf14}>Właściwości użytkowe Huntonit Płyta ścienna malowana
-wałkiem/pędzlem, Panele z Mikrofugą i Fazowane</a></li>
-       <li><a download='Właściwości użytkowe Huntonit
-Sufit malowany wałkiem/pędzlem' href={pdf15}>Właściwości użytkowe Huntonit
-Sufit malowany wałkiem/pędzlem</a></li>
+       <li><a download='Właściwości użytkowe Huntonit Płyty ścienne malowane opatentowanym systemem, Skygge, Perle, Mikrofuga i Fas' href={pdf14}>Właściwości użytkowe Huntonit Płyty ścienne malowane opatentowanym systemem, Skygge, Perle, Mikrofuga i Fas</a></li>
+       <li><a download='Właściwości użytkowe Huntonit Antikk - Płyty sufitowe malowane opatentowanym systemem.' href={pdf15}>Właściwości użytkowe Huntonit Antikk - Płyty sufitowe malowane opatentowanym systemem.</a></li>
 
    </ol> 
                    </div> }

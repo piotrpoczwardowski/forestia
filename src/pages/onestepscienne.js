@@ -36,6 +36,7 @@ class Walls4you extends Component {
 
                             </div>
                         </div>
+                        <div className={styles.info}>Szanowni Państwo chcielibyśmy poinformować, że produkt dostępny jest tylko na zamówienie, oraz minimum logityczne obejmuje jedną paczkę</div>
                         <div className={styles.onestep__section1}>
                             <div className={styles.section1__img}></div>
                             <div className={styles.section1__text}>

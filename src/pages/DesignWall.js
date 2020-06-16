@@ -1,11 +1,12 @@
 
 import React, { Component } from "react"
-import { Link } from "gatsby"
+
 import styles from "./DesignWall.module.css"
 import Layout from "../components/layout"
 import Container from '../components/container'
 import pdf from '../pdf1/designwall.pdf'
 import DesignWallWrapper from '../components/DesignWallWrapper'
+
 
 import wood from '../images/designWall/Antique Wood/woodPanel.jpg'
 import wood1 from '../images/designWall/Antique Wood/wood1.jpg'
@@ -98,7 +99,8 @@ class DesignWall extends Component {
                 img: wood,
                 name: 'Antique wood',
                 description: ['Dekor jest dostosowany do 4 płyt. 2 płyty w paczce. ',
-                    'Możesz wybrać dekor 1 lub 2, patrz nr art. lub zamontować wszystkie cztery płyty i uzyskać',
+                    'Możesz wybrać dekor 1 lub 2, patrz nr art. ',
+                    'lub zamontować wszystkie cztery płyty i uzyskać',
                     'dekoracyjną ścianę 2400 mm. ',
                     ' ',
                     'Typ panelu: Płyta Huntonit Antikk',
@@ -677,7 +679,7 @@ class DesignWall extends Component {
             <Layout>
                 <Container>
 
-
+           
 
 
                     <div className={styles.designWall}>

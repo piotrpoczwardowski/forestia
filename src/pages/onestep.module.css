@@ -12,6 +12,12 @@
     
 
 }
+.info{
+    font-weight: bold;
+    text-align: center;
+    padding: 0 5px;
+    font-size: 23px;
+}
 .logo__forestia{
     background: url(../images/forestia-logo.png) center no-repeat ;
     background-size: 100%;

@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 const facebookAppId = "100507304660512"
-export function CustomerChat(){
+
+ function CustomerChat(){
   useEffect(()=>{
     window.fbAsyncInit = function() {
       window.FB.init({
@@ -27,3 +28,5 @@ export function CustomerChat(){
     </>
   )
 }
+
+export default CustomerChat

@@ -118,9 +118,12 @@ class Navigation extends Component {
               <Link to='/onestepscienne'>One-step wall</Link>
               <Link to='/3WallPlytyScienne'>3Wall</Link>
               <Link to='/MalowanePedzlem'>Malowane Pędzlem</Link>
+              <Link to='/Ognioodporne'>Ognioodoporne</Link>
             </div>
             <div type="2" className=" right__links right__link2">
               <Link to='/BasicWall'>Basic Wall</Link>
+               <Link to='/DesignWall'>Design Wall</Link>
+               <Link to='/TextureWall'>Texture Wall</Link>
             </div>
             <div type="3" className=" right__links right__link3">
               <Link to='/onestep'>One-step ceiling</Link>
@@ -131,7 +134,7 @@ class Navigation extends Component {
               <Link to='/textureCeiling'>Texture ceiling</Link>
             </div>
             <div type="5" className=" right__links right__link5">
-
+            <Link to='/PlytyPodlogowe'>Forestia płyty podłogowe</Link>
             </div>
           </div>
         </div>

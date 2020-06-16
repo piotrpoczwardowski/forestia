@@ -19,7 +19,7 @@
 
 
 .menu__body{
-    background: linear-gradient(to right,#4d4d4d,#000);
+    background: linear-gradient(to right,#414141,rgb(0, 0, 0));
     color: white;
     display: flex;
     justify-content: space-between;
@@ -39,7 +39,7 @@
 .left__decors{
    display: flex;
    flex-wrap: wrap;
-   width: 600px;
+   width: 650px;
    margin-top: 30px;
 }
 .decor{
@@ -63,7 +63,7 @@
 }
 .decor__name{
     margin: 5px;
-    color: rgba(0, 0, 0, 0.452);
+    color: rgba(0, 0, 0, 0.76);
     font-size: 0.7em;
     text-align: center;padding: 0 10px;
 }
@@ -80,6 +80,7 @@
 
 .right__title{
     font-weight: bold;
+    padding: 5px;
   
 }
 
@@ -106,7 +107,7 @@
 
 
 .slide{
-    width: 100%;
+    width: 90%;
     height: 100%;
     background-size: 600px;
     background-repeat: no-repeat;
@@ -119,42 +120,47 @@
 .right__bottom{
     display: flex;
     font-size: 0.7em;
+    line-height: 30px;
+    margin-top: 3vw;
   
 }
 
 
+@media (max-width: 1200px){
 
+}
 
 
 @media (max-width: 1080px){
     
-    .menu__body{
-        justify-content: flex-start;
-    }
-
-    .left__decors{
-        display: block;
-    }
+   
+    
     .right__bottom{
       width: 110%;
     }
 }
 @media (max-width: 970px){
     .right__bottom{
-        width: 100%;
+        width: 80%;
+       margin: 3vw;
+       display: block;
+       padding-left: 50px;
       }
 }
 
-@media (max-width: 850px){
+@media (max-width: 1080px){
     .menu__body{
         flex-direction: column;
+        justify-content: flex-start;
     }
     .left__decors{
         display: flex;
         justify-content: center;
+        width: 100%;
     }
     .menu__right{
         width: 100%;
+        padding: 0;
     }
     
     .right__slider{
@@ -170,6 +176,8 @@
     }
     .slide{
         background-size: 100%;
+        background-position: center;
+        width: 100%;
     }
 }
 @media (max-width: 620px){
